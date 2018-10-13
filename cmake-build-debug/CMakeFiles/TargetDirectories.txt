@@ -1,0 +1,8 @@
+/home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
+/home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+/home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir
+/home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug/vo/CMakeFiles/rebuild_cache.dir
+/home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug/vo/CMakeFiles/edit_cache.dir
+/home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug/vo/CMakeFiles/main.dir
