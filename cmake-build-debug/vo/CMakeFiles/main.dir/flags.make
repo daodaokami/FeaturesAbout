@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lut/Desktop/C++/FeaturesAbout/usr/include/eigen3 -I/home/lut/Desktop/Gitprocs/Sophus -I/usr/include/eigen3 -I/home/lut/Desktop/C++/FeaturesAbout/include -isystem /usr/local/include -isystem /usr/local/include/opencv 
+CXX_INCLUDES = -I/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/usr/include/eigen3 -I/home/lut/Desktop/Gitprocs/Sophus -I/usr/include/eigen3 -I/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include -isystem /usr/local/include -isystem /usr/local/include/opencv 
 

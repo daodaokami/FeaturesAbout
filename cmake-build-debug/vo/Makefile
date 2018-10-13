@@ -48,10 +48,10 @@ RM = /home/lut/Downloads/apps/clion-2018.1.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lut/Desktop/C++/FeaturesAbout
+CMAKE_SOURCE_DIR = /home/lut/Desktop/C++/Suo15VO/FeaturesAbout
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug
+CMAKE_BINARY_DIR = /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug/CMakeFiles /home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug/vo/CMakeFiles/progress.marks
-	cd /home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 vo/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug/CMakeFiles 0
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/CMakeFiles/progress.marks
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 vo/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 vo/clean
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 vo/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 vo/preinstall
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 vo/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 vo/preinstall
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 vo/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 vo/CMakeFiles/main.dir/rule:
-	cd /home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 vo/CMakeFiles/main.dir/rule
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 vo/CMakeFiles/main.dir/rule
 .PHONY : vo/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ main: vo/CMakeFiles/main.dir/rule
 
 # fast build rule for target.
 main/fast:
-	cd /home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/main.dir/build.make vo/CMakeFiles/main.dir/build
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/main.dir/build.make vo/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
 main.o: main.cpp.o
@@ -131,7 +131,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/main.dir/build.make vo/CMakeFiles/main.dir/main.cpp.o
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/main.dir/build.make vo/CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -140,7 +140,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/main.dir/build.make vo/CMakeFiles/main.dir/main.cpp.i
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/main.dir/build.make vo/CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -149,7 +149,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/main.dir/build.make vo/CMakeFiles/main.dir/main.cpp.s
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/main.dir/build.make vo/CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/lut/Desktop/C++/FeaturesAbout/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

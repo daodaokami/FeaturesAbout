@@ -1,4 +1,4 @@
-# Install script for directory: /home/lut/Desktop/C++/FeaturesAbout/vo
+# Install script for directory: /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
