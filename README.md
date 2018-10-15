@@ -3,4 +3,4 @@
 
 	compare some good features detector with different env.
 
-	thanks the deepblue for original code.
+	thanks the deepblue for some original code and knowledge.
