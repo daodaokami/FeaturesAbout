@@ -5,9 +5,13 @@
 #ifndef LUT15VO_MATCHER_H
 #define LUT15VO_MATCHER_H
 
+#include "common_include.h"
+
 namespace suo15features {
     class Matcher {
-
+    public:
+        virtual vector<pair<size_t, size_t>> GetMatchedKeypoints(const vector<cv::KeyPoint>& keypoints_1, const cv::Mat& descriptors_1,
+                const vector<cv::KeyPoint>& keypoints_2, const cv::Mat& descriptors_2);
     };
 }
 

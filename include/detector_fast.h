@@ -45,6 +45,7 @@ namespace suo15features {
     class Detector_fast:public Detector {
     private:
         Fast_config _config;
+        vector<int> umax;
     public:
         Detector_fast();
         Detector_fast(Fast_config config);

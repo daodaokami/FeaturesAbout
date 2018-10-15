@@ -23,6 +23,8 @@ namespace suo15features {
     class Detector {
     public:
         Detector();
+        virtual vector<cv::Mat> GetImagePyramid(){}
+        virtual vector<int> GetKeypointsLevels(){}
         virtual vector<cv::KeyPoint> ExtractorKeyPoints(const cv::Mat& ori_img);
     };
 }

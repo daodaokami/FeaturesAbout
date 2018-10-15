@@ -11,7 +11,7 @@ namespace suo15features{
         _config._patch_size = 31;
         _config._half_path_size = 15;
         _config._edge_threshold = 19;
-        _config._nfeatures = 2000;//预估计的特征的数量
+        _config._nfeatures = 500;//预估计的特征的数量
         _config._iniThFAST = 20;//可接受的特征点的阈值
         _config._minThFAST = 7;//最小的可接受特征点的阈值
     }
@@ -19,7 +19,7 @@ namespace suo15features{
     Detector_fast::Detector_fast(Fast_config config){
         _config.SetConfig(config);
     }
-
+    static void computeOrientation(const Mat& image, const Fast_config& config, vector<cv::KeyPoint>& keypoints, const vector<int>& umax);
     vector<cv::KeyPoint> Detector_fast::ExtractorKeyPoints(const cv::Mat& ori_img){
 
         vector<cv::KeyPoint> keypoints;
@@ -42,7 +42,7 @@ namespace suo15features{
         const int maxBorderY = image.rows - _config._edge_threshold + 3;
 
         vector<cv::KeyPoint> vToDistributeKeys;
-        vToDistributeKeys.reserve(_config._nfeatures*10);
+        vToDistributeKeys.reserve(_config._nfeatures*5);
 
         const float width = (maxBorderX - minBorderX);
         const float height = (maxBorderY - minBorderY);
@@ -100,6 +100,21 @@ namespace suo15features{
             keypoints[i].size = scaledPatchSize;
         }
 
+        umax.resize(_config._half_path_size + 1);
+        int v, v0, vmax = cvFloor(_config._half_path_size*sqrt(2.f)/2 +1);
+        int vmin = cvCeil(_config._half_path_size*sqrt(2.f)/2);
+        const double hp2 = _config._half_path_size*_config._half_path_size;
+        for(v = 0; v<= vmax; ++v)
+            umax[v] = cvRound(sqrt(hp2 -v*v));
+
+        for(v = _config._half_path_size, v0=0; v>=vmin; --v){
+            while(umax[v0] == umax[v0+1])
+                ++v0;
+            umax[v] = v0;
+            ++v0;
+        }
+        //开始计算方向！！！
+        computeOrientation(image,_config, keypoints, umax);
         return keypoints;
     }
 
@@ -163,6 +178,8 @@ namespace suo15features{
 
             while(lit != lNodes.end()) {
                 if (lit->bNoMore) {//
+                    cout<<"when lit->bNoMore lNodes.size"<<lNodes.size()<<endl;
+                    //都不会到这里的吗？
                     lit++;
                     continue;
                 } else {
@@ -174,7 +191,7 @@ namespace suo15features{
                         if (n1.vKeys.size() > 1) {
                             nToExpand++;
                             vSizeAndPointerToNode.push_back(make_pair(n1.vKeys.size(), &lNodes.front()));
-                            lNodes.front().lit = lNodes.begin();
+                            lNodes.front().lit = lNodes.begin();//指向的lit 是lNodes.begin
                         }
                     }
                     if (n2.vKeys.size() > 0) {
@@ -203,14 +220,19 @@ namespace suo15features{
                     }
 
                     lit = lNodes.erase(lit);
+                    //cout<<"node size "<<lNodes.size()<<endl;
                     continue;
                 }
             }
-            //lNodes.size 不可能会大于nFeatures的
-            if((int)lNodes.size() >= nFeatures||
+            if((int)lNodes.size() >= nFeatures ||
                     (int)lNodes.size() == prevSize){
-                bFinish = true;
-            }else if(((int)lNodes.size() + nToExpand*3)>nFeatures){
+                bFinish = true;//这里就是限制了这些点缩小的规模，当分块足够小的时候，就能够得到比较好的特征点集，并且，直接使用
+                        //四叉树的方式，速度块，效率高
+            }//要把所有的点进行OCTTree存储，否则，否则不会得到大于nFeatures的特征点
+            else if(((int)lNodes.size() + nToExpand*3)>nFeatures)
+            {//即要是特征点太多了，那么进行筛选
+                //cout<<"lNodes size "<<lNodes.size()<<", ToExpand size "<<nToExpand<<", Features size "<<nFeatures<<endl;
+                //cout<<"features too many to cal, so delete some bad."<<endl;
                 while(!bFinish)
                 {
 
@@ -279,7 +301,7 @@ namespace suo15features{
         vector<cv::KeyPoint> vResultKeys;
         vResultKeys.reserve(nFeatures);
         for(list<ExtractorNode>::iterator lit=lNodes.begin(); lit!=lNodes.end(); lit++)
-        {//这是做非极大抑制吗？？
+        {
             vector<cv::KeyPoint> &vNodeKeys = lit->vKeys;
             cv::KeyPoint* pKP = &vNodeKeys[0];
             float maxResponse = pKP->response;
@@ -292,10 +314,44 @@ namespace suo15features{
                     maxResponse = vNodeKeys[k].response;
                 }
             }
-
             vResultKeys.push_back(*pKP);
         }
 
         return vResultKeys;
+    }
+
+    static float IC_Angle(const Mat& image, const Fast_config& config, cv::Point2f pt,  const vector<int> & u_max) {
+        int m_01 = 0, m_10 = 0;
+
+        const uchar *center = &image.at<uchar>(cvRound(pt.y), cvRound(pt.x));
+
+        // Treat the center line differently, v=0
+        for (int u = -config._half_path_size; u <= config._half_path_size; ++u)
+            m_10 += u * center[u];
+
+        // Go line by line in the circuI853lar patch
+        int step = (int) image.step1();
+        for (int v = 1; v <= config._half_path_size; ++v) {
+            // Proceed over the two lines
+            int v_sum = 0;
+            int d = u_max[v];
+            for (int u = -d; u <= d; ++u) {
+                int val_plus = center[u + v * step], val_minus = center[u - v * step];
+                v_sum += (val_plus - val_minus);
+                m_10 += u * (val_plus + val_minus);
+            }
+            m_01 += v * v_sum;
+        }
+
+        return cv::fastAtan2((float) m_01, (float) m_10);
+    }
+
+    static void computeOrientation(const Mat& image, const Fast_config& config, vector<cv::KeyPoint>& keypoints, const vector<int>& umax)
+    {
+        for (vector<cv::KeyPoint>::iterator keypoint = keypoints.begin(),
+                     keypointEnd = keypoints.end(); keypoint != keypointEnd; ++keypoint)
+        {
+            keypoint->angle = IC_Angle(image, config, keypoint->pt, umax);
+        }
     }
 }

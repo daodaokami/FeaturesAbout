@@ -3,9 +3,12 @@
 
 vo/CMakeFiles/main.dir/main.cpp.o
  ../include/common_include.h
+ ../include/desc_b256.h
+ ../include/descriptor.h
  ../include/detector.h
  ../include/detector_fast.h
- /home/lut/Desktop/C++/FeaturesAbout/vo/main.cpp
+ ../include/detector_orb.h
+ /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/main.cpp
  /home/lut/Desktop/Gitprocs/Sophus/sophus/se3.h
  /home/lut/Desktop/Gitprocs/Sophus/sophus/so3.h
  /usr/include/eigen3/Eigen/Cholesky
