@@ -10,7 +10,8 @@ add_library(suo15features SHARED
         detector_orb.cpp
         matcher.cpp
         matcher_bf.cpp
-        matcher_knn.cpp)
+        matcher_knn.cpp
+        nearest_neighbor.cpp)
 
 target_link_libraries(
         suo15features ${THIRD_PARTY_LIBS}

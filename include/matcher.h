@@ -8,9 +8,10 @@
 #include "common_include.h"
 
 namespace suo15features {
+    typedef pair<size_t, size_t> CP;
     class Matcher {
     public:
-        virtual vector<pair<size_t, size_t>> GetMatchedKeypoints(const vector<cv::KeyPoint>& keypoints_1, const cv::Mat& descriptors_1,
+        virtual vector<CP> GetMatchedKeypoints(const vector<cv::KeyPoint>& keypoints_1, const cv::Mat& descriptors_1,
                 const vector<cv::KeyPoint>& keypoints_2, const cv::Mat& descriptors_2);
     };
 }

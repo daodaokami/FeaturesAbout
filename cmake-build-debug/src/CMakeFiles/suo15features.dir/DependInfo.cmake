@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher.cpp.o"
   "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher_bf.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher_bf.cpp.o"
   "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher_knn.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher_knn.cpp.o"
+  "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/nearest_neighbor.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/nearest_neighbor.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

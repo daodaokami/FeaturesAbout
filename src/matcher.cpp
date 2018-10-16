@@ -5,7 +5,7 @@
 #include "../include/matcher.h"
 
 namespace suo15features{
-    vector<pair<size_t, size_t>> Matcher::GetMatchedKeypoints(const vector<cv::KeyPoint> &keypoints_1,
+    vector<CP> Matcher::GetMatchedKeypoints(const vector<cv::KeyPoint> &keypoints_1,
                                                               const cv::Mat &descriptors_1,
                                                               const vector<cv::KeyPoint> &keypoints_2,
                                                               const cv::Mat &descriptors_2) {
