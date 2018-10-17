@@ -10,7 +10,8 @@
 namespace suo15features{
 
     template <typename T>
-    void short_inner_prod(T const* query, typename NearestNeighbor<T>::Result* result,
+    void
+    short_inner_prod(T const* query, typename NearestNeighbor<T>::Result* result,
         T const* elements, int num_elements, int dimensions){
 #if ENABLE_SSE2_NN_SEARCH && defined(__SSE2__)
         /* Using a constant number reduces computation time by about 1/3. */
@@ -158,7 +159,9 @@ namespace suo15features{
 #endif
     }
 
-    void NearestNeighbor<short>::find(const short *query,
+    template <>
+    void
+    NearestNeighbor<short>::find(const short *query,
                                       suo15features::NearestNeighbor<short>::Result *result) const {
         result->dist_1st_best = 0;
         result->dist_2nd_best = 0;
@@ -175,8 +178,9 @@ namespace suo15features{
         result->dist_2nd_best = 32258 - 2 * result->dist_2nd_best;
     }
 
-    template <typename T>
-    void NearestNeighbor<unsigned short>::find(const unsigned short *query,
+    template <>
+    void
+    NearestNeighbor<unsigned short>::find(const unsigned short *query,
                                                suo15features::NearestNeighbor<unsigned short>::Result *result) const {
 
         /* Result distances are shamelessly misused to store inner products. */
@@ -206,8 +210,9 @@ namespace suo15features{
     }
 
 
-    template <typename T>
-    void NearestNeighbor<float>::find (float const* query,
+    template <>
+    void
+    NearestNeighbor<float>::find (float const* query,
                                   NearestNeighbor<float>::Result* result) const
     {
         /* Result distances are shamelessly misused to store inner products. */

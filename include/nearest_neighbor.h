@@ -19,7 +19,7 @@ namespace suo15features {
         };
 
     public:
-        NearestNeighbor(void);
+        NearestNeighbor (void);
 
         void set_elements(T const* elements);
         void set_element_dimensions(int element_dimensions);
@@ -35,8 +35,11 @@ namespace suo15features {
         T const* elements;
     };
 
+    template <typename T>
     inline NearestNeighbor<T>::NearestNeighbor(void):
-            dimensions(64), num_elements(0), elements(nullptr){}
+            dimensions(64),
+            num_elements(0),
+            elements(nullptr){}
 
     template <typename T>
     inline void
