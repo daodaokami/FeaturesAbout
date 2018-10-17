@@ -7,13 +7,30 @@
 #include <detector.h>
 #include <detector_fast.h>
 #include <detector_orb.h>
+#include <detector_sift.h>
 #include <opencv2/features2d.hpp>
 #include <descriptor.h>
 #include <desc_b256.h>
 #include <chrono>
 
 int main(){
-
+    int num = 1;
+    int on = num << 1;
+    cout<<num<<", "<<on<<endl;//如果直接<<那么是赋值，当做二进制运算符则相当于×2
+    cv::Mat uchar_mat(3, 3, CV_8UC1);
+    cv::Mat float_mat(3, 3, CV_32FC1);
+    uchar_mat.at<unsigned char>(0, 0) = 1;uchar_mat.at<unsigned char>(0, 1) = 1;uchar_mat.at<unsigned char>(0, 2) = 1;
+    uchar_mat.at<unsigned char>(1, 0) = 2;uchar_mat.at<unsigned char>(1, 1) = 2;uchar_mat.at<unsigned char>(1, 2) = 2;
+    uchar_mat.at<unsigned char>(2, 0) = 3;uchar_mat.at<unsigned char>(2, 1) = 3;uchar_mat.at<unsigned char>(2, 2) = 3;
+    cout<<uchar_mat<<endl;
+    uchar_mat.convertTo(float_mat, CV_32FC1);
+    cout<<float_mat<<endl;
+    //对图像进行上采样
+    float scale = 2;
+    cv::Size sz(cvRound((float)float_mat.cols*scale), cvRound((float)float_mat.rows*scale));
+    cv::Mat temp;
+    cv::resize(float_mat, temp, sz);
+    cout<<"up sample \n"<<temp<<endl;
     //调bug没有准确的定位好特征点，计算的位置产生了偏移
     cv::Mat img;
     string filepath = "./data/000001.png";

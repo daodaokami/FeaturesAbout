@@ -8,6 +8,7 @@ vo/CMakeFiles/main.dir/main.cpp.o
  ../include/detector.h
  ../include/detector_fast.h
  ../include/detector_orb.h
+ ../include/detector_sift.h
  /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/main.cpp
  /home/lut/Desktop/Gitprocs/Sophus/sophus/se3.h
  /home/lut/Desktop/Gitprocs/Sophus/sophus/so3.h

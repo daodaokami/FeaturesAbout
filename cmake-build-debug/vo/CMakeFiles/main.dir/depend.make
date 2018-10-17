@@ -7,6 +7,7 @@ vo/CMakeFiles/main.dir/main.cpp.o: ../include/descriptor.h
 vo/CMakeFiles/main.dir/main.cpp.o: ../include/detector.h
 vo/CMakeFiles/main.dir/main.cpp.o: ../include/detector_fast.h
 vo/CMakeFiles/main.dir/main.cpp.o: ../include/detector_orb.h
+vo/CMakeFiles/main.dir/main.cpp.o: ../include/detector_sift.h
 vo/CMakeFiles/main.dir/main.cpp.o: ../vo/main.cpp
 vo/CMakeFiles/main.dir/main.cpp.o: /home/lut/Desktop/Gitprocs/Sophus/sophus/se3.h
 vo/CMakeFiles/main.dir/main.cpp.o: /home/lut/Desktop/Gitprocs/Sophus/sophus/so3.h

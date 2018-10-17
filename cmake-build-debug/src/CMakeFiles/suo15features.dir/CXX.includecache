@@ -48,6 +48,14 @@ common_include.h
 ../include/detector_orb.h
 ../include/detector_orb.h
 
+../include/matcher.h
+common_include.h
+../include/common_include.h
+
+../include/nearest_neighbor.h
+common_include.h
+../include/common_include.h
+
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/common_include.h
 Eigen/Core
 -
@@ -113,12 +121,22 @@ detector_fast.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/detector_orb.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/detector_sift.h
+detector.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/detector.h
+common_include.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/common_include.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/detector_surf.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher.h
+common_include.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/common_include.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher_bf.h
+common_include.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/common_include.h
+matcher.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher_knn.h
 
@@ -159,6 +177,8 @@ opencv2/features2d.hpp
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/detector_orb.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/detector_sift.cpp
+chrono
+-
 ../include/detector_sift.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/detector_sift.h
 
@@ -173,10 +193,22 @@ opencv2/features2d.hpp
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher_bf.cpp
 ../include/matcher_bf.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher_bf.h
+matcher.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher_knn.cpp
 ../include/matcher_knn.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher_knn.h
+
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/nearest_neighbor.cpp
+algorithm
+-
+emmintrin.h
+-
+pmmintrin.h
+-
+nearest_neighbor.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/nearest_neighbor.h
 
 /home/lut/Desktop/Gitprocs/Sophus/sophus/se3.h
 so3.h

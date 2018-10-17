@@ -66,6 +66,12 @@ detector_fast.h
 ../include/detector_orb.h
 ../include/detector_orb.h
 
+../include/detector_sift.h
+detector.h
+../include/detector.h
+common_include.h
+../include/common_include.h
+
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/main.cpp
 common_include.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/common_include.h
@@ -76,6 +82,8 @@ detector.h
 detector_fast.h
 -
 detector_orb.h
+-
+detector_sift.h
 -
 opencv2/features2d.hpp
 -
