@@ -6,6 +6,7 @@
 #define LUT15VO_DETECTOR_SIFT_H
 
 #include "detector.h"
+#include "Sift_KeyPoint.h"
 #include "common_include.h"
 
 namespace suo15features {
@@ -39,11 +40,12 @@ namespace suo15features {
             }
         };
     protected:
-        typedef vector<cv::KeyPoint> KeyPoints;
+        typedef vector<Sift_KeyPoint> KeyPoints;
         typedef cv::Mat Descriptors;
         KeyPoints keypoints;
         Descriptors descriptors;
 
+        //一个Octave是存储的金字塔的一层！（S+3）
         struct Octave{
             typedef vector<cv::Mat> ImageVector;
             ImageVector img;
@@ -55,38 +57,38 @@ namespace suo15features {
         void create_octaves(void);
         void add_octave(cv::Mat& image, float has_sigma, float target_sigma);
         void extrema_detection(void);
-        void extrema_detection(cv::Mat s[3], int oi, int si);
+        size_t extrema_detection(cv::Mat s[3], int oi, int si);
 
-        void keypoint_localozation(void);
+        void keypoint_localization(void);
         void descriptor_generation(void);
         void generate_grad_ori_images(Octave* octave);
 
-        void orientation_assignment(cv::KeyPoint const& kp,
+        void orientation_assignment(Sift_KeyPoint const& kp,
             Octave const* octave, vector<float>& orientations);
-        bool descriptor_assignment(cv::KeyPoint const& kp, cv::Mat& desc,
+        bool descriptor_assignment(Sift_KeyPoint const& kp, cv::Mat& desc,
             Octave const* octave);
 
-        float keypoint_relative_scale(const cv::KeyPoint& kp);
-        float keypoint_absolute_scale(const cv::KeyPoint& kp);
+        float keypoint_relative_scale(const Sift_KeyPoint& kp);
+        float keypoint_absolute_scale(const Sift_KeyPoint& kp);
 
     public:
         explicit Detector_sift(Options const& options);
         //set什么类型的Image都是一样的
         void set_image(const cv::Mat& img);
         void process(void);//process就是父类中virtual func
-        // virtual vector<cv::KeyPoint> ExtractorKeyPoints(const cv::Mat& ori_img);
 
         KeyPoints const& get_keypoints() const;
 
         Descriptors const& get_Descriptors() const;
 
+        virtual vector<cv::KeyPoint> ExtractorKeyPoints(const cv::Mat& ori_img);
     private:
         cv::Mat orig;
         Options sift_options;
         Octaves octaves;
     };
 
-    inline vector<cv::KeyPoint> const&
+    inline vector<Sift_KeyPoint> const&
     Detector_sift::get_keypoints() const {
         return this->keypoints;
     }

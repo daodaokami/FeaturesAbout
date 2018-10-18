@@ -150,6 +150,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/Sift_KeyPoint.cpp">
+			<Option target="suo15features"/>
+		</Unit>
 		<Unit filename="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/desc_b256.cpp">
 			<Option target="suo15features"/>
 		</Unit>

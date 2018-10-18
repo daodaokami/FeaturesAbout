@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../include/Sift_KeyPoint.h
+common_include.h
+../include/common_include.h
+
 ../include/common_include.h
 Eigen/Core
 -
@@ -140,6 +144,10 @@ matcher.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher_knn.h
 
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/Sift_KeyPoint.cpp
+Sift_KeyPoint.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/Sift_KeyPoint.h
+
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/desc_b256.cpp
 detector_orb.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/detector_orb.h
@@ -178,6 +186,10 @@ opencv2/features2d.hpp
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/detector_sift.cpp
 chrono
+-
+math.h
+-
+opencv2/imgproc/imgproc.hpp
 -
 ../include/detector_sift.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/detector_sift.h

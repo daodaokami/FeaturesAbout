@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../include/Sift_KeyPoint.h
+common_include.h
+../include/common_include.h
+
 ../include/common_include.h
 Eigen/Core
 -
@@ -83,6 +87,8 @@ detector_fast.h
 -
 detector_orb.h
 -
+Sift_KeyPoint.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/Sift_KeyPoint.h
 detector_sift.h
 -
 opencv2/features2d.hpp

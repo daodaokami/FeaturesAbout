@@ -177,9 +177,33 @@ src/CMakeFiles/suo15features.dir/detector.cpp.o.provides: src/CMakeFiles/suo15fe
 src/CMakeFiles/suo15features.dir/detector.cpp.o.provides.build: src/CMakeFiles/suo15features.dir/detector.cpp.o
 
 
+src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o: src/CMakeFiles/suo15features.dir/flags.make
+src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o: ../src/Sift_KeyPoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o"
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o -c /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/Sift_KeyPoint.cpp
+
+src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.i"
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/Sift_KeyPoint.cpp > CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.i
+
+src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.s"
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/Sift_KeyPoint.cpp -o CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.s
+
+src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o.requires
+
+src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o.provides: src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o.provides.build
+.PHONY : src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o.provides
+
+src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o.provides.build: src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o
+
+
 src/CMakeFiles/suo15features.dir/detector_fast.cpp.o: src/CMakeFiles/suo15features.dir/flags.make
 src/CMakeFiles/suo15features.dir/detector_fast.cpp.o: ../src/detector_fast.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/suo15features.dir/detector_fast.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/suo15features.dir/detector_fast.cpp.o"
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/suo15features.dir/detector_fast.cpp.o -c /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/detector_fast.cpp
 
 src/CMakeFiles/suo15features.dir/detector_fast.cpp.i: cmake_force
@@ -203,7 +227,7 @@ src/CMakeFiles/suo15features.dir/detector_fast.cpp.o.provides.build: src/CMakeFi
 
 src/CMakeFiles/suo15features.dir/detector_sift.cpp.o: src/CMakeFiles/suo15features.dir/flags.make
 src/CMakeFiles/suo15features.dir/detector_sift.cpp.o: ../src/detector_sift.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/suo15features.dir/detector_sift.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/suo15features.dir/detector_sift.cpp.o"
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/suo15features.dir/detector_sift.cpp.o -c /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/detector_sift.cpp
 
 src/CMakeFiles/suo15features.dir/detector_sift.cpp.i: cmake_force
@@ -227,7 +251,7 @@ src/CMakeFiles/suo15features.dir/detector_sift.cpp.o.provides.build: src/CMakeFi
 
 src/CMakeFiles/suo15features.dir/detector_surf.cpp.o: src/CMakeFiles/suo15features.dir/flags.make
 src/CMakeFiles/suo15features.dir/detector_surf.cpp.o: ../src/detector_surf.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/suo15features.dir/detector_surf.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/suo15features.dir/detector_surf.cpp.o"
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/suo15features.dir/detector_surf.cpp.o -c /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/detector_surf.cpp
 
 src/CMakeFiles/suo15features.dir/detector_surf.cpp.i: cmake_force
@@ -251,7 +275,7 @@ src/CMakeFiles/suo15features.dir/detector_surf.cpp.o.provides.build: src/CMakeFi
 
 src/CMakeFiles/suo15features.dir/detector_orb.cpp.o: src/CMakeFiles/suo15features.dir/flags.make
 src/CMakeFiles/suo15features.dir/detector_orb.cpp.o: ../src/detector_orb.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/suo15features.dir/detector_orb.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/suo15features.dir/detector_orb.cpp.o"
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/suo15features.dir/detector_orb.cpp.o -c /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/detector_orb.cpp
 
 src/CMakeFiles/suo15features.dir/detector_orb.cpp.i: cmake_force
@@ -275,7 +299,7 @@ src/CMakeFiles/suo15features.dir/detector_orb.cpp.o.provides.build: src/CMakeFil
 
 src/CMakeFiles/suo15features.dir/matcher.cpp.o: src/CMakeFiles/suo15features.dir/flags.make
 src/CMakeFiles/suo15features.dir/matcher.cpp.o: ../src/matcher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/suo15features.dir/matcher.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/suo15features.dir/matcher.cpp.o"
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/suo15features.dir/matcher.cpp.o -c /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher.cpp
 
 src/CMakeFiles/suo15features.dir/matcher.cpp.i: cmake_force
@@ -299,7 +323,7 @@ src/CMakeFiles/suo15features.dir/matcher.cpp.o.provides.build: src/CMakeFiles/su
 
 src/CMakeFiles/suo15features.dir/matcher_bf.cpp.o: src/CMakeFiles/suo15features.dir/flags.make
 src/CMakeFiles/suo15features.dir/matcher_bf.cpp.o: ../src/matcher_bf.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/suo15features.dir/matcher_bf.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/suo15features.dir/matcher_bf.cpp.o"
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/suo15features.dir/matcher_bf.cpp.o -c /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher_bf.cpp
 
 src/CMakeFiles/suo15features.dir/matcher_bf.cpp.i: cmake_force
@@ -323,7 +347,7 @@ src/CMakeFiles/suo15features.dir/matcher_bf.cpp.o.provides.build: src/CMakeFiles
 
 src/CMakeFiles/suo15features.dir/matcher_knn.cpp.o: src/CMakeFiles/suo15features.dir/flags.make
 src/CMakeFiles/suo15features.dir/matcher_knn.cpp.o: ../src/matcher_knn.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/suo15features.dir/matcher_knn.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/suo15features.dir/matcher_knn.cpp.o"
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/suo15features.dir/matcher_knn.cpp.o -c /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher_knn.cpp
 
 src/CMakeFiles/suo15features.dir/matcher_knn.cpp.i: cmake_force
@@ -347,7 +371,7 @@ src/CMakeFiles/suo15features.dir/matcher_knn.cpp.o.provides.build: src/CMakeFile
 
 src/CMakeFiles/suo15features.dir/nearest_neighbor.cpp.o: src/CMakeFiles/suo15features.dir/flags.make
 src/CMakeFiles/suo15features.dir/nearest_neighbor.cpp.o: ../src/nearest_neighbor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/suo15features.dir/nearest_neighbor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/suo15features.dir/nearest_neighbor.cpp.o"
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/suo15features.dir/nearest_neighbor.cpp.o -c /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/nearest_neighbor.cpp
 
 src/CMakeFiles/suo15features.dir/nearest_neighbor.cpp.i: cmake_force
@@ -376,6 +400,7 @@ suo15features_OBJECTS = \
 "CMakeFiles/suo15features.dir/desc_s64.cpp.o" \
 "CMakeFiles/suo15features.dir/desc_b256.cpp.o" \
 "CMakeFiles/suo15features.dir/detector.cpp.o" \
+"CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o" \
 "CMakeFiles/suo15features.dir/detector_fast.cpp.o" \
 "CMakeFiles/suo15features.dir/detector_sift.cpp.o" \
 "CMakeFiles/suo15features.dir/detector_surf.cpp.o" \
@@ -393,6 +418,7 @@ suo15features_EXTERNAL_OBJECTS =
 ../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/desc_s64.cpp.o
 ../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/desc_b256.cpp.o
 ../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/detector.cpp.o
+../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o
 ../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/detector_fast.cpp.o
 ../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/detector_sift.cpp.o
 ../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/detector_surf.cpp.o
@@ -450,7 +476,7 @@ suo15features_EXTERNAL_OBJECTS =
 ../lib/libsuo15features.so: /usr/local/lib/libopencv_imgproc.so.3.4.0
 ../lib/libsuo15features.so: /usr/local/lib/libopencv_core.so.3.4.0
 ../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX shared library ../../lib/libsuo15features.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX shared library ../../lib/libsuo15features.so"
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/suo15features.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -463,6 +489,7 @@ src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/desc
 src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/desc_s64.cpp.o.requires
 src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/desc_b256.cpp.o.requires
 src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/detector.cpp.o.requires
+src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o.requires
 src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/detector_fast.cpp.o.requires
 src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/detector_sift.cpp.o.requires
 src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/detector_surf.cpp.o.requires

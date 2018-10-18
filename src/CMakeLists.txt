@@ -4,6 +4,7 @@ add_library(suo15features SHARED
         desc_s64.cpp
         desc_b256.cpp
         detector.cpp
+        Sift_KeyPoint.cpp
         detector_fast.cpp
         detector_sift.cpp
         detector_surf.cpp

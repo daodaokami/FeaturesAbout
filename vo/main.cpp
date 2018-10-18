@@ -7,6 +7,7 @@
 #include <detector.h>
 #include <detector_fast.h>
 #include <detector_orb.h>
+#include "Sift_KeyPoint.h"
 #include <detector_sift.h>
 #include <opencv2/features2d.hpp>
 #include <descriptor.h>
@@ -14,6 +15,11 @@
 #include <chrono>
 
 int main(){
+    cv::KeyPoint kp;
+    kp.pt.x = 1, kp.pt.y = 2;
+    cout<<kp.pt.x<<" "<<kp.pt.y<<endl;
+    suo15features::Sift_KeyPoint skp(kp);
+    cout<<skp.pt.x<<" "<<skp.pt.y<<endl;
     int num = 1;
     int on = num << 1;
     cout<<num<<", "<<on<<endl;//如果直接<<那么是赋值，当做二进制运算符则相当于×2

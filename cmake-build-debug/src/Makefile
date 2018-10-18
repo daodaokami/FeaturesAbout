@@ -125,6 +125,33 @@ suo15features/fast:
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/build
 .PHONY : suo15features/fast
 
+Sift_KeyPoint.o: Sift_KeyPoint.cpp.o
+
+.PHONY : Sift_KeyPoint.o
+
+# target to build an object file
+Sift_KeyPoint.cpp.o:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o
+.PHONY : Sift_KeyPoint.cpp.o
+
+Sift_KeyPoint.i: Sift_KeyPoint.cpp.i
+
+.PHONY : Sift_KeyPoint.i
+
+# target to preprocess a source file
+Sift_KeyPoint.cpp.i:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.i
+.PHONY : Sift_KeyPoint.cpp.i
+
+Sift_KeyPoint.s: Sift_KeyPoint.cpp.s
+
+.PHONY : Sift_KeyPoint.s
+
+# target to generate assembly for a file
+Sift_KeyPoint.cpp.s:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.s
+.PHONY : Sift_KeyPoint.cpp.s
+
 desc_b256.o: desc_b256.cpp.o
 
 .PHONY : desc_b256.o
@@ -485,6 +512,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... suo15features"
+	@echo "... Sift_KeyPoint.o"
+	@echo "... Sift_KeyPoint.i"
+	@echo "... Sift_KeyPoint.s"
 	@echo "... desc_b256.o"
 	@echo "... desc_b256.i"
 	@echo "... desc_b256.s"
