@@ -124,6 +124,19 @@ suo15features/fast:
 .PHONY : suo15features/fast
 
 #=============================================================================
+# Target rules for targets named testgb
+
+# Build rule for target.
+testgb: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testgb
+.PHONY : testgb
+
+# fast build rule for target.
+testgb/fast:
+	$(MAKE) -f vo/CMakeFiles/testgb.dir/build.make vo/CMakeFiles/testgb.dir/build
+.PHONY : testgb/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -145,6 +158,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... suo15features"
+	@echo "... testgb"
 	@echo "... main"
 .PHONY : help
 

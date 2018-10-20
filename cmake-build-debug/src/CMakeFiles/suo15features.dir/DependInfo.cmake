@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/Sift_KeyPoint.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o"
+  "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/accum_conv.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/accum_conv.cpp.o"
   "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/desc_b256.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/desc_b256.cpp.o"
   "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/desc_s128.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/desc_s128.cpp.o"
   "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/desc_s64.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/desc_s64.cpp.o"
@@ -14,10 +14,12 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/detector_orb.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/detector_orb.cpp.o"
   "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/detector_sift.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/detector_sift.cpp.o"
   "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/detector_surf.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/detector_surf.cpp.o"
+  "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/gauss_blur.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/gauss_blur.cpp.o"
   "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher.cpp.o"
   "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher_bf.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher_bf.cpp.o"
   "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher_knn.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher_knn.cpp.o"
   "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/nearest_neighbor.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/nearest_neighbor.cpp.o"
+  "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/sift_keypoint.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/sift_keypoint.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

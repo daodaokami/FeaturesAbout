@@ -6,7 +6,7 @@
 #define LUT15VO_DETECTOR_SIFT_H
 
 #include "detector.h"
-#include "Sift_KeyPoint.h"
+#include "sift_keypoint.h"
 #include "common_include.h"
 
 namespace suo15features {
@@ -60,13 +60,11 @@ namespace suo15features {
         size_t extrema_detection(cv::Mat s[3], int oi, int si);
 
         void keypoint_localization(void);
-        void descriptor_generation(void);
+
         void generate_grad_ori_images(Octave* octave);
 
         void orientation_assignment(Sift_KeyPoint const& kp,
             Octave const* octave, vector<float>& orientations);
-        bool descriptor_assignment(Sift_KeyPoint const& kp, cv::Mat& desc,
-            Octave const* octave);
 
         float keypoint_relative_scale(const Sift_KeyPoint& kp);
         float keypoint_absolute_scale(const Sift_KeyPoint& kp);
@@ -79,8 +77,6 @@ namespace suo15features {
 
         KeyPoints const& get_keypoints() const;
 
-        Descriptors const& get_Descriptors() const;
-
         virtual vector<cv::KeyPoint> ExtractorKeyPoints(const cv::Mat& ori_img);
     private:
         cv::Mat orig;
@@ -92,12 +88,6 @@ namespace suo15features {
     Detector_sift::get_keypoints() const {
         return this->keypoints;
     }
-
-    inline cv::Mat const&
-    Detector_sift::get_Descriptors() const {
-        return this->descriptors;
-    }
-
 
 }
 

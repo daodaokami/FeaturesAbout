@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/Sift_KeyPoint.h
-common_include.h
-../include/common_include.h
-
 ../include/common_include.h
 Eigen/Core
 -
@@ -73,6 +69,22 @@ detector_fast.h
 ../include/detector_sift.h
 detector.h
 ../include/detector.h
+sift_keypoint.h
+../include/sift_keypoint.h
+common_include.h
+../include/common_include.h
+
+../include/matcher.h
+common_include.h
+../include/common_include.h
+
+../include/matcher_bf.h
+common_include.h
+../include/common_include.h
+matcher.h
+../include/matcher.h
+
+../include/sift_keypoint.h
 common_include.h
 ../include/common_include.h
 
@@ -87,8 +99,8 @@ detector_fast.h
 -
 detector_orb.h
 -
-Sift_KeyPoint.h
-/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/Sift_KeyPoint.h
+sift_keypoint.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/sift_keypoint.h
 detector_sift.h
 -
 opencv2/features2d.hpp
@@ -98,6 +110,8 @@ descriptor.h
 desc_b256.h
 -
 chrono
+-
+matcher_bf.h
 -
 
 /home/lut/Desktop/Gitprocs/Sophus/sophus/se3.h

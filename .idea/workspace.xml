@@ -3,6 +3,7 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="Lut15VO" targetName="main" />
+      <config projectName="Lut15VO" targetName="testgb" />
       <config projectName="Lut15VO" targetName="suo15features" />
     </generated>
   </component>
@@ -13,22 +14,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f6d1d61-9017-4b53-9d4e-237f5f1c19ce" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/include/Sift_KeyPoint.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sift_KeyPoint.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/example.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/kxm1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/kxm2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/positions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/accum_conv.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/gauss_blur.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/accum_conv.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gauss_blur.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vo/testgaussblur.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/main" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Lut15VO.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Lut15VO.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/desc_b256.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/desc_b256.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/descriptor.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/descriptor.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/detector.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/detector.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/detector_fast.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/detector_fast.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/detector_orb.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/detector_orb.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/detector_sift.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/detector_sift.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher_bf.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher_bf.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/nearest_neighbor.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/nearest_neighbor.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/main.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/main.dir/CXX.includecache" afterDir="false" />
@@ -36,10 +56,15 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/main.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/main.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/main.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/main.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Sift_KeyPoint.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/sift_keypoint.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/common_include.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/common_include.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/detector_sift.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/detector_sift.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libsuo15features.so" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libsuo15features.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libsuo15features.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sift_KeyPoint.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sift_keypoint.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/detector_sift.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/detector_sift.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vo/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vo/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vo/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vo/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -61,11 +86,65 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vo/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            <state relative-caret-position="266">
+              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
               <folding>
                 <element signature="e#38#65#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gauss_blur.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/gauss_blur.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="94" selection-start-line="12" selection-start-column="94" selection-end-line="12" selection-end-column="94" />
+              <folding>
+                <element signature="e#96#123#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testgaussblur.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vo/testgaussblur.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+              <folding>
+                <element signature="e#37#70#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sift_keypoint.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sift_keypoint.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detector_sift.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/detector_sift.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+              <folding>
+                <element signature="e#38#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -74,7 +153,7 @@
         <entry file="file://$PROJECT_DIR$/include/detector_sift.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
-              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+              <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
               <folding>
                 <element signature="e#103#124#0" expanded="true" />
               </folding>
@@ -82,32 +161,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detector_sift.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/detector_sift.cpp">
+      <file leaf-file-name="accum_conv.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/accum_conv.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="247" column="43" selection-start-line="247" selection-start-column="43" selection-end-line="247" selection-end-column="43" />
-              <folding>
-                <element signature="e#38#55#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="494">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sift_KeyPoint.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/Sift_KeyPoint.h">
+      <file leaf-file-name="sift_keypoint.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/sift_keypoint.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sift_KeyPoint.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Sift_KeyPoint.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+            <state relative-caret-position="247">
+              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -135,21 +202,18 @@
         <option value="$PROJECT_DIR$/features/sift.h" />
         <option value="$PROJECT_DIR$/features/surf.cpp" />
         <option value="$PROJECT_DIR$/features/surf.h" />
-        <option value="$PROJECT_DIR$/include/common_include.h" />
         <option value="$PROJECT_DIR$/include/desc_s64.h" />
         <option value="$PROJECT_DIR$/include/desc_s128.h" />
         <option value="$PROJECT_DIR$/include/detector_surf.h" />
         <option value="$PROJECT_DIR$/include/matcher_knn.h" />
         <option value="$PROJECT_DIR$/features/features.h" />
         <option value="$PROJECT_DIR$/features/features.cpp" />
-        <option value="$PROJECT_DIR$/vo/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/include/detector_fast.h" />
         <option value="$PROJECT_DIR$/src/detector_fast.cpp" />
         <option value="$PROJECT_DIR$/src/detector_orb.cpp" />
         <option value="$PROJECT_DIR$/src/detector.cpp" />
         <option value="$PROJECT_DIR$/include/detector.h" />
         <option value="$PROJECT_DIR$/include/detector_orb.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/include/desc_b256.h" />
         <option value="$PROJECT_DIR$/src/descriptor.cpp" />
         <option value="$PROJECT_DIR$/include/descriptor.h" />
@@ -161,21 +225,35 @@
         <option value="$PROJECT_DIR$/include/nearest_neighbor.h" />
         <option value="$PROJECT_DIR$/src/nearest_neighbor.cpp" />
         <option value="$PROJECT_DIR$/features/Sift_KeyPoint.h" />
-        <option value="$PROJECT_DIR$/vo/main.cpp" />
-        <option value="$PROJECT_DIR$/include/Sift_KeyPoint.h" />
-        <option value="$PROJECT_DIR$/src/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/Sift_KeyPoint.cpp" />
+        <option value="$PROJECT_DIR$/include/Sift_KeyPoint.h" />
         <option value="$PROJECT_DIR$/include/detector_sift.h" />
+        <option value="$PROJECT_DIR$/include/common_include.h" />
+        <option value="$PROJECT_DIR$/vo/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/include/Gauss_Blur.h" />
+        <option value="$PROJECT_DIR$/src/Gauss_Blur.cpp" />
+        <option value="$PROJECT_DIR$/include/Accum.h" />
+        <option value="$PROJECT_DIR$/src/gauss_Blur.cpp" />
+        <option value="$PROJECT_DIR$/src/sift_keypoint.cpp" />
+        <option value="$PROJECT_DIR$/src/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/include/accum.h" />
+        <option value="$PROJECT_DIR$/src/accum.cpp" />
+        <option value="$PROJECT_DIR$/src/accum_conv.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/include/gauss_blur.h" />
+        <option value="$PROJECT_DIR$/src/gauss_blur.cpp" />
+        <option value="$PROJECT_DIR$/vo/main.cpp" />
         <option value="$PROJECT_DIR$/src/detector_sift.cpp" />
+        <option value="$PROJECT_DIR$/vo/testgaussblur.cpp" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="573" />
-    <option name="y" value="108" />
-    <option name="width" value="1572" />
-    <option name="height" value="906" />
+    <option name="x" value="37" />
+    <option name="y" value="54" />
+    <option name="width" value="1809" />
+    <option name="height" value="933" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -185,7 +263,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,11 +288,6 @@
             <path>
               <item name="Lut15VO" type="b2602c69:ProjectViewProjectNode" />
               <item name="FeaturesAbout" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lut15VO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeaturesAbout" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -227,23 +299,24 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Gauss&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/detector_sift.cpp&#10;Gauss&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Gitprocs/ImageBasedModellingEduV1.0/CMakeLists.txt" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/include" />
+      <recent name="$PROJECT_DIR$/features" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/include" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/features" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -258,14 +331,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.suo15features">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="main" EXPLICIT_BUILD_TARGET_NAME="all" />
-    <configuration name="main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lut15VO" TARGET_NAME="main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="main" />
-    <configuration name="suo15features" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lut15VO" TARGET_NAME="suo15features" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="main" />
+  <component name="RunManager" selected="Application.testgb">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="testgb" EXPLICIT_BUILD_TARGET_NAME="all" />
+    <configuration name="main" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lut15VO" TARGET_NAME="testgb" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="testgb" />
+    <configuration name="suo15features" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lut15VO" TARGET_NAME="main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="testgb" />
+    <configuration name="testgb" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lut15VO" TARGET_NAME="testgb" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="testgb" />
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.suo15features" />
       <item itemvalue="Application.main" />
+      <item itemvalue="Application.testgb" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -292,25 +367,34 @@
       <workItem from="1539778808134" duration="9508000" />
       <workItem from="1539825425072" duration="11246000" />
       <workItem from="1539854061984" duration="897000" />
+      <workItem from="1539874002337" duration="5490000" />
+      <workItem from="1539910548925" duration="1049000" />
+      <workItem from="1539915207364" duration="17036000" />
+      <workItem from="1539948116646" duration="5739000" />
+      <workItem from="1539954205279" duration="8839000" />
+      <workItem from="1540023578735" duration="15283000" />
+      <workItem from="1540039568260" duration="5403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107352000" />
+    <option name="totallyTimeSpent" value="166191000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="569" y="203" width="1572" height="906" extended-state="0" />
+    <frame x="-1" y="-4" width="1922" height="1020" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1566879" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14427084" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.3194292" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32282472" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.8296875" weight="0.50606394" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.31919906" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5046875" side_tool="true" visible="true" weight="0.26019844" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997233" weight="0.3292683" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4953125" visible="true" weight="0.26019844" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.50375" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4902439" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -318,9 +402,27 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.28373265" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.31919906" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14427084" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3880926" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4432194" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.26571113" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -330,97 +432,49 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/vo/main.cpp</url>
-          <line>40</line>
-          <option name="timeStamp" value="37" />
+          <line>58</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/vo/main.cpp</url>
-          <line>67</line>
-          <option name="timeStamp" value="40" />
+          <line>20</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/detector_sift.cpp</url>
+          <line>15</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/detector_sift.cpp</url>
+          <line>135</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/gauss_blur.cpp</url>
+          <line>30</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/vo/testgaussblur.cpp</url>
+          <line>32</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/vo/testgaussblur.cpp</url>
+          <line>19</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/vo/testgaussblur.cpp</url>
+          <line>11</line>
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="41" />
+      <option name="time" value="56" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/detector_surf.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/orb_sift.cpp" />
-    <entry file="file://$PROJECT_DIR$/features/orb_sift.h" />
-    <entry file="file://$PROJECT_DIR$/src/matcher_knn.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake_modules/FindG2O.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/matcher_knn.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/detector_surf.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/desc_s64.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/orb.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/orb.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/orb_s64.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/orb_s64.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/surf.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/surf.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/features.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -462,20 +516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vo/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/common_include.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/detector_fast.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -497,13 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/detector.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1197">
@@ -515,13 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
           <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/desc_b256.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1368">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -612,13 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/include/opencv2/imgproc.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="1395" column="29" selection-start-line="1395" selection-start-column="29" selection-end-line="1395" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/detector_orb.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -626,53 +645,183 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/../../../Gitprocs/opencv-3.4.0/modules/imgproc/src/smooth.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        <state relative-caret-position="33801">
+          <caret line="1779" selection-start-line="1779" selection-end-line="1779" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/Sift_KeyPoint.h">
+    <entry file="file://$PROJECT_DIR$/include/common_include.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        <state relative-caret-position="380">
+          <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sift_KeyPoint.cpp">
+    <entry file="file:///usr/local/include/opencv2/imgproc.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="290" column="48" selection-start-line="290" selection-start-column="48" selection-end-line="290" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/include/opencv2/core/base.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="269" column="19" selection-start-line="269" selection-start-column="19" selection-end-line="269" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/include/opencv2/core/mat.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="1881" column="24" selection-start-line="1881" selection-start-column="20" selection-end-line="1881" selection-end-column="25" />
+          <folding>
+            <element signature="e#84083#84097#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Gitprocs/opencv-3.4.0/modules/core/src/matrix.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="473" selection-start-line="473" selection-end-line="473" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/accum_conv.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gauss_blur.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1596">
+          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vo/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/kxm2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/kxm1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/example.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desc_b256.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="294" selection-start-line="294" selection-end-line="294" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sift_keypoint.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vo/main.cpp">
+    <entry file="file:///usr/local/include/opencv2/core/mat.inl.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="e#38#65#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="411">
+          <caret line="726" selection-start-line="726" selection-end-line="726" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/positions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30227">
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/sift_keypoint.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/detector_sift.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
           <folding>
             <element signature="e#103#124#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/accum_conv.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/detector_sift.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="247" column="43" selection-start-line="247" selection-start-column="43" selection-end-line="247" selection-end-column="43" />
+        <state relative-caret-position="95">
+          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
           <folding>
             <element signature="e#38#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vo/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <element signature="e#38#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/gauss_blur.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="94" selection-start-line="12" selection-start-column="94" selection-end-line="12" selection-end-column="94" />
+          <folding>
+            <element signature="e#96#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vo/testgaussblur.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding>
+            <element signature="e#37#70#0" expanded="true" />
           </folding>
         </state>
       </provider>

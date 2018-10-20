@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../include/Sift_KeyPoint.h
-common_include.h
-../include/common_include.h
+../include/accum_conv.h
 
 ../include/common_include.h
 Eigen/Core
@@ -52,11 +50,21 @@ common_include.h
 ../include/detector_orb.h
 ../include/detector_orb.h
 
+../include/gauss_blur.h
+common_include.h
+../include/common_include.h
+accum_conv.h
+../include/accum_conv.h
+
 ../include/matcher.h
 common_include.h
 ../include/common_include.h
 
 ../include/nearest_neighbor.h
+common_include.h
+../include/common_include.h
+
+../include/sift_keypoint.h
 common_include.h
 ../include/common_include.h
 
@@ -127,6 +135,8 @@ detector_fast.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/detector_sift.h
 detector.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/detector.h
+sift_keypoint.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/sift_keypoint.h
 common_include.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/common_include.h
 
@@ -144,9 +154,13 @@ matcher.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher_knn.h
 
-/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/Sift_KeyPoint.cpp
-Sift_KeyPoint.h
-/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/Sift_KeyPoint.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/sift_keypoint.h
+common_include.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/common_include.h
+
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/accum_conv.cpp
+accum_conv.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/accum_conv.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/desc_b256.cpp
 detector_orb.h
@@ -193,10 +207,18 @@ opencv2/imgproc/imgproc.hpp
 -
 ../include/detector_sift.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/detector_sift.h
+Eigen/Core
+-
+gauss_blur.h
+-
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/detector_surf.cpp
 ../include/detector_surf.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/detector_surf.h
+
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/gauss_blur.cpp
+gauss_blur.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/gauss_blur.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher.cpp
 ../include/matcher.h
@@ -221,6 +243,10 @@ pmmintrin.h
 -
 nearest_neighbor.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/nearest_neighbor.h
+
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/sift_keypoint.cpp
+sift_keypoint.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/sift_keypoint.h
 
 /home/lut/Desktop/Gitprocs/Sophus/sophus/se3.h
 so3.h

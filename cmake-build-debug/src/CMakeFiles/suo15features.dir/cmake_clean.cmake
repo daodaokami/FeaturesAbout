@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/suo15features.dir/accum_conv.cpp.o"
   "CMakeFiles/suo15features.dir/descriptor.cpp.o"
   "CMakeFiles/suo15features.dir/desc_s128.cpp.o"
   "CMakeFiles/suo15features.dir/desc_s64.cpp.o"
   "CMakeFiles/suo15features.dir/desc_b256.cpp.o"
   "CMakeFiles/suo15features.dir/detector.cpp.o"
-  "CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o"
+  "CMakeFiles/suo15features.dir/sift_keypoint.cpp.o"
+  "CMakeFiles/suo15features.dir/gauss_blur.cpp.o"
   "CMakeFiles/suo15features.dir/detector_fast.cpp.o"
   "CMakeFiles/suo15features.dir/detector_sift.cpp.o"
   "CMakeFiles/suo15features.dir/detector_surf.cpp.o"

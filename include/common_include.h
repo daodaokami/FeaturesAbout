@@ -4,7 +4,6 @@
 
 #ifndef LUT15VO_COMMON_INCLUDE_H
 #define LUT15VO_COMMON_INCLUDE_H
-
 #include <Eigen/Core>
 #include <Eigen/Geometry>
 using Eigen::Vector2d;
@@ -30,4 +29,5 @@ using cv::Mat;
 #include <map>
 using namespace std;
 
+#define MATH_EPSILON_EQ(x,v,eps) (((v - eps) <= x) && (x <= (v + eps)))
 #endif //LUT15VO_COMMON_INCLUDE_H

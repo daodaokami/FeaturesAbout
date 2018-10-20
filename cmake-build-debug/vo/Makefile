@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+vo/CMakeFiles/testgb.dir/rule:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 vo/CMakeFiles/testgb.dir/rule
+.PHONY : vo/CMakeFiles/testgb.dir/rule
+
+# Convenience name for target.
+testgb: vo/CMakeFiles/testgb.dir/rule
+
+.PHONY : testgb
+
+# fast build rule for target.
+testgb/fast:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testgb.dir/build.make vo/CMakeFiles/testgb.dir/build
+.PHONY : testgb/fast
+
+# Convenience name for target.
 vo/CMakeFiles/main.dir/rule:
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 vo/CMakeFiles/main.dir/rule
 .PHONY : vo/CMakeFiles/main.dir/rule
@@ -152,6 +167,33 @@ main.cpp.s:
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/main.dir/build.make vo/CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+testgaussblur.o: testgaussblur.cpp.o
+
+.PHONY : testgaussblur.o
+
+# target to build an object file
+testgaussblur.cpp.o:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testgb.dir/build.make vo/CMakeFiles/testgb.dir/testgaussblur.cpp.o
+.PHONY : testgaussblur.cpp.o
+
+testgaussblur.i: testgaussblur.cpp.i
+
+.PHONY : testgaussblur.i
+
+# target to preprocess a source file
+testgaussblur.cpp.i:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testgb.dir/build.make vo/CMakeFiles/testgb.dir/testgaussblur.cpp.i
+.PHONY : testgaussblur.cpp.i
+
+testgaussblur.s: testgaussblur.cpp.s
+
+.PHONY : testgaussblur.s
+
+# target to generate assembly for a file
+testgaussblur.cpp.s:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testgb.dir/build.make vo/CMakeFiles/testgb.dir/testgaussblur.cpp.s
+.PHONY : testgaussblur.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,11 +201,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... testgb"
 	@echo "... edit_cache"
 	@echo "... main"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... testgaussblur.o"
+	@echo "... testgaussblur.i"
+	@echo "... testgaussblur.s"
 .PHONY : help
 
 

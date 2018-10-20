@@ -125,32 +125,32 @@ suo15features/fast:
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/build
 .PHONY : suo15features/fast
 
-Sift_KeyPoint.o: Sift_KeyPoint.cpp.o
+accum_conv.o: accum_conv.cpp.o
 
-.PHONY : Sift_KeyPoint.o
+.PHONY : accum_conv.o
 
 # target to build an object file
-Sift_KeyPoint.cpp.o:
-	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.o
-.PHONY : Sift_KeyPoint.cpp.o
+accum_conv.cpp.o:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/accum_conv.cpp.o
+.PHONY : accum_conv.cpp.o
 
-Sift_KeyPoint.i: Sift_KeyPoint.cpp.i
+accum_conv.i: accum_conv.cpp.i
 
-.PHONY : Sift_KeyPoint.i
+.PHONY : accum_conv.i
 
 # target to preprocess a source file
-Sift_KeyPoint.cpp.i:
-	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.i
-.PHONY : Sift_KeyPoint.cpp.i
+accum_conv.cpp.i:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/accum_conv.cpp.i
+.PHONY : accum_conv.cpp.i
 
-Sift_KeyPoint.s: Sift_KeyPoint.cpp.s
+accum_conv.s: accum_conv.cpp.s
 
-.PHONY : Sift_KeyPoint.s
+.PHONY : accum_conv.s
 
 # target to generate assembly for a file
-Sift_KeyPoint.cpp.s:
-	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/Sift_KeyPoint.cpp.s
-.PHONY : Sift_KeyPoint.cpp.s
+accum_conv.cpp.s:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/accum_conv.cpp.s
+.PHONY : accum_conv.cpp.s
 
 desc_b256.o: desc_b256.cpp.o
 
@@ -395,6 +395,33 @@ detector_surf.cpp.s:
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/detector_surf.cpp.s
 .PHONY : detector_surf.cpp.s
 
+gauss_blur.o: gauss_blur.cpp.o
+
+.PHONY : gauss_blur.o
+
+# target to build an object file
+gauss_blur.cpp.o:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/gauss_blur.cpp.o
+.PHONY : gauss_blur.cpp.o
+
+gauss_blur.i: gauss_blur.cpp.i
+
+.PHONY : gauss_blur.i
+
+# target to preprocess a source file
+gauss_blur.cpp.i:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/gauss_blur.cpp.i
+.PHONY : gauss_blur.cpp.i
+
+gauss_blur.s: gauss_blur.cpp.s
+
+.PHONY : gauss_blur.s
+
+# target to generate assembly for a file
+gauss_blur.cpp.s:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/gauss_blur.cpp.s
+.PHONY : gauss_blur.cpp.s
+
 matcher.o: matcher.cpp.o
 
 .PHONY : matcher.o
@@ -503,6 +530,33 @@ nearest_neighbor.cpp.s:
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/nearest_neighbor.cpp.s
 .PHONY : nearest_neighbor.cpp.s
 
+sift_keypoint.o: sift_keypoint.cpp.o
+
+.PHONY : sift_keypoint.o
+
+# target to build an object file
+sift_keypoint.cpp.o:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/sift_keypoint.cpp.o
+.PHONY : sift_keypoint.cpp.o
+
+sift_keypoint.i: sift_keypoint.cpp.i
+
+.PHONY : sift_keypoint.i
+
+# target to preprocess a source file
+sift_keypoint.cpp.i:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/sift_keypoint.cpp.i
+.PHONY : sift_keypoint.cpp.i
+
+sift_keypoint.s: sift_keypoint.cpp.s
+
+.PHONY : sift_keypoint.s
+
+# target to generate assembly for a file
+sift_keypoint.cpp.s:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/sift_keypoint.cpp.s
+.PHONY : sift_keypoint.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -512,9 +566,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... suo15features"
-	@echo "... Sift_KeyPoint.o"
-	@echo "... Sift_KeyPoint.i"
-	@echo "... Sift_KeyPoint.s"
+	@echo "... accum_conv.o"
+	@echo "... accum_conv.i"
+	@echo "... accum_conv.s"
 	@echo "... desc_b256.o"
 	@echo "... desc_b256.i"
 	@echo "... desc_b256.s"
@@ -542,6 +596,9 @@ help:
 	@echo "... detector_surf.o"
 	@echo "... detector_surf.i"
 	@echo "... detector_surf.s"
+	@echo "... gauss_blur.o"
+	@echo "... gauss_blur.i"
+	@echo "... gauss_blur.s"
 	@echo "... matcher.o"
 	@echo "... matcher.i"
 	@echo "... matcher.s"
@@ -554,6 +611,9 @@ help:
 	@echo "... nearest_neighbor.o"
 	@echo "... nearest_neighbor.i"
 	@echo "... nearest_neighbor.s"
+	@echo "... sift_keypoint.o"
+	@echo "... sift_keypoint.i"
+	@echo "... sift_keypoint.s"
 .PHONY : help
 
 

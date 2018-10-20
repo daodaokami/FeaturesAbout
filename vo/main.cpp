@@ -7,40 +7,31 @@
 #include <detector.h>
 #include <detector_fast.h>
 #include <detector_orb.h>
-#include "Sift_KeyPoint.h"
+#include "sift_keypoint.h"
 #include <detector_sift.h>
 #include <opencv2/features2d.hpp>
 #include <descriptor.h>
 #include <desc_b256.h>
 #include <chrono>
+#include <matcher_bf.h>
 
 int main(){
-    cv::KeyPoint kp;
-    kp.pt.x = 1, kp.pt.y = 2;
-    cout<<kp.pt.x<<" "<<kp.pt.y<<endl;
-    suo15features::Sift_KeyPoint skp(kp);
-    cout<<skp.pt.x<<" "<<skp.pt.y<<endl;
-    int num = 1;
-    int on = num << 1;
-    cout<<num<<", "<<on<<endl;//如果直接<<那么是赋值，当做二进制运算符则相当于×2
-    cv::Mat uchar_mat(3, 3, CV_8UC1);
-    cv::Mat float_mat(3, 3, CV_32FC1);
-    uchar_mat.at<unsigned char>(0, 0) = 1;uchar_mat.at<unsigned char>(0, 1) = 1;uchar_mat.at<unsigned char>(0, 2) = 1;
-    uchar_mat.at<unsigned char>(1, 0) = 2;uchar_mat.at<unsigned char>(1, 1) = 2;uchar_mat.at<unsigned char>(1, 2) = 2;
-    uchar_mat.at<unsigned char>(2, 0) = 3;uchar_mat.at<unsigned char>(2, 1) = 3;uchar_mat.at<unsigned char>(2, 2) = 3;
-    cout<<uchar_mat<<endl;
-    uchar_mat.convertTo(float_mat, CV_32FC1);
-    cout<<float_mat<<endl;
-    //对图像进行上采样
-    float scale = 2;
-    cv::Size sz(cvRound((float)float_mat.cols*scale), cvRound((float)float_mat.rows*scale));
-    cv::Mat temp;
-    cv::resize(float_mat, temp, sz);
-    cout<<"up sample \n"<<temp<<endl;
-    //调bug没有准确的定位好特征点，计算的位置产生了偏移
+    cv::Mat img_example = cv::imread("./data/example.jpeg", cv::IMREAD_ANYCOLOR);
+    suo15features::Detector_sift::Options sift_options;
+    suo15features::Detector_sift* detector_sift = new suo15features::Detector_sift(sift_options);
+    vector<cv::KeyPoint> SKP = detector_sift->ExtractorKeyPoints(img_example);
+    cv::Mat out;
+    cv::drawKeypoints(img_example, SKP, out);
+    cv::imshow("out", out);
+    cv::waitKey(0);
+    /*
     cv::Mat img;
     string filepath = "./data/000001.png";
+
     img = cv::imread(filepath, cv::IMREAD_GRAYSCALE);
+    cout<<"here"<<endl;
+    cout<<"here"<<endl;
+
     suo15features::Detector *detector;
 
     detector = new suo15features::Detector();
@@ -70,7 +61,7 @@ int main(){
     std::chrono::system_clock::time_point end = std::chrono::system_clock::now();
     std::chrono::duration<double> elapsed_seconds = end - start;
     cout<<"time out "<< elapsed_seconds.count()<<"s."<<endl;
-    delete detector;
+    delete detector;*/
 
     //将点展开，得到，分别得到不同层次上的特征点
 /*    vector<vector<cv::KeyPoint>> allKeypoints;

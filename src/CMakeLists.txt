@@ -1,10 +1,12 @@
 add_library(suo15features SHARED
+        accum_conv.cpp
         descriptor.cpp
         desc_s128.cpp
         desc_s64.cpp
         desc_b256.cpp
         detector.cpp
-        Sift_KeyPoint.cpp
+        sift_keypoint.cpp
+        gauss_blur.cpp
         detector_fast.cpp
         detector_sift.cpp
         detector_surf.cpp
