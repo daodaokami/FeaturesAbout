@@ -1,6 +1,6 @@
 add_library(suo15features SHARED
         accum_conv.cpp
-        descriptor.cpp
+        descry.cpp
         desc_s128.cpp
         desc_s64.cpp
         desc_b256.cpp

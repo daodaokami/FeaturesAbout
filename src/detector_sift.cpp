@@ -11,7 +11,7 @@
 
 namespace suo15features{
 
-    Detector_sift::Detector_sift(const suo15features::Detector_sift::Options &options)
+    Detector_sift::Detector_sift(const suo15features::Detector_sift::SIFT_Options &options)
     :sift_options(options){
         if(this->sift_options.min_octave < -1 ||
                 this->sift_options.min_octave > this->sift_options.max_octave)
@@ -21,21 +21,18 @@ namespace suo15features{
             / static_cast<float>(this->sift_options.num_samples_per_octave);
     }
 
-    vector<cv::KeyPoint> Detector_sift::ExtractorKeyPoints(const cv::Mat &ori_img) {
+    Detector_sift::~Detector_sift() {
+        this->orig.release();
+        this->octaves.clear();
+        cout<<"delete Octaves"<<endl;
+    }
+    vector<Sift_KeyPoint> Detector_sift::ExtractorKeyPoints(const cv::Mat &ori_img) {
         set_image(ori_img);
         process();
         //这是算完了要清理octaves
         //要判断要不要清理这个process
         octaves.clear();
-        //目前这里的keypoints is zero？where error
-        vector<cv::KeyPoint> new_keypoints;
-        cout<<"kps.size "<<keypoints.size();
-        new_keypoints.resize(keypoints.size());
-        for(int i=0; i<keypoints.size(); ++i){
-            new_keypoints[i].pt.x = keypoints[i].pt.x;
-            new_keypoints[i].pt.y = keypoints[i].pt.y;
-        }
-        return new_keypoints;
+        return this->keypoints;
     }
 
     void Detector_sift::process() {
@@ -44,12 +41,12 @@ namespace suo15features{
         this->create_octaves();
         this->extrema_detection();
         cout<<"SIFT detector "<<this->keypoints.size()<<endl;
-        this->keypoint_localization();//这里reject的有点少！！！
-        cout<<"After localization and filter "<<this->keypoints.size()<<endl;
+        this->keypoint_localization();
         for(size_t i=0; i<this->octaves.size(); ++i){
             this->octaves[i].dog.clear();
         }
 
+        this->octaves.clear();
         std::chrono::system_clock::time_point end = std::chrono::system_clock::now();
         std::chrono::duration<double> elapsed_seconds = end - start;
         cout<<"time out "<< elapsed_seconds.count()<<"s."<<endl;
@@ -81,7 +78,6 @@ namespace suo15features{
             this->orig = (splitChannelsMat[0]+splitChannelsMat[1]+splitChannelsMat[2])/3;
         }
         this->orig = this->orig/255.0f;
-        //cout<<this->orig.row(0)<<endl;
     }
 
     //创建gauss prymaid！！！
@@ -119,12 +115,7 @@ namespace suo15features{
             cv::Size sz(cvRound((float)img.cols/2), cvRound((float)img.rows/2));
             cv::Mat pre_base = octaves[octaves.size()-1].img[0];
             cv::resize(pre_base, img, sz);
-            //cout<<img.size()<<endl<<"resize before \n";
-            //cout<<img.row(0)<<endl;
-            //img = GB.rescale_half_size_gaussian(pre_base);
-            //cv::resize(img, img, sz);
-            //cout<<img.size()<<endl<<"resize after \n";
-            //cout<<img.row(0)<<endl;
+
             img_sigma = this->sift_options.base_blur_sigma;
         }
 
@@ -132,7 +123,6 @@ namespace suo15features{
 
     void Detector_sift::add_octave(cv::Mat &image, float has_sigma, float target_sigma) {
 
-        //cout<<"before blur \n"<<image.row(0)<<endl;
         float sigma = std::sqrt(pow(target_sigma, 2) - pow(has_sigma, 2));
         /*std::cout << "Pre-blurring image to sigma " << target_sigma << " (has "
             << has_sigma << ", blur = " << sigma << ")..." << std::endl;*/
@@ -142,17 +132,12 @@ namespace suo15features{
                                       ? cv::GaussianBlur(image, image, sz, sigma, sigma)
                                       : image.clone());*/
         cv::Mat base;
-        cout<<"---------------\n";
-        cout<<image.row(0)<<endl;
-        cout<<image.row(1)<<endl;
-        cout<<image.row(2)<<endl;
-        cout<<"---------------\n";
+
         if(target_sigma > has_sigma){
             cv::GaussianBlur(image, base, sz, sigma, sigma, cv::BORDER_REPLICATE);
-            //cout<<"after blur "<<sigma<<"\n"<<base.row(0)<<endl;
         } else
             base = image.clone();
-        //对第一个来说是这样的，然后要对后面的就不一样了！！！
+
         /* Create the new octave and add initial image. */
         this->octaves.push_back(Octave());
         Octave& oct = this->octaves.back();
@@ -178,7 +163,6 @@ namespace suo15features{
             cv::GaussianBlur(base, img, csz, blur_sigma, blur_sigma, cv::BORDER_REPLICATE);
             oct.img.push_back(img);
 
-            //cout<<img.row(0)<<endl;
             /* Create the Difference of Gaussian image (DoG). */
             //计算差分拉普拉斯 // todo revised by sway
             cv::Mat dog = (img - base);
@@ -248,11 +232,9 @@ namespace suo15features{
                 kp.pt.x = static_cast<float>(x);
                 kp.pt.y = static_cast<float>(y);
                 kp.sample = static_cast<float>(si);
-
                 this->keypoints.push_back(kp);
                 detected += 1;
             }
-
         return detected;
     }
 
@@ -356,9 +338,7 @@ namespace suo15features{
             this->keypoints[num_keypoints] = kp;
             num_keypoints += 1;
         }
-
         this->keypoints.resize(num_keypoints);
 
     }
-
 }

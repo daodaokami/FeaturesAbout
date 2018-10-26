@@ -39,7 +39,7 @@ namespace suo15features {
         }
     };
 
-    class Detector_orb :public Detector{
+    class Detector_orb :public Detector<cv::KeyPoint>{
         //多了更多的层次的信息，旋转信息等等
         //提取ORB特征，还要额外加上旋转，金字塔等信息！！！
     private:

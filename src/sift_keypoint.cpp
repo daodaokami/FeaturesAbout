@@ -6,6 +6,7 @@ namespace suo15features{
     Sift_KeyPoint::Sift_KeyPoint(){}
 
     Sift_KeyPoint::Sift_KeyPoint(const cv::KeyPoint& kp):cv::KeyPoint(kp){
-        sample = -1;
+        this->sample = -1;
+        this->scale = -1;
     }
 }

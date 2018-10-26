@@ -81,28 +81,28 @@ src/CMakeFiles/suo15features.dir/accum_conv.cpp.o.provides: src/CMakeFiles/suo15
 src/CMakeFiles/suo15features.dir/accum_conv.cpp.o.provides.build: src/CMakeFiles/suo15features.dir/accum_conv.cpp.o
 
 
-src/CMakeFiles/suo15features.dir/descriptor.cpp.o: src/CMakeFiles/suo15features.dir/flags.make
-src/CMakeFiles/suo15features.dir/descriptor.cpp.o: ../src/descriptor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/suo15features.dir/descriptor.cpp.o"
-	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/suo15features.dir/descriptor.cpp.o -c /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/descriptor.cpp
+src/CMakeFiles/suo15features.dir/descry.cpp.o: src/CMakeFiles/suo15features.dir/flags.make
+src/CMakeFiles/suo15features.dir/descry.cpp.o: ../src/descry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/suo15features.dir/descry.cpp.o"
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/suo15features.dir/descry.cpp.o -c /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/descry.cpp
 
-src/CMakeFiles/suo15features.dir/descriptor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/suo15features.dir/descriptor.cpp.i"
-	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/descriptor.cpp > CMakeFiles/suo15features.dir/descriptor.cpp.i
+src/CMakeFiles/suo15features.dir/descry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/suo15features.dir/descry.cpp.i"
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/descry.cpp > CMakeFiles/suo15features.dir/descry.cpp.i
 
-src/CMakeFiles/suo15features.dir/descriptor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/suo15features.dir/descriptor.cpp.s"
-	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/descriptor.cpp -o CMakeFiles/suo15features.dir/descriptor.cpp.s
+src/CMakeFiles/suo15features.dir/descry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/suo15features.dir/descry.cpp.s"
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/descry.cpp -o CMakeFiles/suo15features.dir/descry.cpp.s
 
-src/CMakeFiles/suo15features.dir/descriptor.cpp.o.requires:
+src/CMakeFiles/suo15features.dir/descry.cpp.o.requires:
 
-.PHONY : src/CMakeFiles/suo15features.dir/descriptor.cpp.o.requires
+.PHONY : src/CMakeFiles/suo15features.dir/descry.cpp.o.requires
 
-src/CMakeFiles/suo15features.dir/descriptor.cpp.o.provides: src/CMakeFiles/suo15features.dir/descriptor.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/descriptor.cpp.o.provides.build
-.PHONY : src/CMakeFiles/suo15features.dir/descriptor.cpp.o.provides
+src/CMakeFiles/suo15features.dir/descry.cpp.o.provides: src/CMakeFiles/suo15features.dir/descry.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/descry.cpp.o.provides.build
+.PHONY : src/CMakeFiles/suo15features.dir/descry.cpp.o.provides
 
-src/CMakeFiles/suo15features.dir/descriptor.cpp.o.provides.build: src/CMakeFiles/suo15features.dir/descriptor.cpp.o
+src/CMakeFiles/suo15features.dir/descry.cpp.o.provides.build: src/CMakeFiles/suo15features.dir/descry.cpp.o
 
 
 src/CMakeFiles/suo15features.dir/desc_s128.cpp.o: src/CMakeFiles/suo15features.dir/flags.make
@@ -444,7 +444,7 @@ src/CMakeFiles/suo15features.dir/nearest_neighbor.cpp.o.provides.build: src/CMak
 # Object files for target suo15features
 suo15features_OBJECTS = \
 "CMakeFiles/suo15features.dir/accum_conv.cpp.o" \
-"CMakeFiles/suo15features.dir/descriptor.cpp.o" \
+"CMakeFiles/suo15features.dir/descry.cpp.o" \
 "CMakeFiles/suo15features.dir/desc_s128.cpp.o" \
 "CMakeFiles/suo15features.dir/desc_s64.cpp.o" \
 "CMakeFiles/suo15features.dir/desc_b256.cpp.o" \
@@ -464,7 +464,7 @@ suo15features_OBJECTS = \
 suo15features_EXTERNAL_OBJECTS =
 
 ../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/accum_conv.cpp.o
-../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/descriptor.cpp.o
+../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/descry.cpp.o
 ../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/desc_s128.cpp.o
 ../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/desc_s64.cpp.o
 ../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/desc_b256.cpp.o
@@ -537,7 +537,7 @@ src/CMakeFiles/suo15features.dir/build: ../lib/libsuo15features.so
 .PHONY : src/CMakeFiles/suo15features.dir/build
 
 src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/accum_conv.cpp.o.requires
-src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/descriptor.cpp.o.requires
+src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/descry.cpp.o.requires
 src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/desc_s128.cpp.o.requires
 src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/desc_s64.cpp.o.requires
 src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/desc_b256.cpp.o.requires

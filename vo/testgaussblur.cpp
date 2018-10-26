@@ -10,14 +10,14 @@ using namespace std;
 
 int main(){
     vector<cv::KeyPoint> kps;
-    kps.reserve(1614);
+    kps.reserve(1706);
     float x, y;
     ifstream infile("./data/positions.txt");
     if(!infile.is_open()) {
         cerr << "not open" << endl;
         return -1;
     }
-    for(int i=0; i<1614; i++){
+    for(int i=0; i<1706; i++){
         infile>>x>>y;
         cv::KeyPoint kp;
         kp.pt.x = x;

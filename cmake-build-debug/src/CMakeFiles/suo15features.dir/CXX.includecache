@@ -40,6 +40,12 @@ unordered_map
 map
 -
 
+../include/descry.h
+common_include.h
+../include/common_include.h
+sift_keypoint.h
+../include/sift_keypoint.h
+
 ../include/detector.h
 common_include.h
 ../include/common_include.h
@@ -67,6 +73,8 @@ common_include.h
 ../include/sift_keypoint.h
 common_include.h
 ../include/common_include.h
+sift_keypoint.h
+../include/sift_keypoint.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/common_include.h
 Eigen/Core
@@ -103,18 +111,24 @@ map
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/desc_b256.h
 detector_orb.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/detector_orb.h
-descriptor.h
-/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/descriptor.h
+descry.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/descry.h
 desc_b256.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/desc_b256.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/desc_s128.h
+descry.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/descry.h
+sift_keypoint.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/sift_keypoint.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/desc_s64.h
 
-/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/descriptor.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/descry.h
 common_include.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/common_include.h
+sift_keypoint.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/sift_keypoint.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/detector.h
 common_include.h
@@ -157,6 +171,8 @@ matcher.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/sift_keypoint.h
 common_include.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/common_include.h
+sift_keypoint.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/sift_keypoint.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/accum_conv.cpp
 accum_conv.h
@@ -176,9 +192,9 @@ detector_orb.h
 ../include/desc_s64.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/desc_s64.h
 
-/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/descriptor.cpp
-../include/descriptor.h
-/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/descriptor.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/descry.cpp
+descry.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/descry.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/detector.cpp
 ../include/detector.h

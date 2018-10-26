@@ -42,7 +42,7 @@ namespace suo15features {
          * */
     };
 
-    class Detector_fast:public Detector {
+    class Detector_fast:public Detector<cv::KeyPoint>{
     private:
         Fast_config _config;
         vector<int> umax;

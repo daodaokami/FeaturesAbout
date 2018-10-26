@@ -41,14 +41,22 @@ map
 ../include/desc_b256.h
 detector_orb.h
 ../include/detector_orb.h
-descriptor.h
-../include/descriptor.h
+descry.h
+../include/descry.h
 desc_b256.h
 ../include/desc_b256.h
 
-../include/descriptor.h
+../include/desc_s128.h
+descry.h
+../include/descry.h
+sift_keypoint.h
+../include/sift_keypoint.h
+
+../include/descry.h
 common_include.h
 ../include/common_include.h
+sift_keypoint.h
+../include/sift_keypoint.h
 
 ../include/detector.h
 common_include.h
@@ -74,25 +82,15 @@ sift_keypoint.h
 common_include.h
 ../include/common_include.h
 
-../include/matcher.h
-common_include.h
-../include/common_include.h
-
-../include/matcher_bf.h
-common_include.h
-../include/common_include.h
-matcher.h
-../include/matcher.h
-
 ../include/sift_keypoint.h
 common_include.h
 ../include/common_include.h
+sift_keypoint.h
+../include/sift_keypoint.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/main.cpp
 common_include.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/common_include.h
-vector
--
 detector.h
 -
 detector_fast.h
@@ -105,13 +103,13 @@ detector_sift.h
 -
 opencv2/features2d.hpp
 -
-descriptor.h
+descry.h
 -
-desc_b256.h
+desc_s128.h
 -
 chrono
 -
-matcher_bf.h
+desc_b256.h
 -
 
 /home/lut/Desktop/Gitprocs/Sophus/sophus/se3.h

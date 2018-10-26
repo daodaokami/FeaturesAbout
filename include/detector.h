@@ -9,6 +9,7 @@
 
 namespace suo15features {
 
+
     class ExtractorNode{
     public:
         vector<cv::KeyPoint> vKeys;
@@ -20,12 +21,21 @@ namespace suo15features {
         void DivideNode(ExtractorNode &n1, ExtractorNode &n2, ExtractorNode &n3, ExtractorNode &n4);
     };
 
-    class Detector {
+    template <typename T>
+    class Detector {//表示要提取什么样的特征点，自定义的还是官方的cv::KeyPoints
     public:
-        Detector();
-        virtual vector<cv::Mat> GetImagePyramid(){}
-        virtual vector<int> GetKeypointsLevels(){}
-        virtual vector<cv::KeyPoint> ExtractorKeyPoints(const cv::Mat& ori_img);
+        Detector<T>(){}
+        virtual vector<cv::Mat> GetImagePyramid(){
+            return vector<cv::Mat>(0);
+        }
+        virtual vector<int> GetKeypointsLevels(){
+            return vector<int>(0);
+        }
+        virtual vector<T> ExtractorKeyPoints(const cv::Mat& ori_img)
+        {
+            cout<<"Father Detector func!"<<endl;
+            return vector<T>();
+        }
     };
 }
 

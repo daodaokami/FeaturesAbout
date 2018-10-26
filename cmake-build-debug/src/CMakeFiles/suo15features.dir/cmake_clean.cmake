@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/suo15features.dir/accum_conv.cpp.o"
-  "CMakeFiles/suo15features.dir/descriptor.cpp.o"
+  "CMakeFiles/suo15features.dir/descry.cpp.o"
   "CMakeFiles/suo15features.dir/desc_s128.cpp.o"
   "CMakeFiles/suo15features.dir/desc_s64.cpp.o"
   "CMakeFiles/suo15features.dir/desc_b256.cpp.o"

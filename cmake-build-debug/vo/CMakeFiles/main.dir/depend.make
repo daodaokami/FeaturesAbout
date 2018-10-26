@@ -3,13 +3,12 @@
 
 vo/CMakeFiles/main.dir/main.cpp.o: ../include/common_include.h
 vo/CMakeFiles/main.dir/main.cpp.o: ../include/desc_b256.h
-vo/CMakeFiles/main.dir/main.cpp.o: ../include/descriptor.h
+vo/CMakeFiles/main.dir/main.cpp.o: ../include/desc_s128.h
+vo/CMakeFiles/main.dir/main.cpp.o: ../include/descry.h
 vo/CMakeFiles/main.dir/main.cpp.o: ../include/detector.h
 vo/CMakeFiles/main.dir/main.cpp.o: ../include/detector_fast.h
 vo/CMakeFiles/main.dir/main.cpp.o: ../include/detector_orb.h
 vo/CMakeFiles/main.dir/main.cpp.o: ../include/detector_sift.h
-vo/CMakeFiles/main.dir/main.cpp.o: ../include/matcher.h
-vo/CMakeFiles/main.dir/main.cpp.o: ../include/matcher_bf.h
 vo/CMakeFiles/main.dir/main.cpp.o: ../include/sift_keypoint.h
 vo/CMakeFiles/main.dir/main.cpp.o: ../vo/main.cpp
 vo/CMakeFiles/main.dir/main.cpp.o: /home/lut/Desktop/Gitprocs/Sophus/sophus/se3.h

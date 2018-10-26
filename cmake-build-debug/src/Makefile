@@ -233,32 +233,32 @@ desc_s64.cpp.s:
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/desc_s64.cpp.s
 .PHONY : desc_s64.cpp.s
 
-descriptor.o: descriptor.cpp.o
+descry.o: descry.cpp.o
 
-.PHONY : descriptor.o
+.PHONY : descry.o
 
 # target to build an object file
-descriptor.cpp.o:
-	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/descriptor.cpp.o
-.PHONY : descriptor.cpp.o
+descry.cpp.o:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/descry.cpp.o
+.PHONY : descry.cpp.o
 
-descriptor.i: descriptor.cpp.i
+descry.i: descry.cpp.i
 
-.PHONY : descriptor.i
+.PHONY : descry.i
 
 # target to preprocess a source file
-descriptor.cpp.i:
-	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/descriptor.cpp.i
-.PHONY : descriptor.cpp.i
+descry.cpp.i:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/descry.cpp.i
+.PHONY : descry.cpp.i
 
-descriptor.s: descriptor.cpp.s
+descry.s: descry.cpp.s
 
-.PHONY : descriptor.s
+.PHONY : descry.s
 
 # target to generate assembly for a file
-descriptor.cpp.s:
-	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/descriptor.cpp.s
-.PHONY : descriptor.cpp.s
+descry.cpp.s:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/descry.cpp.s
+.PHONY : descry.cpp.s
 
 detector.o: detector.cpp.o
 
@@ -578,9 +578,9 @@ help:
 	@echo "... desc_s64.o"
 	@echo "... desc_s64.i"
 	@echo "... desc_s64.s"
-	@echo "... descriptor.o"
-	@echo "... descriptor.i"
-	@echo "... descriptor.s"
+	@echo "... descry.o"
+	@echo "... descry.i"
+	@echo "... descry.s"
 	@echo "... detector.o"
 	@echo "... detector.i"
 	@echo "... detector.s"

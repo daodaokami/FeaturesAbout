@@ -263,7 +263,7 @@ namespace suo15features{
             7, 0, 12, -2/*mean (0.127002), correlation (0.537452)*/,
             -1, -6, 0, -11/*mean (0.127148), correlation (0.547401)*/
     };
-    Desc_b256::Desc_b256(Detector* ptr) {
+    Desc_b256::Desc_b256(Detector<cv::KeyPoint>* ptr) {
         detector = ptr;
 
         const int npoints = 512;
@@ -277,6 +277,7 @@ namespace suo15features{
     /*
      *
      * */
+    //template<typename T>
     cv::Mat Desc_b256::ComputeDescriptor(const cv::Mat &image, const vector<cv::KeyPoint> &keypoints) {
         cv::Mat descriptors;
         //compute descriptor
