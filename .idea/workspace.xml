@@ -15,52 +15,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f6d1d61-9017-4b53-9d4e-237f5f1c19ce" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/include/distance.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/feature_set.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/feature_set.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vo/testfeaturesmatcher.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Lut15VO.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Lut15VO.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/desc_s128.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/desc_s128.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/detector_fast.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/detector_fast.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/detector_orb.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/detector_orb.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/detector_sift.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/detector_sift.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher_bf.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher_bf.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testgb.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testgb.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/desc_s128.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/desc_s128.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/detector_fast.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/detector_fast.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/detector_orb.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/detector_orb.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/detector_sift.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/detector_sift.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/matcher.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/matcher.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/nearest_neighbor.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/nearest_neighbor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libsuo15features.so" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libsuo15features.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/desc_s128.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/desc_s128.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/detector_fast.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/detector_fast.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/detector_orb.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/detector_orb.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/detector_sift.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/detector_sift.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/matcher.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/matcher.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nearest_neighbor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/nearest_neighbor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vo/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vo/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vo/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vo/testfeaturesextractor.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,31 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="descry.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/descry.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="descry.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/descry.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-92">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-              <folding>
-                <element signature="e#97#124#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="detector.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/detector.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
+            <state relative-caret-position="494">
               <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
             </state>
           </provider>
@@ -111,7 +45,7 @@
       <file leaf-file-name="common_include.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/common_include.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
+            <state relative-caret-position="722">
               <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
             </state>
           </provider>
@@ -120,15 +54,40 @@
       <file leaf-file-name="desc_b256.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/desc_b256.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
+            <state relative-caret-position="6669">
               <caret line="351" column="66" selection-start-line="351" selection-start-column="66" selection-end-line="351" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="distance.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="distance.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/distance.h">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nearest_neighbor.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/nearest_neighbor.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nearest_neighbor.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/nearest_neighbor.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+              <folding>
+                <element signature="e#38#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
@@ -155,7 +114,7 @@
       <file leaf-file-name="feature_set.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/feature_set.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
+            <state relative-caret-position="699">
               <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
             </state>
           </provider>
@@ -164,7 +123,7 @@
       <file leaf-file-name="desc_b256.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/desc_b256.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="361">
               <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
             </state>
           </provider>
@@ -241,8 +200,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="215" />
-    <option name="y" value="86" />
+    <option name="x" value="538" />
+    <option name="y" value="117" />
     <option name="width" value="1916" />
     <option name="height" value="919" />
   </component>
@@ -295,15 +254,15 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/include" />
-      <recent name="$PROJECT_DIR$/features" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/include" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/include" />
+      <recent name="$PROJECT_DIR$/features" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -385,15 +344,17 @@
       <workItem from="1540802256611" duration="3969000" />
       <workItem from="1540824972025" duration="608000" />
       <workItem from="1540826962628" duration="66000" />
-      <workItem from="1540867334701" duration="752000" />
+      <workItem from="1540867334701" duration="1074000" />
+      <workItem from="1540880830661" duration="1679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284866000" />
+    <option name="totallyTimeSpent" value="286867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1922" height="1020" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.146875" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -415,23 +376,23 @@
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997233" weight="0.3292683" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.31919906" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.146875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8354167" visible="true" weight="0.31201765" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997233" weight="0.3292683" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.86875" weight="0.3351709" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.7739583" weight="0.5192944" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.16458334" side_tool="true" visible="true" weight="0.31201765" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997233" weight="0.3292683" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.7739583" weight="0.5192944" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.31919906" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -686,27 +647,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/aligned_allocator.h" />
     <entry file="file://$PROJECT_DIR$/include/aligned_memory.h" />
-    <entry file="file://$PROJECT_DIR$/include/nearest_neighbor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/desc_s128.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
           <caret line="92" column="42" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nearest_neighbor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-          <folding>
-            <element signature="e#38#58#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -724,9 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="26" column="77" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
-          <folding>
-            <element signature="e#38#57#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -770,7 +711,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/descry.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
+        <state relative-caret-position="133">
           <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding>
             <element signature="e#97#124#0" expanded="true" />
@@ -780,15 +721,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/detector.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
+        <state relative-caret-position="494">
           <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/common_include.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
+        <state relative-caret-position="722">
           <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/desc_b256.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desc_b256.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6669">
+          <caret line="351" column="66" selection-start-line="351" selection-start-column="66" selection-end-line="351" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/distance.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -811,27 +773,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/feature_set.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
+        <state relative-caret-position="699">
           <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/desc_b256.h">
+    <entry file="file://$PROJECT_DIR$/include/nearest_neighbor.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        <state relative-caret-position="45">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/desc_b256.cpp">
+    <entry file="file://$PROJECT_DIR$/src/nearest_neighbor.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="351" column="66" selection-start-line="351" selection-start-column="66" selection-end-line="351" selection-end-column="66" />
+        <state relative-caret-position="456">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding>
+            <element signature="e#38#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/distance.h">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

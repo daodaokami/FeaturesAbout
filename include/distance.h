@@ -92,7 +92,7 @@ namespace math_tools {
     //只能是int类型
     template<typename T>
     T Distance<T>::cal_hamming_distance(T const* queryIdx, T const* trainIdx){
-        T dist=static_cast<T>(0);
+        T dist=static_cast<T>(0);//这里情况下把维度设为固定值
         for(int i=0; i<8; i++, queryIdx++, trainIdx++)
         {
             unsigned  int v = *queryIdx ^ *trainIdx;
