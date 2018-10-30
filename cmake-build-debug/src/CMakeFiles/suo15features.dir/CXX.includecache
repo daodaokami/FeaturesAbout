@@ -40,6 +40,12 @@ unordered_map
 map
 -
 
+../include/desc_s128.h
+descry.h
+../include/descry.h
+sift_keypoint.h
+../include/sift_keypoint.h
+
 ../include/descry.h
 common_include.h
 ../include/common_include.h
@@ -50,10 +56,38 @@ sift_keypoint.h
 common_include.h
 ../include/common_include.h
 
+../include/detector_fast.h
+detector.h
+../include/detector.h
+detector_fast.h
+../include/detector_fast.h
+
 ../include/detector_orb.h
 ../include/detector.h
 ../include/detector.h
 ../include/detector_orb.h
+../include/detector_orb.h
+
+../include/detector_sift.h
+detector.h
+../include/detector.h
+sift_keypoint.h
+../include/sift_keypoint.h
+common_include.h
+../include/common_include.h
+
+../include/detector_surf.h
+
+../include/feature_set.h
+common_include.h
+../include/common_include.h
+detector_sift.h
+../include/detector_sift.h
+detector_surf.h
+../include/detector_surf.h
+detector_fast.h
+../include/detector_fast.h
+detector_orb.h
 ../include/detector_orb.h
 
 ../include/gauss_blur.h
@@ -65,6 +99,8 @@ accum_conv.h
 ../include/matcher.h
 common_include.h
 ../include/common_include.h
+descry.h
+../include/descry.h
 
 ../include/nearest_neighbor.h
 common_include.h
@@ -159,6 +195,8 @@ common_include.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher.h
 common_include.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/common_include.h
+descry.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/descry.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher_bf.h
 common_include.h
@@ -232,11 +270,19 @@ gauss_blur.h
 ../include/detector_surf.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/detector_surf.h
 
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/feature_set.cpp
+desc_s128.h
+-
+feature_set.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/feature_set.h
+
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/gauss_blur.cpp
 gauss_blur.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/gauss_blur.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher.cpp
+nearest_neighbor.h
+-
 ../include/matcher.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher.h
 

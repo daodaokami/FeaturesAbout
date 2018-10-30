@@ -8,22 +8,22 @@
 
 namespace suo15features{
     Detector_fast::Detector_fast(){
-        _config._patch_size = 31;
-        _config._half_path_size = 15;
-        _config._edge_threshold = 19;
-        _config._nfeatures = 500;//预估计的特征的数量
-        _config._iniThFAST = 20;//可接受的特征点的阈值
-        _config._minThFAST = 7;//最小的可接受特征点的阈值
+        _options._patch_size = 31;
+        _options._half_path_size = 15;
+        _options._edge_threshold = 19;
+        _options._nfeatures = 500;//预估计的特征的数量
+        _options._iniThFAST = 20;//可接受的特征点的阈值
+        _options._minThFAST = 7;//最小的可接受特征点的阈值
     }
 
-    Detector_fast::Detector_fast(Fast_config config){
-        _config.SetConfig(config);
+    Detector_fast::Detector_fast(Fast_options options){
+        _options.SetConfig(options);
     }
-    static void computeOrientation(const Mat& image, const Fast_config& config, vector<cv::KeyPoint>& keypoints, const vector<int>& umax);
+    static void computeOrientation(const Mat& image, const Fast_options& options, vector<cv::KeyPoint>& keypoints, const vector<int>& umax);
     vector<cv::KeyPoint> Detector_fast::ExtractorKeyPoints(const cv::Mat& ori_img){
 
         vector<cv::KeyPoint> keypoints;
-        keypoints.resize(_config._nfeatures);
+        keypoints.resize(_options._nfeatures);
 
         if(ori_img.empty()) {
             keypoints.resize(0);
@@ -36,13 +36,13 @@ namespace suo15features{
         //cv::GaussianBlur(image, image, cv::Size(7, 7), 2, 2, cv::BORDER_REFLECT_101);
         const float W = 30;
 
-        const int minBorderX = _config._edge_threshold - 3;
+        const int minBorderX = _options._edge_threshold - 3;
         const int minBorderY = minBorderX;
-        const int maxBorderX = image.cols - _config._edge_threshold + 3;
-        const int maxBorderY = image.rows - _config._edge_threshold + 3;
+        const int maxBorderX = image.cols - _options._edge_threshold + 3;
+        const int maxBorderY = image.rows - _options._edge_threshold + 3;
 
         vector<cv::KeyPoint> vToDistributeKeys;
-        vToDistributeKeys.reserve(_config._nfeatures*5);
+        vToDistributeKeys.reserve(_options._nfeatures*5);
 
         const float width = (maxBorderX - minBorderX);
         const float height = (maxBorderY - minBorderY);
@@ -69,10 +69,10 @@ namespace suo15features{
                 vector<cv::KeyPoint> vKeysCell;
                 //确定Cell的位置
                 cv::FAST(image.rowRange(iniY, maxY).colRange(iniX, maxX),
-                    vKeysCell, _config._iniThFAST, true);
+                    vKeysCell, _options._iniThFAST, true);
                 if(vKeysCell.empty()){
                     FAST(image.rowRange(iniY, maxY).colRange(iniX, maxX),
-                    vKeysCell, _config._minThFAST, true);
+                    vKeysCell, _options._minThFAST, true);
                 }
                 if(!vKeysCell.empty()){
                     for(vector<cv::KeyPoint>::iterator vit = vKeysCell.begin();
@@ -84,11 +84,11 @@ namespace suo15features{
                 }
             }
         }
-        keypoints.reserve(_config._nfeatures);
+        keypoints.reserve(_options._nfeatures);
 
         keypoints = DistributeOctTree(vToDistributeKeys, minBorderX, maxBorderX,
-                minBorderY, maxBorderY, _config._nfeatures);
-        const int scaledPatchSize = _config._patch_size;
+                minBorderY, maxBorderY, _options._nfeatures);
+        const int scaledPatchSize = _options._patch_size;
 
         // Add border to coordinates and scale information
         const int nkps = keypoints.size();
@@ -100,21 +100,21 @@ namespace suo15features{
             keypoints[i].size = scaledPatchSize;
         }
 
-        umax.resize(_config._half_path_size + 1);
-        int v, v0, vmax = cvFloor(_config._half_path_size*sqrt(2.f)/2 +1);
-        int vmin = cvCeil(_config._half_path_size*sqrt(2.f)/2);
-        const double hp2 = _config._half_path_size*_config._half_path_size;
+        umax.resize(_options._half_path_size + 1);
+        int v, v0, vmax = cvFloor(_options._half_path_size*sqrt(2.f)/2 +1);
+        int vmin = cvCeil(_options._half_path_size*sqrt(2.f)/2);
+        const double hp2 = _options._half_path_size*_options._half_path_size;
         for(v = 0; v<= vmax; ++v)
             umax[v] = cvRound(sqrt(hp2 -v*v));
 
-        for(v = _config._half_path_size, v0=0; v>=vmin; --v){
+        for(v = _options._half_path_size, v0=0; v>=vmin; --v){
             while(umax[v0] == umax[v0+1])
                 ++v0;
             umax[v] = v0;
             ++v0;
         }
         //开始计算方向！！！
-        computeOrientation(image,_config, keypoints, umax);
+        computeOrientation(image,_options, keypoints, umax);
         return keypoints;
     }
 
@@ -320,18 +320,18 @@ namespace suo15features{
         return vResultKeys;
     }
 
-    static float IC_Angle(const Mat& image, const Fast_config& config, cv::Point2f pt,  const vector<int> & u_max) {
+    static float IC_Angle(const Mat& image, const Fast_options& options, cv::Point2f pt,  const vector<int> & u_max) {
         int m_01 = 0, m_10 = 0;
 
         const uchar *center = &image.at<uchar>(cvRound(pt.y), cvRound(pt.x));
 
         // Treat the center line differently, v=0
-        for (int u = -config._half_path_size; u <= config._half_path_size; ++u)
+        for (int u = -options._half_path_size; u <= options._half_path_size; ++u)
             m_10 += u * center[u];
 
         // Go line by line in the circuI853lar patch
         int step = (int) image.step1();
-        for (int v = 1; v <= config._half_path_size; ++v) {
+        for (int v = 1; v <= options._half_path_size; ++v) {
             // Proceed over the two lines
             int v_sum = 0;
             int d = u_max[v];
@@ -346,12 +346,12 @@ namespace suo15features{
         return cv::fastAtan2((float) m_01, (float) m_10);
     }
 
-    static void computeOrientation(const Mat& image, const Fast_config& config, vector<cv::KeyPoint>& keypoints, const vector<int>& umax)
+    static void computeOrientation(const Mat& image, const Fast_options& options, vector<cv::KeyPoint>& keypoints, const vector<int>& umax)
     {
         for (vector<cv::KeyPoint>::iterator keypoint = keypoints.begin(),
                      keypointEnd = keypoints.end(); keypoint != keypointEnd; ++keypoint)
         {
-            keypoint->angle = IC_Angle(image, config, keypoint->pt, umax);
+            keypoint->angle = IC_Angle(image, options, keypoint->pt, umax);
         }
     }
 }

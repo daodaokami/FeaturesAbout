@@ -14,7 +14,8 @@ add_library(suo15features SHARED
         matcher.cpp
         matcher_bf.cpp
         matcher_knn.cpp
-        nearest_neighbor.cpp)
+        nearest_neighbor.cpp
+        feature_set.cpp)
 
 target_link_libraries(
         suo15features ${THIRD_PARTY_LIBS}

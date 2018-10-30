@@ -93,6 +93,62 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="testfe">
+				<Option output="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/bin/testfe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/usr/include/eigen3"/>
+					<Add directory="/home/lut/Desktop/Gitprocs/Sophus"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 testfe"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testfe/fast">
+				<Option output="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/bin/testfe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/usr/include/eigen3"/>
+					<Add directory="/home/lut/Desktop/Gitprocs/Sophus"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 testfe/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="testgb">
 				<Option output="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/bin/testgb" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/bin"/>
@@ -149,8 +205,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="main">
-				<Option output="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/bin/main" prefix_auto="0" extension_auto="0"/>
+			<Target title="testfm">
+				<Option output="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/bin/testfm" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -171,14 +227,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 main"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 testfm"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="main/fast">
-				<Option output="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/bin/main" prefix_auto="0" extension_auto="0"/>
+			<Target title="testfm/fast">
+				<Option output="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/bin/testfm" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -199,7 +255,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 main/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 testfm/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/vo/Makefile&quot;  VERBOSE=1 clean"/>
@@ -236,6 +292,9 @@
 		<Unit filename="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/detector_surf.cpp">
 			<Option target="suo15features"/>
 		</Unit>
+		<Unit filename="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/feature_set.cpp">
+			<Option target="suo15features"/>
+		</Unit>
 		<Unit filename="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/gauss_blur.cpp">
 			<Option target="suo15features"/>
 		</Unit>
@@ -254,8 +313,11 @@
 		<Unit filename="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/sift_keypoint.cpp">
 			<Option target="suo15features"/>
 		</Unit>
-		<Unit filename="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/main.cpp">
-			<Option target="main"/>
+		<Unit filename="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/testfeaturesextractor.cpp">
+			<Option target="testfe"/>
+		</Unit>
+		<Unit filename="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/testfeaturesmatcher.cpp">
+			<Option target="testfm"/>
 		</Unit>
 		<Unit filename="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/testgaussblur.cpp">
 			<Option target="testgb"/>

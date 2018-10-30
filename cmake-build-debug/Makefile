@@ -124,6 +124,19 @@ suo15features/fast:
 .PHONY : suo15features/fast
 
 #=============================================================================
+# Target rules for targets named testfe
+
+# Build rule for target.
+testfe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testfe
+.PHONY : testfe
+
+# fast build rule for target.
+testfe/fast:
+	$(MAKE) -f vo/CMakeFiles/testfe.dir/build.make vo/CMakeFiles/testfe.dir/build
+.PHONY : testfe/fast
+
+#=============================================================================
 # Target rules for targets named testgb
 
 # Build rule for target.
@@ -137,17 +150,17 @@ testgb/fast:
 .PHONY : testgb/fast
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named testfm
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
+testfm: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testfm
+.PHONY : testfm
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) -f vo/CMakeFiles/main.dir/build.make vo/CMakeFiles/main.dir/build
-.PHONY : main/fast
+testfm/fast:
+	$(MAKE) -f vo/CMakeFiles/testfm.dir/build.make vo/CMakeFiles/testfm.dir/build
+.PHONY : testfm/fast
 
 # Help Target
 help:
@@ -158,8 +171,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... suo15features"
+	@echo "... testfe"
 	@echo "... testgb"
-	@echo "... main"
+	@echo "... testfm"
 .PHONY : help
 
 

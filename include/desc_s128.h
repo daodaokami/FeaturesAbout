@@ -10,14 +10,14 @@
 #define MATH_PI         3.14159265358979323846264338327950288   // pi
 #define MATH_SQRT2      1.41421356237309504880168872420969808   // sqrt(2)
 namespace suo15features {
-    struct S128_Options{
+    struct S128_options{
         int num_samples_per_octave;
         int min_octave;
         int max_octave;
         float contrast_threshold;
         float base_blur_sigma;
         float inherent_blur_sigma;
-        S128_Options():num_samples_per_octave(3),
+        S128_options():num_samples_per_octave(3),
                        min_octave(0),
                        max_octave(4),
                        contrast_threshold(-1.0f),
@@ -35,16 +35,18 @@ namespace suo15features {
 
     class Desc_s128 : public Descry<Sift_KeyPoint>{
     private:
-        S128_Options desc_s128_options;
+        S128_options desc_s128_options;
         cv::Mat orig;
         cv::Mat descriptors;
+        Descriptors define_descriptors;
         Simple_Octaves octaves;
     public:
-        Desc_s128(S128_Options options);
+        Desc_s128(S128_options options);
 
         void set_image(const cv::Mat& img);
         //这里可以是一层的image也可以是多层的octaves, keypoints 需要修改值的，因为需要修改keypoints的方向
         virtual cv::Mat ComputeDescriptor(const cv::Mat& image, vector<Sift_KeyPoint>& keypoints);
+        Descriptors process(const cv::Mat& image, vector<Sift_KeyPoint>& keypoints);
 
         //cost same time to create the img pyramid
         Simple_Octaves create_octaves(const cv::Mat& image);

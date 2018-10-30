@@ -7,54 +7,54 @@
 namespace suo15features{
     //static ORB_config default_config(31, 15, 19, 1000, 0.8, 4, 20, 7);
     Detector_orb::Detector_orb(){}
-    Detector_orb::Detector_orb(ORB_config config) :_config(config){
-        mvScaleFactor.resize(_config._nlevels);
-        mvLevelSigma2.resize(_config._nlevels);
-        mnkeypointsLevels.resize(_config._nlevels);
+    Detector_orb::Detector_orb(ORB_options options) :_options(options){
+        mvScaleFactor.resize(_options._nlevels);
+        mvLevelSigma2.resize(_options._nlevels);
+        mnkeypointsLevels.resize(_options._nlevels);
 
         mvScaleFactor[0] = 1.0f;
         mvLevelSigma2[0] = 1.0f;
 
-        for(int i=1; i<_config._nlevels; i++){
-            mvScaleFactor[i] = mvScaleFactor[i-1]*_config._scaleFactor;
+        for(int i=1; i<_options._nlevels; i++){
+            mvScaleFactor[i] = mvScaleFactor[i-1]*_options._scaleFactor;
             mvLevelSigma2[i] = mvScaleFactor[i]*mvScaleFactor[i];
         }
 
-        mvInvScaleFactor.resize(_config._nlevels);
-        mvInvLevelSigma2.resize(_config._nlevels);
-        for(int i=0; i<_config._nlevels; i++)
+        mvInvScaleFactor.resize(_options._nlevels);
+        mvInvLevelSigma2.resize(_options._nlevels);
+        for(int i=0; i<_options._nlevels; i++)
         {
             mvInvScaleFactor[i]=1.0f/mvScaleFactor[i];
             mvInvLevelSigma2[i]=1.0f/mvLevelSigma2[i];
         }
 
-        mvImagePyramid.resize(_config._nlevels);
-        mnFeaturesPerLevel.resize(_config._nlevels);
+        mvImagePyramid.resize(_options._nlevels);
+        mnFeaturesPerLevel.resize(_options._nlevels);
 
-        float factor = 1.0f/ _config._scaleFactor;
-        float nDesiredFeaturesPerScale = _config._nfeatures*(1 - factor)/(1 - (float)pow((double)factor, (double)_config._nlevels));
+        float factor = 1.0f/ _options._scaleFactor;
+        float nDesiredFeaturesPerScale = _options._nfeatures*(1 - factor)/(1 - (float)pow((double)factor, (double)_options._nlevels));
 
         int sumFeatures = 0;
-        for(int level = 0; level < _config._nlevels-1; level++){
+        for(int level = 0; level < _options._nlevels-1; level++){
             mnFeaturesPerLevel[level] = cvRound(nDesiredFeaturesPerScale);
             sumFeatures += mnFeaturesPerLevel[level];
             nDesiredFeaturesPerScale *= factor;
         }
-        mnFeaturesPerLevel[_config._nlevels-1] = std::max(_config._nfeatures-sumFeatures, 0);
+        mnFeaturesPerLevel[_options._nlevels-1] = std::max(_options._nfeatures-sumFeatures, 0);
 
         //const int npoints = 512;
         //const cv::Point* pattern0 = (const cv::Point*)bit_pattern_31_;
         //这个是描述子
 
         //Orientation
-        umax.resize(_config._half_path_size + 1);
-        int v, v0, vmax = cvFloor(_config._half_path_size*sqrt(2.f)/2 +1);
-        int vmin = cvCeil(_config._half_path_size*sqrt(2.f)/2);
-        const double hp2 = _config._half_path_size*_config._half_path_size;
+        umax.resize(_options._half_path_size + 1);
+        int v, v0, vmax = cvFloor(_options._half_path_size*sqrt(2.f)/2 +1);
+        int vmin = cvCeil(_options._half_path_size*sqrt(2.f)/2);
+        const double hp2 = _options._half_path_size*_options._half_path_size;
         for(v = 0; v<= vmax; ++v)
             umax[v] = cvRound(sqrt(hp2 -v*v));
 
-        for(v = _config._half_path_size, v0=0; v>=vmin; --v){
+        for(v = _options._half_path_size, v0=0; v>=vmin; --v){
             while(umax[v0] == umax[v0+1])
                 ++v0;
             umax[v] = v0;
@@ -79,14 +79,14 @@ namespace suo15features{
         //这里就提取好了特征点
 
         int nKeypoints = 0;
-        for(int level = 0; level<_config._nlevels; ++level)
+        for(int level = 0; level<_options._nlevels; ++level)
             nKeypoints += (int)(allKeypoints[level].size());
 
         keypoints.clear();
         keypoints.reserve(nKeypoints);
 
         int offset = 0;
-        for(int level = 0; level < _config._nlevels; ++level){
+        for(int level = 0; level < _options._nlevels; ++level){
             vector<cv::KeyPoint> &kps = allKeypoints[level];
             int nkeypointsLevel = (int)kps.size();
             mnkeypointsLevels[level] = nkeypointsLevel;
@@ -105,7 +105,7 @@ namespace suo15features{
         return keypoints;
     }
 
-    static float IC_Angle(const Mat& image, const ORB_config& config, cv::Point2f pt,  const vector<int> & u_max) {
+    static float IC_Angle(const Mat& image, const ORB_options& config, cv::Point2f pt,  const vector<int> & u_max) {
         int m_01 = 0, m_10 = 0;
 
         const uchar *center = &image.at<uchar>(cvRound(pt.y), cvRound(pt.x));
@@ -131,12 +131,12 @@ namespace suo15features{
         return cv::fastAtan2((float) m_01, (float) m_10);
     }
 
-    static void computeOrientation(const Mat& image, const ORB_config& config, vector<cv::KeyPoint>& keypoints, const vector<int>& umax)
+    static void computeOrientation(const Mat& image, const ORB_options& options, vector<cv::KeyPoint>& keypoints, const vector<int>& umax)
     {
         for (vector<cv::KeyPoint>::iterator keypoint = keypoints.begin(),
                      keypointEnd = keypoints.end(); keypoint != keypointEnd; ++keypoint)
         {
-            keypoint->angle = IC_Angle(image, config, keypoint->pt, umax);
+            keypoint->angle = IC_Angle(image, options, keypoint->pt, umax);
         }
     }
 
@@ -344,7 +344,7 @@ namespace suo15features{
 
         // Retain the best point in each node
         vector<cv::KeyPoint> vResultKeys;
-        vResultKeys.reserve(_config._nfeatures);
+        vResultKeys.reserve(_options._nfeatures);
         for(list<ExtractorNode>::iterator lit=lNodes.begin(); lit!=lNodes.end(); lit++)
         {
             vector<cv::KeyPoint> &vNodeKeys = lit->vKeys;
@@ -368,19 +368,19 @@ namespace suo15features{
     }
 
     void Detector_orb::ComputeKeyPointsOctTree(vector<vector<cv::KeyPoint>> &allKeypoints) {
-        allKeypoints.resize(_config._nlevels);
+        allKeypoints.resize(_options._nlevels);
 
         const float W = 30;
 
-        for (int level = 0; level < _config._nlevels; ++level)
+        for (int level = 0; level < _options._nlevels; ++level)
         {
-            const int minBorderX = _config._edge_threshold-3;
+            const int minBorderX = _options._edge_threshold-3;
             const int minBorderY = minBorderX;
-            const int maxBorderX = mvImagePyramid[level].cols-_config._edge_threshold+3;
-            const int maxBorderY = mvImagePyramid[level].rows-_config._edge_threshold+3;
+            const int maxBorderX = mvImagePyramid[level].cols-_options._edge_threshold+3;
+            const int maxBorderY = mvImagePyramid[level].rows-_options._edge_threshold+3;
 
             vector<cv::KeyPoint> vToDistributeKeys;
-            vToDistributeKeys.reserve(_config._nfeatures*10);
+            vToDistributeKeys.reserve(_options._nfeatures*10);
 
             const float width = (maxBorderX-minBorderX);
             const float height = (maxBorderY-minBorderY);
@@ -411,12 +411,12 @@ namespace suo15features{
 
                     vector<cv::KeyPoint> vKeysCell;
                     cv::FAST(mvImagePyramid[level].rowRange(iniY,maxY).colRange(iniX,maxX),
-                         vKeysCell,_config._iniThFAST,true);
+                         vKeysCell,_options._iniThFAST,true);
 
                     if(vKeysCell.empty())
                     {
                         cv::FAST(mvImagePyramid[level].rowRange(iniY,maxY).colRange(iniX,maxX),
-                             vKeysCell,_config._minThFAST,true);
+                             vKeysCell,_options._minThFAST,true);
                     }
 
                     if(!vKeysCell.empty())
@@ -433,12 +433,12 @@ namespace suo15features{
             }
 
             vector<cv::KeyPoint> & keypoints = allKeypoints[level];
-            keypoints.reserve(_config._nfeatures);
+            keypoints.reserve(_options._nfeatures);
 
             keypoints = DistributeOctTree(vToDistributeKeys, minBorderX, maxBorderX,
                                           minBorderY, maxBorderY,mnFeaturesPerLevel[level], level);
 
-            const int scaledPatchSize = _config._patch_size*mvScaleFactor[level];
+            const int scaledPatchSize = _options._patch_size*mvScaleFactor[level];
 
             // Add border to coordinates and scale information
             const int nkps = keypoints.size();
@@ -452,32 +452,32 @@ namespace suo15features{
         }
 
         // compute orientations
-        for (int level = 0; level < _config._nlevels; ++level)
-            computeOrientation(mvImagePyramid[level],_config, allKeypoints[level], umax);
+        for (int level = 0; level < _options._nlevels; ++level)
+            computeOrientation(mvImagePyramid[level],_options, allKeypoints[level], umax);
     }
 
     void Detector_orb::ComputePyramid(cv::Mat image) {
-        for (int level = 0; level < _config._nlevels; ++level)
+        for (int level = 0; level < _options._nlevels; ++level)
         {
             float scale = mvInvScaleFactor[level];
             cv::Size sz(cvRound((float)image.cols*scale), cvRound((float)image.rows*scale));
-            cv::Size wholeSize(sz.width + _config._edge_threshold*2, sz.height + _config._edge_threshold*2);
+            cv::Size wholeSize(sz.width + _options._edge_threshold*2, sz.height + _options._edge_threshold*2);
             Mat temp(wholeSize, image.type()), masktemp;
-            mvImagePyramid[level] = temp(cv::Rect(_config._edge_threshold, _config._edge_threshold, sz.width, sz.height));
+            mvImagePyramid[level] = temp(cv::Rect(_options._edge_threshold, _options._edge_threshold, sz.width, sz.height));
 
             // Compute the resized image
             if( level != 0 )
             {
                 resize(mvImagePyramid[level-1], mvImagePyramid[level], sz, 0, 0, cv::INTER_LINEAR);
 
-                copyMakeBorder(mvImagePyramid[level], temp, _config._edge_threshold, _config._edge_threshold,
-                               _config._edge_threshold, _config._edge_threshold,
+                copyMakeBorder(mvImagePyramid[level], temp, _options._edge_threshold, _options._edge_threshold,
+                               _options._edge_threshold, _options._edge_threshold,
                                cv::BORDER_REFLECT_101+cv::BORDER_ISOLATED);
             }
             else
             {
-                copyMakeBorder(image, temp, _config._edge_threshold, _config._edge_threshold,
-                               _config._edge_threshold, _config._edge_threshold,
+                copyMakeBorder(image, temp, _options._edge_threshold, _options._edge_threshold,
+                               _options._edge_threshold, _options._edge_threshold,
                                cv::BORDER_REFLECT_101);
             }
         }

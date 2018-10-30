@@ -9,28 +9,27 @@
 #include "detector_fast.h"
 
 namespace suo15features {
-
-    struct Fast_config{
+    struct Fast_options{
         int _patch_size;
         int _half_path_size;
         int _edge_threshold;
         int _nfeatures;//预估计的特征的数量
         int _iniThFAST;//可接受的特征点的阈值
         int _minThFAST;//最小的可接受特征点的阈值
-        Fast_config(){}
-        Fast_config(int patch_size, int half_path_size, int edge_threshold,
+        Fast_options(){}
+        Fast_options(int patch_size, int half_path_size, int edge_threshold,
             int nfeatures, int iniThFAST, int minThFAST): _patch_size(patch_size), _half_path_size(half_path_size),
                                                           _edge_threshold(edge_threshold), _nfeatures(nfeatures),
                                                           _iniThFAST(iniThFAST), _minThFAST(minThFAST)
         {}
-        void SetConfig(Fast_config config)
+        void SetConfig(Fast_options options)
         {
-            _patch_size = config._patch_size;
-            _half_path_size = config._half_path_size;
-            _edge_threshold = config._edge_threshold;
-            _nfeatures = config._nfeatures;
-            _iniThFAST = config._iniThFAST;
-            _minThFAST = config._minThFAST;
+            _patch_size = options._patch_size;
+            _half_path_size = options._half_path_size;
+            _edge_threshold = options._edge_threshold;
+            _nfeatures = options._nfeatures;
+            _iniThFAST = options._iniThFAST;
+            _minThFAST = options._minThFAST;
         }
         /*
          * init value is patch_size = 31,
@@ -44,11 +43,11 @@ namespace suo15features {
 
     class Detector_fast:public Detector<cv::KeyPoint>{
     private:
-        Fast_config _config;
+        Fast_options _options;
         vector<int> umax;
     public:
         Detector_fast();
-        Detector_fast(Fast_config config);
+        Detector_fast(Fast_options options);
         virtual vector<cv::KeyPoint> ExtractorKeyPoints(const cv::Mat& ori_img);
 
         vector<cv::KeyPoint> DistributeOctTree(const vector<cv::KeyPoint>& vToDistributeKeys,

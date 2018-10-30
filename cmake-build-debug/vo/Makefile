@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+vo/CMakeFiles/testfe.dir/rule:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 vo/CMakeFiles/testfe.dir/rule
+.PHONY : vo/CMakeFiles/testfe.dir/rule
+
+# Convenience name for target.
+testfe: vo/CMakeFiles/testfe.dir/rule
+
+.PHONY : testfe
+
+# fast build rule for target.
+testfe/fast:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testfe.dir/build.make vo/CMakeFiles/testfe.dir/build
+.PHONY : testfe/fast
+
+# Convenience name for target.
 vo/CMakeFiles/testgb.dir/rule:
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 vo/CMakeFiles/testgb.dir/rule
 .PHONY : vo/CMakeFiles/testgb.dir/rule
@@ -126,46 +141,73 @@ testgb/fast:
 .PHONY : testgb/fast
 
 # Convenience name for target.
-vo/CMakeFiles/main.dir/rule:
-	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 vo/CMakeFiles/main.dir/rule
-.PHONY : vo/CMakeFiles/main.dir/rule
+vo/CMakeFiles/testfm.dir/rule:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 vo/CMakeFiles/testfm.dir/rule
+.PHONY : vo/CMakeFiles/testfm.dir/rule
 
 # Convenience name for target.
-main: vo/CMakeFiles/main.dir/rule
+testfm: vo/CMakeFiles/testfm.dir/rule
 
-.PHONY : main
+.PHONY : testfm
 
 # fast build rule for target.
-main/fast:
-	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/main.dir/build.make vo/CMakeFiles/main.dir/build
-.PHONY : main/fast
+testfm/fast:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testfm.dir/build.make vo/CMakeFiles/testfm.dir/build
+.PHONY : testfm/fast
 
-main.o: main.cpp.o
+testfeaturesextractor.o: testfeaturesextractor.cpp.o
 
-.PHONY : main.o
+.PHONY : testfeaturesextractor.o
 
 # target to build an object file
-main.cpp.o:
-	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/main.dir/build.make vo/CMakeFiles/main.dir/main.cpp.o
-.PHONY : main.cpp.o
+testfeaturesextractor.cpp.o:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testfe.dir/build.make vo/CMakeFiles/testfe.dir/testfeaturesextractor.cpp.o
+.PHONY : testfeaturesextractor.cpp.o
 
-main.i: main.cpp.i
+testfeaturesextractor.i: testfeaturesextractor.cpp.i
 
-.PHONY : main.i
+.PHONY : testfeaturesextractor.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/main.dir/build.make vo/CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
+testfeaturesextractor.cpp.i:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testfe.dir/build.make vo/CMakeFiles/testfe.dir/testfeaturesextractor.cpp.i
+.PHONY : testfeaturesextractor.cpp.i
 
-main.s: main.cpp.s
+testfeaturesextractor.s: testfeaturesextractor.cpp.s
 
-.PHONY : main.s
+.PHONY : testfeaturesextractor.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/main.dir/build.make vo/CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
+testfeaturesextractor.cpp.s:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testfe.dir/build.make vo/CMakeFiles/testfe.dir/testfeaturesextractor.cpp.s
+.PHONY : testfeaturesextractor.cpp.s
+
+testfeaturesmatcher.o: testfeaturesmatcher.cpp.o
+
+.PHONY : testfeaturesmatcher.o
+
+# target to build an object file
+testfeaturesmatcher.cpp.o:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testfm.dir/build.make vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o
+.PHONY : testfeaturesmatcher.cpp.o
+
+testfeaturesmatcher.i: testfeaturesmatcher.cpp.i
+
+.PHONY : testfeaturesmatcher.i
+
+# target to preprocess a source file
+testfeaturesmatcher.cpp.i:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testfm.dir/build.make vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.i
+.PHONY : testfeaturesmatcher.cpp.i
+
+testfeaturesmatcher.s: testfeaturesmatcher.cpp.s
+
+.PHONY : testfeaturesmatcher.s
+
+# target to generate assembly for a file
+testfeaturesmatcher.cpp.s:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testfm.dir/build.make vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.s
+.PHONY : testfeaturesmatcher.cpp.s
 
 testgaussblur.o: testgaussblur.cpp.o
 
@@ -200,13 +242,17 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
+	@echo "... testfe"
 	@echo "... testgb"
+	@echo "... rebuild_cache"
+	@echo "... testfm"
 	@echo "... edit_cache"
-	@echo "... main"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... testfeaturesextractor.o"
+	@echo "... testfeaturesextractor.i"
+	@echo "... testfeaturesextractor.s"
+	@echo "... testfeaturesmatcher.o"
+	@echo "... testfeaturesmatcher.i"
+	@echo "... testfeaturesmatcher.s"
 	@echo "... testgaussblur.o"
 	@echo "... testgaussblur.i"
 	@echo "... testgaussblur.s"

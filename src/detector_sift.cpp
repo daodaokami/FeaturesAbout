@@ -11,7 +11,7 @@
 
 namespace suo15features{
 
-    Detector_sift::Detector_sift(const suo15features::Detector_sift::SIFT_Options &options)
+    Detector_sift::Detector_sift(const suo15features::SIFT_options &options)
     :sift_options(options){
         if(this->sift_options.min_octave < -1 ||
                 this->sift_options.min_octave > this->sift_options.max_octave)

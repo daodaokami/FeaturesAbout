@@ -6,7 +6,7 @@
 
 namespace suo15features{
 
-    Desc_s128::Desc_s128(suo15features::S128_Options options):
+    Desc_s128::Desc_s128(suo15features::S128_options options):
             desc_s128_options(options) {
         if(this->desc_s128_options.min_octave < -1 ||
            this->desc_s128_options.min_octave > this->desc_s128_options.max_octave)
@@ -28,12 +28,17 @@ namespace suo15features{
                 cv::waitKey(0);
             }
         }//金字塔的创建没有明显异常*/
-        descriptor_generation(keypoints);//存在异常的错误
+        descriptor_generation(keypoints);
         if(descriptors.empty())
             descriptors.resize(0);
         return this->descriptors;
     }
 
+    Descriptors Desc_s128::process(const cv::Mat &image, vector<Sift_KeyPoint> &keypoints){
+        create_octaves(image);
+        descriptor_generation(keypoints);
+        return this->define_descriptors;
+    }
 
     void Desc_s128::descriptor_generation(vector<suo15features::Sift_KeyPoint> &keypoints) {
         vector<Sift_KeyPoint> new_keypoints;
@@ -41,10 +46,11 @@ namespace suo15features{
         if(this->octaves.empty())
             throw std::runtime_error("Octave not available!");
         if(keypoints.empty())
-            return ;
+            return;
         //首先申请keypoints的大小的两倍大小的， description， 描述子是按照行来存储的
         this->descriptors.release();
         this->descriptors.reserve(keypoints.size()*3/2);
+        this->define_descriptors.reserve(keypoints.size()*3/2);
 
         int octave_index = keypoints[0].octave;
         Simple_Octave* octave = &this->octaves[octave_index - this->desc_s128_options.min_octave];
@@ -84,6 +90,7 @@ namespace suo15features{
                 desc.orientation = orientations[j];
                 if(this->descriptor_assignment(kp, desc, octave)) {
                     this->descriptors.push_back(desc.data);
+                    this->define_descriptors.push_back(desc);
                     //put descriptors into mat
                     Sift_KeyPoint skp;
                     skp.pt = cv::Point2f(desc.x,desc.y);

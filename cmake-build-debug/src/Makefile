@@ -395,6 +395,33 @@ detector_surf.cpp.s:
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/detector_surf.cpp.s
 .PHONY : detector_surf.cpp.s
 
+feature_set.o: feature_set.cpp.o
+
+.PHONY : feature_set.o
+
+# target to build an object file
+feature_set.cpp.o:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/feature_set.cpp.o
+.PHONY : feature_set.cpp.o
+
+feature_set.i: feature_set.cpp.i
+
+.PHONY : feature_set.i
+
+# target to preprocess a source file
+feature_set.cpp.i:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/feature_set.cpp.i
+.PHONY : feature_set.cpp.i
+
+feature_set.s: feature_set.cpp.s
+
+.PHONY : feature_set.s
+
+# target to generate assembly for a file
+feature_set.cpp.s:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/feature_set.cpp.s
+.PHONY : feature_set.cpp.s
+
 gauss_blur.o: gauss_blur.cpp.o
 
 .PHONY : gauss_blur.o
@@ -596,6 +623,9 @@ help:
 	@echo "... detector_surf.o"
 	@echo "... detector_surf.i"
 	@echo "... detector_surf.s"
+	@echo "... feature_set.o"
+	@echo "... feature_set.i"
+	@echo "... feature_set.s"
 	@echo "... gauss_blur.o"
 	@echo "... gauss_blur.i"
 	@echo "... gauss_blur.s"

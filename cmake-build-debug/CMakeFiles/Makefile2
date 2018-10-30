@@ -84,7 +84,7 @@ src/preinstall:
 src/CMakeFiles/suo15features.dir/all:
 	$(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/depend
 	$(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target suo15features"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target suo15features"
 .PHONY : src/CMakeFiles/suo15features.dir/all
 
 # Include target in all.
@@ -94,7 +94,7 @@ all: src/CMakeFiles/suo15features.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/suo15features.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/suo15features.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles 0
 .PHONY : src/CMakeFiles/suo15features.dir/rule
@@ -118,14 +118,16 @@ clean: src/CMakeFiles/suo15features.dir/clean
 # Directory level rules for directory vo
 
 # Convenience name for "all" pass in the directory.
+vo/all: vo/CMakeFiles/testfe.dir/all
 vo/all: vo/CMakeFiles/testgb.dir/all
-vo/all: vo/CMakeFiles/main.dir/all
+vo/all: vo/CMakeFiles/testfm.dir/all
 
 .PHONY : vo/all
 
 # Convenience name for "clean" pass in the directory.
+vo/clean: vo/CMakeFiles/testfe.dir/clean
 vo/clean: vo/CMakeFiles/testgb.dir/clean
-vo/clean: vo/CMakeFiles/main.dir/clean
+vo/clean: vo/CMakeFiles/testfm.dir/clean
 
 .PHONY : vo/clean
 
@@ -135,13 +137,50 @@ vo/preinstall:
 .PHONY : vo/preinstall
 
 #=============================================================================
+# Target rules for target vo/CMakeFiles/testfe.dir
+
+# All Build rule for target.
+vo/CMakeFiles/testfe.dir/all: src/CMakeFiles/suo15features.dir/all
+	$(MAKE) -f vo/CMakeFiles/testfe.dir/build.make vo/CMakeFiles/testfe.dir/depend
+	$(MAKE) -f vo/CMakeFiles/testfe.dir/build.make vo/CMakeFiles/testfe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target testfe"
+.PHONY : vo/CMakeFiles/testfe.dir/all
+
+# Include target in all.
+all: vo/CMakeFiles/testfe.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+vo/CMakeFiles/testfe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles 20
+	$(MAKE) -f CMakeFiles/Makefile2 vo/CMakeFiles/testfe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles 0
+.PHONY : vo/CMakeFiles/testfe.dir/rule
+
+# Convenience name for target.
+testfe: vo/CMakeFiles/testfe.dir/rule
+
+.PHONY : testfe
+
+# clean rule for target.
+vo/CMakeFiles/testfe.dir/clean:
+	$(MAKE) -f vo/CMakeFiles/testfe.dir/build.make vo/CMakeFiles/testfe.dir/clean
+.PHONY : vo/CMakeFiles/testfe.dir/clean
+
+# clean rule for target.
+clean: vo/CMakeFiles/testfe.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target vo/CMakeFiles/testgb.dir
 
 # All Build rule for target.
 vo/CMakeFiles/testgb.dir/all: src/CMakeFiles/suo15features.dir/all
 	$(MAKE) -f vo/CMakeFiles/testgb.dir/build.make vo/CMakeFiles/testgb.dir/depend
 	$(MAKE) -f vo/CMakeFiles/testgb.dir/build.make vo/CMakeFiles/testgb.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=20,21 "Built target testgb"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target testgb"
 .PHONY : vo/CMakeFiles/testgb.dir/all
 
 # Include target in all.
@@ -151,7 +190,7 @@ all: vo/CMakeFiles/testgb.dir/all
 
 # Build rule for subdir invocation for target.
 vo/CMakeFiles/testgb.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 vo/CMakeFiles/testgb.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles 0
 .PHONY : vo/CMakeFiles/testgb.dir/rule
@@ -172,39 +211,39 @@ clean: vo/CMakeFiles/testgb.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target vo/CMakeFiles/main.dir
+# Target rules for target vo/CMakeFiles/testfm.dir
 
 # All Build rule for target.
-vo/CMakeFiles/main.dir/all: src/CMakeFiles/suo15features.dir/all
-	$(MAKE) -f vo/CMakeFiles/main.dir/build.make vo/CMakeFiles/main.dir/depend
-	$(MAKE) -f vo/CMakeFiles/main.dir/build.make vo/CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target main"
-.PHONY : vo/CMakeFiles/main.dir/all
+vo/CMakeFiles/testfm.dir/all: src/CMakeFiles/suo15features.dir/all
+	$(MAKE) -f vo/CMakeFiles/testfm.dir/build.make vo/CMakeFiles/testfm.dir/depend
+	$(MAKE) -f vo/CMakeFiles/testfm.dir/build.make vo/CMakeFiles/testfm.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target testfm"
+.PHONY : vo/CMakeFiles/testfm.dir/all
 
 # Include target in all.
-all: vo/CMakeFiles/main.dir/all
+all: vo/CMakeFiles/testfm.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-vo/CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles 19
-	$(MAKE) -f CMakeFiles/Makefile2 vo/CMakeFiles/main.dir/all
+vo/CMakeFiles/testfm.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles 20
+	$(MAKE) -f CMakeFiles/Makefile2 vo/CMakeFiles/testfm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles 0
-.PHONY : vo/CMakeFiles/main.dir/rule
+.PHONY : vo/CMakeFiles/testfm.dir/rule
 
 # Convenience name for target.
-main: vo/CMakeFiles/main.dir/rule
+testfm: vo/CMakeFiles/testfm.dir/rule
 
-.PHONY : main
-
-# clean rule for target.
-vo/CMakeFiles/main.dir/clean:
-	$(MAKE) -f vo/CMakeFiles/main.dir/build.make vo/CMakeFiles/main.dir/clean
-.PHONY : vo/CMakeFiles/main.dir/clean
+.PHONY : testfm
 
 # clean rule for target.
-clean: vo/CMakeFiles/main.dir/clean
+vo/CMakeFiles/testfm.dir/clean:
+	$(MAKE) -f vo/CMakeFiles/testfm.dir/build.make vo/CMakeFiles/testfm.dir/clean
+.PHONY : vo/CMakeFiles/testfm.dir/clean
+
+# clean rule for target.
+clean: vo/CMakeFiles/testfm.dir/clean
 
 .PHONY : clean
 

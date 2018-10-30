@@ -3,7 +3,6 @@
 //
 
 #include "common_include.h"
-//#include <vector>
 #include <detector.h>
 #include <detector_fast.h>
 #include <detector_orb.h>
@@ -24,7 +23,7 @@ bool sift_compare_x(suo15features::Sift_KeyPoint& kp1, suo15features::Sift_KeyPo
 }
 int main(){
     cv::Mat img_example = cv::imread("./data/example.jpeg", cv::IMREAD_ANYCOLOR);
-    suo15features::Detector_sift* Ptr = new suo15features::Detector_sift(suo15features::Detector_sift::SIFT_Options());
+    suo15features::Detector_sift* Ptr = new suo15features::Detector_sift(suo15features::SIFT_options());
     //注意这里返回的值的类型还要修改一波！！！最好还是用模板类型，但是模板类型不能用虚函数
     vector<suo15features::Sift_KeyPoint> sift_keypoints = Ptr->ExtractorKeyPoints(img_example);
     vector<cv::KeyPoint> vkps(sift_keypoints.size());
@@ -37,7 +36,7 @@ int main(){
     cv::imshow("out", out);
     cv::waitKey(0);
     cv::destroyAllWindows();
-    suo15features::S128_Options desc_s128_options;
+    suo15features::S128_options desc_s128_options;
     suo15features::Descry<suo15features::Sift_KeyPoint>* descry = new suo15features::Desc_s128(desc_s128_options);
     cv::Mat descriptors = descry->ComputeDescriptor(img_example, sift_keypoints);
     cout<<"new_keypoints "<<sift_keypoints.size()<<endl;

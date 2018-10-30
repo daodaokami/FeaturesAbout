@@ -9,7 +9,7 @@
 #include "../include/detector_orb.h"
 
 namespace suo15features {
-    struct ORB_config{
+    struct ORB_options{
         int _patch_size;
         int _half_path_size;
         int _edge_threshold;
@@ -18,24 +18,24 @@ namespace suo15features {
         int _nlevels;
         int _iniThFAST;//可接受的特征点的阈值
         int _minThFAST;//最小的可接受特征点的阈值
-        ORB_config(){}
-        ORB_config(int patch_size, int half_path_size, int edge_threshold,
+        ORB_options(){}
+        ORB_options(int patch_size, int half_path_size, int edge_threshold,
                    int nfeatures, float scaleFactor, int nlevels,
                    int iniThFAST, int minThFAST): _patch_size(patch_size), _half_path_size(half_path_size),
                                                   _edge_threshold(edge_threshold), _nfeatures(nfeatures),
                                                   _scaleFactor(scaleFactor), _nlevels(nlevels),
                                                   _iniThFAST(iniThFAST), _minThFAST(minThFAST)
         {}
-        void SetConfig(ORB_config config)
+        void SetOptions(ORB_options options)
         {
-            _patch_size = config._patch_size;
-            _half_path_size = config._half_path_size;
-            _edge_threshold = config._edge_threshold;
-            _nfeatures = config._nfeatures;
-            _scaleFactor = config._scaleFactor;
-            _nlevels = config._nlevels;
-            _iniThFAST = config._iniThFAST;
-            _minThFAST = config._minThFAST;
+            _patch_size = options._patch_size;
+            _half_path_size = options._half_path_size;
+            _edge_threshold = options._edge_threshold;
+            _nfeatures = options._nfeatures;
+            _scaleFactor = options._scaleFactor;
+            _nlevels = options._nlevels;
+            _iniThFAST = options._iniThFAST;
+            _minThFAST = options._minThFAST;
         }
     };
 
@@ -43,7 +43,7 @@ namespace suo15features {
         //多了更多的层次的信息，旋转信息等等
         //提取ORB特征，还要额外加上旋转，金字塔等信息！！！
     private:
-        ORB_config _config;
+        ORB_options _options;
     protected:
         std::vector<int> mnFeaturesPerLevel;
         std::vector<int> umax;
@@ -59,7 +59,7 @@ namespace suo15features {
     public:
         enum{HARRIS_SCORE = 0, FAST_SCORE = 1};
         Detector_orb();
-        Detector_orb(ORB_config config);
+        Detector_orb(ORB_options options);
 
         virtual vector<cv::KeyPoint> ExtractorKeyPoints(const cv::Mat& ori_img);
 
@@ -80,11 +80,11 @@ namespace suo15features {
         }
 
         int inline GetLevels(){
-            return _config._nlevels;
+            return _options._nlevels;
         }
 
         float inline GetScaleFactor(){
-            return _config._scaleFactor;
+            return _options._scaleFactor;
         }
 
         vector<float> inline GetScaleFactors(){
