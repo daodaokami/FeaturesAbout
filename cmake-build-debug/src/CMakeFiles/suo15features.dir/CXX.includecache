@@ -40,11 +40,21 @@ unordered_map
 map
 -
 
+../include/desc_b256.h
+detector_orb.h
+../include/detector_orb.h
+descry.h
+../include/descry.h
+desc_b256.h
+../include/desc_b256.h
+
 ../include/desc_s128.h
 descry.h
 ../include/descry.h
 sift_keypoint.h
 ../include/sift_keypoint.h
+
+../include/desc_s64.h
 
 ../include/descry.h
 common_include.h
@@ -77,6 +87,12 @@ common_include.h
 ../include/common_include.h
 
 ../include/detector_surf.h
+
+../include/distance.h
+iostream
+-
+cmath
+-
 
 ../include/feature_set.h
 common_include.h
@@ -89,6 +105,12 @@ detector_fast.h
 ../include/detector_fast.h
 detector_orb.h
 ../include/detector_orb.h
+desc_s64.h
+../include/desc_s64.h
+desc_s128.h
+../include/desc_s128.h
+desc_b256.h
+../include/desc_b256.h
 
 ../include/gauss_blur.h
 common_include.h
@@ -96,15 +118,19 @@ common_include.h
 accum_conv.h
 ../include/accum_conv.h
 
+../include/knn.h
+distance.h
+../include/distance.h
+
 ../include/matcher.h
 common_include.h
 ../include/common_include.h
 descry.h
 ../include/descry.h
-
-../include/nearest_neighbor.h
-common_include.h
-../include/common_include.h
+distance.h
+../include/distance.h
+knn.h
+../include/knn.h
 
 ../include/sift_keypoint.h
 common_include.h
@@ -192,19 +218,33 @@ common_include.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/detector_surf.h
 
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/distance.h
+iostream
+-
+cmath
+-
+
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/knn.h
+distance.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/distance.h
+
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher.h
 common_include.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/common_include.h
 descry.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/descry.h
+distance.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/distance.h
+knn.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/knn.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher_bf.h
-common_include.h
-/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/common_include.h
 matcher.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher_knn.h
+matcher.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/sift_keypoint.h
 common_include.h
@@ -271,8 +311,6 @@ gauss_blur.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/detector_surf.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/feature_set.cpp
-desc_s128.h
--
 feature_set.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/feature_set.h
 
@@ -281,8 +319,6 @@ gauss_blur.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/gauss_blur.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher.cpp
-nearest_neighbor.h
--
 ../include/matcher.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher.h
 
@@ -295,16 +331,6 @@ matcher.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher_knn.cpp
 ../include/matcher_knn.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher_knn.h
-
-/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/nearest_neighbor.cpp
-algorithm
--
-emmintrin.h
--
-pmmintrin.h
--
-nearest_neighbor.h
-/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/nearest_neighbor.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/sift_keypoint.cpp
 sift_keypoint.h

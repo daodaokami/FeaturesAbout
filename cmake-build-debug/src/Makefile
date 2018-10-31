@@ -530,33 +530,6 @@ matcher_knn.cpp.s:
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/matcher_knn.cpp.s
 .PHONY : matcher_knn.cpp.s
 
-nearest_neighbor.o: nearest_neighbor.cpp.o
-
-.PHONY : nearest_neighbor.o
-
-# target to build an object file
-nearest_neighbor.cpp.o:
-	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/nearest_neighbor.cpp.o
-.PHONY : nearest_neighbor.cpp.o
-
-nearest_neighbor.i: nearest_neighbor.cpp.i
-
-.PHONY : nearest_neighbor.i
-
-# target to preprocess a source file
-nearest_neighbor.cpp.i:
-	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/nearest_neighbor.cpp.i
-.PHONY : nearest_neighbor.cpp.i
-
-nearest_neighbor.s: nearest_neighbor.cpp.s
-
-.PHONY : nearest_neighbor.s
-
-# target to generate assembly for a file
-nearest_neighbor.cpp.s:
-	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/nearest_neighbor.cpp.s
-.PHONY : nearest_neighbor.cpp.s
-
 sift_keypoint.o: sift_keypoint.cpp.o
 
 .PHONY : sift_keypoint.o
@@ -638,9 +611,6 @@ help:
 	@echo "... matcher_knn.o"
 	@echo "... matcher_knn.i"
 	@echo "... matcher_knn.s"
-	@echo "... nearest_neighbor.o"
-	@echo "... nearest_neighbor.i"
-	@echo "... nearest_neighbor.s"
 	@echo "... sift_keypoint.o"
 	@echo "... sift_keypoint.i"
 	@echo "... sift_keypoint.s"

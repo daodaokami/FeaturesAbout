@@ -14,7 +14,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/suo15features.dir/matcher.cpp.o"
   "CMakeFiles/suo15features.dir/matcher_bf.cpp.o"
   "CMakeFiles/suo15features.dir/matcher_knn.cpp.o"
-  "CMakeFiles/suo15features.dir/nearest_neighbor.cpp.o"
   "CMakeFiles/suo15features.dir/feature_set.cpp.o"
   "../../lib/libsuo15features.pdb"
   "../../lib/libsuo15features.so"

@@ -3,10 +3,18 @@
 
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o
  ../include/common_include.h
+ ../include/desc_b256.h
  ../include/desc_s128.h
+ ../include/desc_s64.h
  ../include/descry.h
  ../include/detector.h
+ ../include/detector_fast.h
+ ../include/detector_orb.h
  ../include/detector_sift.h
+ ../include/detector_surf.h
+ ../include/distance.h
+ ../include/feature_set.h
+ ../include/knn.h
  ../include/matcher.h
  ../include/sift_keypoint.h
  /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/testfeaturesmatcher.cpp

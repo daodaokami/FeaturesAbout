@@ -38,11 +38,21 @@ unordered_map
 map
 -
 
+../include/desc_b256.h
+detector_orb.h
+../include/detector_orb.h
+descry.h
+../include/descry.h
+desc_b256.h
+../include/desc_b256.h
+
 ../include/desc_s128.h
 descry.h
 ../include/descry.h
 sift_keypoint.h
 ../include/sift_keypoint.h
+
+../include/desc_s64.h
 
 ../include/descry.h
 common_include.h
@@ -53,6 +63,18 @@ sift_keypoint.h
 ../include/detector.h
 common_include.h
 ../include/common_include.h
+
+../include/detector_fast.h
+detector.h
+../include/detector.h
+detector_fast.h
+../include/detector_fast.h
+
+../include/detector_orb.h
+../include/detector.h
+../include/detector.h
+../include/detector_orb.h
+../include/detector_orb.h
 
 ../include/detector_sift.h
 detector.h
@@ -62,11 +84,45 @@ sift_keypoint.h
 common_include.h
 ../include/common_include.h
 
+../include/detector_surf.h
+
+../include/distance.h
+iostream
+-
+cmath
+-
+
+../include/feature_set.h
+common_include.h
+../include/common_include.h
+detector_sift.h
+../include/detector_sift.h
+detector_surf.h
+../include/detector_surf.h
+detector_fast.h
+../include/detector_fast.h
+detector_orb.h
+../include/detector_orb.h
+desc_s64.h
+../include/desc_s64.h
+desc_s128.h
+../include/desc_s128.h
+desc_b256.h
+../include/desc_b256.h
+
+../include/knn.h
+distance.h
+../include/distance.h
+
 ../include/matcher.h
 common_include.h
 ../include/common_include.h
 descry.h
 ../include/descry.h
+distance.h
+../include/distance.h
+knn.h
+../include/knn.h
 
 ../include/sift_keypoint.h
 common_include.h
@@ -84,6 +140,10 @@ desc_s128.h
 sift_keypoint.h
 -
 matcher.h
+-
+feature_set.h
+-
+opencv2/features2d.hpp
 -
 common_include.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/common_include.h

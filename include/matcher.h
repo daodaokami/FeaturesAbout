@@ -7,12 +7,22 @@
 
 #include "common_include.h"
 #include "descry.h"
+#include "distance.h"
+#include "knn.h"
 
 namespace suo15features {
+    typedef pair<size_t, size_t> CP;
+
     struct Matcher_options{
-        int descriptor_length;
+        math_tools::Distance_options distance_options;
         float lowe_ratio_threshold;
         float distance_threshold;
+
+        Matcher_options(){}
+        Matcher_options(const math_tools::Distance_options& dist_opts,
+                        float lowe_ratio, float dist_threshold):
+                        distance_options(dist_opts),
+                        lowe_ratio_threshold(lowe_ratio), distance_threshold(dist_threshold){}
     };
 
     struct Result{
@@ -20,26 +30,14 @@ namespace suo15features {
         vector<int> matches_2_1;
     };
 
-    //这是可以相互搜索的匹配对
-    typedef pair<size_t, size_t> CP;
-    //CP是两个输入的keypoints的序号的链接
     class Matcher {
     public:
-        void twoway_match(const Matcher_options& options,
-                const Descriptors& set_1, size_t set_1_size,
-                const Descriptors& set_2, size_t set_2_size,
-                Result& matches);
-
-        void oneway_match(const Matcher_options& options,
-                const Descriptors& set_1, int set_1_size,
-                const Descriptors& set_2, int set_2_size,
-                vector<int>& result);
-
+        Matcher(){}
         virtual vector<CP> GetMatchedKeypoints(
                 const vector<cv::KeyPoint>& keypoints_1,
-                const cv::Mat& descriptors_1,
+                cv::Mat& descriptors_1,
                 const vector<cv::KeyPoint>& keypoints_2,
-                const cv::Mat& descriptors_2);
+                cv::Mat& descriptors_2);
     };
 }
 

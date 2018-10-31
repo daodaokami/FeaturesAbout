@@ -6,7 +6,7 @@
 #include "matcher.h"
 
 namespace suo15features{
-    Matcher_bf::Matcher_bf(Options opts){
+    Matcher_bf::Matcher_bf(const Matcher_options& opts){
         //先设置匹配matcher的参数
 
     }

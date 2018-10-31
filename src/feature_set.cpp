@@ -2,24 +2,9 @@
 // Created by lut on 18-10-26.
 //
 
-#include <desc_s128.h>
 #include "feature_set.h"
 
 namespace suo15features{
-    template<typename T>
-    bool compare_scale(const T& desc1, const T& desc2){
-        return desc1.scale > desc2.scale;
-    }//没有这个尺度信息怎么办？？
-
-    inline FeatureSet::FeatureSet() {}
-
-    inline FeatureSet::FeatureSet(const suo15features::Options &options):
-            opts(options) {}
-
-    inline void FeatureSet::set_options(const suo15features::Options &options) {
-        this->opts = options;
-    }
-
     void FeatureSet::compute_sift(const cv::Mat &image) {
         vector<Sift_KeyPoint> keypoints;
         Descriptors descr;
@@ -49,17 +34,43 @@ namespace suo15features{
         swap(descr, this->sift_descriptors);
     }
 
+    void FeatureSet::compute_orb(const cv::Mat &image) {
+        vector<cv::KeyPoint> keypoints;
+        cv::Mat descriptors;
+        {
+            Detector_orb* detector_orb = new Detector_orb(this->feature_options.orb_opts);
+            Desc_b256* desc_b256 = new Desc_b256(detector_orb);
+            vector<cv::KeyPoint> keypoints = detector_orb->ExtractorKeyPoints(image);
+            this->descriptors = desc_b256->ComputeDescriptor(image, keypoints);
+            this->positions.resize(keypoints.size());
+            for(size_t i=0; i<keypoints.size();i++){
+                this->positions[i] = keypoints[i].pt;
+            }
+            delete detector_orb;
+            delete desc_b256;
+        }
+    }
+
     void FeatureSet::compute_features(const cv::Mat &image) {
         this->colors.clear();
         this->positions.clear();
         this->width = image.cols;
         this->height = image.rows;
 
-        if(this->opts.feature_types & FEATURE_SIFT)
-            this->compute_sift(image);
-
+        switch(this->feature_options.feature_types){
+            case FEATURE_SIFT:
+                this->compute_sift(image);
+                break;
+            case FEATURE_ORB:
+                this->compute_orb(image);
+                break;
+            default:
+                return ;
+        }
+        //计算出了descriptors
     }
 
+    /* 不一定用的上这个函数 */
     void FeatureSet::normalize_feature_position() {
         const float fwidth = static_cast<float>(this->width);
         const float fheight = static_cast<float>(this->height);

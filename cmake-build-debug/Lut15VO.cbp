@@ -307,9 +307,6 @@
 		<Unit filename="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher_knn.cpp">
 			<Option target="suo15features"/>
 		</Unit>
-		<Unit filename="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/nearest_neighbor.cpp">
-			<Option target="suo15features"/>
-		</Unit>
 		<Unit filename="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/sift_keypoint.cpp">
 			<Option target="suo15features"/>
 		</Unit>

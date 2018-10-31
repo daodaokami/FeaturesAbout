@@ -9,7 +9,7 @@
 #define MATH_POW2(x) ((x) * (x))
 
 namespace math_tools {
-    enum{
+    enum DistanceType{
         EUCLIDEAN_DISTANCE = 0,
         MANHATTAN_DISTANCE = 1,
         HAMMING_DISTANCE = 2,

@@ -2237,7 +2237,9 @@ src/CMakeFiles/suo15features.dir/detector_surf.cpp.o
  /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/detector_surf.cpp
 src/CMakeFiles/suo15features.dir/feature_set.cpp.o
  ../include/common_include.h
+ ../include/desc_b256.h
  ../include/desc_s128.h
+ ../include/desc_s64.h
  ../include/descry.h
  ../include/detector.h
  ../include/detector_fast.h
@@ -2877,9 +2879,10 @@ src/CMakeFiles/suo15features.dir/gauss_blur.cpp.o
  /usr/local/include/opencv2/xfeatures2d/cuda.hpp
  /usr/local/include/opencv2/xfeatures2d/nonfree.hpp
 src/CMakeFiles/suo15features.dir/matcher.cpp.o
- ../include/common_include.h
- ../include/nearest_neighbor.h
+ /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/common_include.h
  /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/descry.h
+ /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/distance.h
+ /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/knn.h
  /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher.h
  /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/sift_keypoint.h
  /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher.cpp
@@ -3196,10 +3199,12 @@ src/CMakeFiles/suo15features.dir/matcher.cpp.o
  /usr/local/include/opencv2/xfeatures2d/cuda.hpp
  /usr/local/include/opencv2/xfeatures2d/nonfree.hpp
 src/CMakeFiles/suo15features.dir/matcher_bf.cpp.o
+ ../include/common_include.h
  ../include/descry.h
+ ../include/distance.h
+ ../include/knn.h
  ../include/matcher.h
  ../include/sift_keypoint.h
- /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/common_include.h
  /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher_bf.h
  /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher_bf.cpp
  /home/lut/Desktop/Gitprocs/Sophus/sophus/se3.h
@@ -3515,12 +3520,14 @@ src/CMakeFiles/suo15features.dir/matcher_bf.cpp.o
  /usr/local/include/opencv2/xfeatures2d/cuda.hpp
  /usr/local/include/opencv2/xfeatures2d/nonfree.hpp
 src/CMakeFiles/suo15features.dir/matcher_knn.cpp.o
+ /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/common_include.h
+ /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/descry.h
+ /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/distance.h
+ /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/knn.h
+ /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher.h
  /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher_knn.h
+ /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/sift_keypoint.h
  /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher_knn.cpp
-src/CMakeFiles/suo15features.dir/nearest_neighbor.cpp.o
- ../include/common_include.h
- ../include/nearest_neighbor.h
- /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/nearest_neighbor.cpp
  /home/lut/Desktop/Gitprocs/Sophus/sophus/se3.h
  /home/lut/Desktop/Gitprocs/Sophus/sophus/so3.h
  /usr/include/eigen3/Eigen/Cholesky
