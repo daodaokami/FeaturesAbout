@@ -15,7 +15,9 @@ vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/distance.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/feature_set.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/knn.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/matcher.h
+vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/matcher_knn.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/sift_keypoint.h
+vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/visualize.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../vo/testfeaturesmatcher.cpp
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: /home/lut/Desktop/Gitprocs/Sophus/sophus/se3.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: /home/lut/Desktop/Gitprocs/Sophus/sophus/so3.h

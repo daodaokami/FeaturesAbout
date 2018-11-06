@@ -138,6 +138,10 @@ common_include.h
 sift_keypoint.h
 ../include/sift_keypoint.h
 
+../include/visualize.h
+common_include.h
+../include/common_include.h
+
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/common_include.h
 Eigen/Core
 -
@@ -245,6 +249,8 @@ matcher.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher_knn.h
 matcher.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher.h
+knn.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/knn.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/sift_keypoint.h
 common_include.h
@@ -335,6 +341,14 @@ matcher.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/sift_keypoint.cpp
 sift_keypoint.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/sift_keypoint.h
+
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/visualize.cpp
+opencv2/features2d.hpp
+-
+matcher.h
+-
+visualize.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/visualize.h
 
 /home/lut/Desktop/Gitprocs/Sophus/sophus/se3.h
 so3.h

@@ -124,11 +124,21 @@ distance.h
 knn.h
 ../include/knn.h
 
+../include/matcher_knn.h
+matcher.h
+../include/matcher.h
+knn.h
+../include/knn.h
+
 ../include/sift_keypoint.h
 common_include.h
 ../include/common_include.h
 sift_keypoint.h
 ../include/sift_keypoint.h
+
+../include/visualize.h
+common_include.h
+../include/common_include.h
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/testfeaturesmatcher.cpp
 iostream
@@ -145,6 +155,10 @@ feature_set.h
 -
 opencv2/features2d.hpp
 -
+matcher_knn.h
+-
+visualize.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/visualize.h
 common_include.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/common_include.h
 

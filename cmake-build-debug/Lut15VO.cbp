@@ -310,6 +310,9 @@
 		<Unit filename="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/sift_keypoint.cpp">
 			<Option target="suo15features"/>
 		</Unit>
+		<Unit filename="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/visualize.cpp">
+			<Option target="suo15features"/>
+		</Unit>
 		<Unit filename="/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/testfeaturesextractor.cpp">
 			<Option target="testfe"/>
 		</Unit>

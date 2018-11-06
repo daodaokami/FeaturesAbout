@@ -16,7 +16,9 @@ vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o
  ../include/feature_set.h
  ../include/knn.h
  ../include/matcher.h
+ ../include/matcher_knn.h
  ../include/sift_keypoint.h
+ ../include/visualize.h
  /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/testfeaturesmatcher.cpp
  /home/lut/Desktop/Gitprocs/Sophus/sophus/se3.h
  /home/lut/Desktop/Gitprocs/Sophus/sophus/so3.h

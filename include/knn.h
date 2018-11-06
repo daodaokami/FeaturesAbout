@@ -60,7 +60,7 @@ namespace math_tools {
             int offset = i*this->options.dimension/32;//因为最大是256维度的数据，int 4个字节，uchar 1个字节
             T const* offsample = &(samples[offset]);
             inner_product = distance_measurement->cal_hamming_distance(query, offsample);
-            std::cout<<inner_product<<std::endl;
+            //std::cout<<inner_product<<std::endl;
             if(inner_product <= result->dist_2nd_best){
                 if(inner_product <= result->dist_1st_best){
                     result->index_2nd_best = result->index_1st_best;

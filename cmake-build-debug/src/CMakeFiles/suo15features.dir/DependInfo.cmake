@@ -20,6 +20,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher_bf.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher_bf.cpp.o"
   "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher_knn.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher_knn.cpp.o"
   "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/sift_keypoint.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/sift_keypoint.cpp.o"
+  "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/visualize.cpp" "/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src/CMakeFiles/suo15features.dir/visualize.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

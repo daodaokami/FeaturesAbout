@@ -41,7 +41,6 @@ namespace suo15features {
                 continue;*/
             result.at(i) = nn_res.index_1st_best;
         }
-        //特指ORB的话类型是int，先将描述子进行转型
     }
 
 
@@ -50,7 +49,7 @@ namespace suo15features {
      * format the data to mat//orb direct use
      *                       //sift should use de sift.data.
      * */
-    virtual vector<CP> Matcher_knn::GetMatchedKeypoints(
+    vector<CP> Matcher_knn::GetMatchedKeypoints(
             const vector<cv::KeyPoint> &keypoints_1,
             cv::Mat &descriptors_1,
             const vector<cv::KeyPoint> &keypoints_2,

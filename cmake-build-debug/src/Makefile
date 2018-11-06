@@ -557,6 +557,33 @@ sift_keypoint.cpp.s:
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/sift_keypoint.cpp.s
 .PHONY : sift_keypoint.cpp.s
 
+visualize.o: visualize.cpp.o
+
+.PHONY : visualize.o
+
+# target to build an object file
+visualize.cpp.o:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/visualize.cpp.o
+.PHONY : visualize.cpp.o
+
+visualize.i: visualize.cpp.i
+
+.PHONY : visualize.i
+
+# target to preprocess a source file
+visualize.cpp.i:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/visualize.cpp.i
+.PHONY : visualize.cpp.i
+
+visualize.s: visualize.cpp.s
+
+.PHONY : visualize.s
+
+# target to generate assembly for a file
+visualize.cpp.s:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/visualize.cpp.s
+.PHONY : visualize.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -614,6 +641,9 @@ help:
 	@echo "... sift_keypoint.o"
 	@echo "... sift_keypoint.i"
 	@echo "... sift_keypoint.s"
+	@echo "... visualize.o"
+	@echo "... visualize.i"
+	@echo "... visualize.s"
 .PHONY : help
 
 
