@@ -41,7 +41,6 @@ namespace math_tools {
             delete distance_measurement;
         }
     };
-
     template<typename T>
     void Knn<T>::search_knnsample(T const*query, T const*samples, Result<T>* result){
         /*
@@ -54,12 +53,15 @@ namespace math_tools {
         //小的值表示对应的相似度越好，这里与cos相似度是不同的（越接近1则相似度越大）
         result->dist_2nd_best = static_cast<T>(256);
         result->dist_1st_best = static_cast<T>(256);
+        vector<int> diss;
+        diss.resize(sample_nums);
         //在o（n）的时间复杂度下面得到一个最优解和一个次优解
         for(int i=0; i<this->sample_nums; i++){
             T inner_product = static_cast<T>(0);
             int offset = i*this->options.dimension/32;//因为最大是256维度的数据，int 4个字节，uchar 1个字节
             T const* offsample = &(samples[offset]);
             inner_product = distance_measurement->cal_hamming_distance(query, offsample);
+            diss[i] = inner_product;
             //std::cout<<inner_product<<std::endl;
             if(inner_product <= result->dist_2nd_best){
                 if(inner_product <= result->dist_1st_best){
@@ -74,6 +76,13 @@ namespace math_tools {
                 }
             }
         }
+        /*static bool flag = true;
+        if(flag) {
+            for (int i = 0; i < sample_nums; i++) {
+                cout << i << " " << diss[i] << endl;
+            }
+            flag = false;
+        }*/
     }
 }
 

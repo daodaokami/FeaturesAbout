@@ -79,6 +79,9 @@ namespace suo15features {
             return mnkeypointsLevels;
         }
 
+        virtual vector<float> GetScaleFactors(){
+            return this->mvScaleFactor;
+        }
         int inline GetLevels(){
             return _options._nlevels;
         }
@@ -87,9 +90,9 @@ namespace suo15features {
             return _options._scaleFactor;
         }
 
-        vector<float> inline GetScaleFactors(){
+        /*vector<float> inline GetScaleFactors(){
             return mvScaleFactor;
-        }
+        }*/
 
         vector<float> inline GetInverseScaleFactors(){
             return mvInvScaleFactor;

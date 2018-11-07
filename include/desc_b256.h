@@ -9,15 +9,20 @@
 #include "descry.h"
 #include "desc_b256.h"
 
+
 namespace suo15features {
-    class Desc_b256 :public Descry<cv::KeyPoint>{
+
+    class Desc_b256 : public Descry<cv::KeyPoint>{
     protected:
         std::vector<cv::Point> pattern;
         Detector<cv::KeyPoint>* detector;
+        /*
+         * 在母方法中添加获取尺度因子的方法
+         * */
     public:
         Desc_b256(Detector<cv::KeyPoint>* ptr);
 
-        virtual cv::Mat ComputeDescriptor(const cv::Mat& image, const vector<cv::KeyPoint>& keypoints);
+        virtual cv::Mat ComputeDescriptor(const cv::Mat& image, vector<cv::KeyPoint>& keypoints);
     };
 }
 

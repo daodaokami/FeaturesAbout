@@ -22,7 +22,7 @@ bool sift_compare_x(suo15features::Sift_KeyPoint& kp1, suo15features::Sift_KeyPo
     return kp1.pt.x < kp2.pt.x;
 }
 int main(){
-    cv::Mat img_example = cv::imread("./data/example.jpeg", cv::IMREAD_ANYCOLOR);
+    /*cv::Mat img_example = cv::imread("./data/example.jpeg", cv::IMREAD_ANYCOLOR);
     suo15features::Detector_sift* Ptr = new suo15features::Detector_sift(suo15features::SIFT_options());
     //注意这里返回的值的类型还要修改一波！！！最好还是用模板类型，但是模板类型不能用虚函数
     vector<suo15features::Sift_KeyPoint> sift_keypoints = Ptr->ExtractorKeyPoints(img_example);
@@ -57,7 +57,7 @@ int main(){
     cv::imshow("out2", out2);
     cv::waitKey(0);
     cv::destroyAllWindows();
-    return 0;
+    return 0;*/
 
     /*cv::Mat img_example = cv::imread("./data/example.jpeg", cv::IMREAD_ANYCOLOR);
     suo15features::Detector_sift::SIFT_Options sift_options;

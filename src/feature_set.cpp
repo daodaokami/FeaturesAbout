@@ -39,15 +39,15 @@ namespace suo15features{
         cv::Mat descriptors;
         {
             Detector_orb* detector_orb = new Detector_orb(this->feature_options.orb_opts);
-            Desc_b256* desc_b256 = new Desc_b256(detector_orb);
+            Descry<cv::KeyPoint>* descry = new Desc_b256(detector_orb);
             vector<cv::KeyPoint> keypoints = detector_orb->ExtractorKeyPoints(image);
-            this->descriptors = desc_b256->ComputeDescriptor(image, keypoints);
+            this->descriptors = descry->ComputeDescriptor(image, keypoints);
             this->positions.resize(keypoints.size());
             for(size_t i=0; i<keypoints.size();i++){
                 this->positions[i] = keypoints[i].pt;
             }
             delete detector_orb;
-            delete desc_b256;
+            delete descry;
         }
     }
 

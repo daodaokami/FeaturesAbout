@@ -33,8 +33,11 @@ namespace suo15features {
         }
         virtual vector<T> ExtractorKeyPoints(const cv::Mat& ori_img)
         {
-            cout<<"Father Detector func!"<<endl;
+            //cout<<"Father Detector func!"<<endl;
             return vector<T>();
+        }
+        virtual vector<float> GetScaleFactors(){
+            return vector<float>();
         }
     };
 }

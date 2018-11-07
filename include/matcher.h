@@ -16,13 +16,15 @@ namespace suo15features {
     struct Matcher_options{
         math_tools::Distance_options distance_options;
         float lowe_ratio_threshold;
-        float distance_threshold;
+        float low_distance_threshold;
+        float high_distance_threshold;
 
         Matcher_options(){}
         Matcher_options(const math_tools::Distance_options& dist_opts,
-                        float lowe_ratio, float dist_threshold):
+                        float lowe_ratio, float low_dist_threshold, float high_dist_threshold):
                         distance_options(dist_opts),
-                        lowe_ratio_threshold(lowe_ratio), distance_threshold(dist_threshold){}
+                        lowe_ratio_threshold(lowe_ratio), low_distance_threshold(low_dist_threshold),
+                        high_distance_threshold(high_dist_threshold){}
     };
 
     struct Result{

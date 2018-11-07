@@ -35,7 +35,6 @@ namespace suo15features {
         Descry<T>(){}
         //这里注意的是需要 keypoints 是需要进行修改的，对其的方向等描述方向
         virtual cv::Mat ComputeDescriptor(const cv::Mat& image, vector<T>& keypoints);
-        //virtual cv::Mat ComputeDescriptor(const cv::Mat& image, vector<Sift_KeyPoint>& keypoints);
     };
 
     template <typename T>

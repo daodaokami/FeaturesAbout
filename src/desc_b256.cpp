@@ -263,58 +263,77 @@ namespace suo15features{
             7, 0, 12, -2/*mean (0.127002), correlation (0.537452)*/,
             -1, -6, 0, -11/*mean (0.127148), correlation (0.547401)*/
     };
-    Desc_b256::Desc_b256(Detector<cv::KeyPoint>* ptr) {
-        detector = ptr;
 
+    Desc_b256::Desc_b256(Detector<cv::KeyPoint>* ptr){
+        this->detector = ptr;
         const int npoints = 512;
         const cv::Point* pattern0 = (const cv::Point*)bit_pattern_31_;
         std::copy(pattern0, pattern0 + npoints, std::back_inserter(pattern));
     }
     /*
-     * declaration
+     * 定位是没有问题的,绝对是对的,但是描述子不对!!
      * */
-    static void computeDescriptors(const Mat& image, vector<cv::KeyPoint>& keypoints, Mat& descriptors, const vector<cv::Point>& pattern);
-    /*
-     *
-     * */
-    //template<typename T>
-    cv::Mat Desc_b256::ComputeDescriptor(const cv::Mat &image, const vector<cv::KeyPoint> &keypoints) {
+
+    static void computeDescriptors(const Mat& image, const vector<cv::KeyPoint>& keypoints, cv::Mat& descriptors, const vector<cv::Point>& pattern);
+    cv::Mat Desc_b256::ComputeDescriptor(const cv::Mat& image, vector<cv::KeyPoint>& keypoints){
+        //cout<<"orb son compute Descriptors"<<endl;
+        assert(image.type() == CV_8UC1);
         cv::Mat descriptors;
-        //compute descriptor
         int nkeypoints = keypoints.size();
-        vector<cv::Mat> mvImagePyramid = detector->GetImagePyramid();
-        vector<int> mnkeypointsLevels= detector->GetKeypointsLevels();
-        int nlevels = mvImagePyramid.size();
+        vector<cv::Mat> mvImagePyrmid = detector->GetImagePyramid();
+        vector<float> mvScaleFactor = detector->GetScaleFactors();
+        vector<int> mnkeypointsLevels = detector->GetKeypointsLevels();
+        int nlevels = mvImagePyrmid.size();
         if(nkeypoints == 0)
             descriptors.release();
-        else{
+        else
             descriptors.create(nkeypoints, 32, CV_8U);
-        }
         int offset = 0;
         for(int level = 0; level < nlevels; ++level){
-            Mat workingMat = mvImagePyramid[level];
+            Mat workingMat = mvImagePyrmid[level].clone();
             cv::GaussianBlur(workingMat, workingMat, cv::Size(7, 7), 2, 2, cv::BORDER_REFLECT_101);
-            int nkeypointsLevel = mnkeypointsLevels[level];
-            vector<cv::KeyPoint> kps(keypoints.begin()+offset, keypoints.begin()+offset+nkeypointsLevel);
-            //32个uchar(4个字节32×8位)，那么有256位的二进制数
-            Mat desc = descriptors.rowRange(offset, offset+nkeypointsLevel);
-            computeDescriptors(workingMat, kps, desc, pattern);
-            offset += nkeypointsLevel;
+            int nkeypointslevel = mnkeypointsLevels[level];
+            if(nkeypointslevel == 0)
+                continue;
+            vector<cv::KeyPoint> kps(keypoints.begin()+offset, keypoints.begin()+offset+nkeypointslevel);
+            if(level != 0) {
+                float scale = mvScaleFactor[level];
+                cout<<"scale "<<scale<<endl;
+                for(vector<cv::KeyPoint>::iterator keypoint = kps.begin(),
+                        keypointEnd = kps.end(); keypoint != keypointEnd; ++keypoint){
+                    keypoint->pt *= 1.f/scale;
+                }
+            }
+            Mat desc = descriptors.rowRange(offset, offset + nkeypointslevel);
+            computeDescriptors(workingMat, kps, desc, this->pattern);
+            offset += nkeypointslevel;
+            cout<<"desc "<<level <<"\n"<<desc<<endl;
         }
+        //这里计算描述子需要修改位置!!!, 在特征点乘上尺度,并且加上偏移之前,如果没有还原尺度,那么描述子将计算出错!!!
         return descriptors;
     }
 
+    static void computeOrbDescriptor(const cv::KeyPoint& kpt, const Mat& img, const cv::Point* pattern, uchar* desc);
+    static void computeDescriptors(const Mat& image, const vector<cv::KeyPoint>& keypoints,
+                                    cv::Mat& descriptors,
+                                    const vector<cv::Point>& pattern){
+        descriptors = Mat::zeros((int)keypoints.size(), 32, CV_8UC1);
+        for (size_t i = 0; i < keypoints.size(); i++) {
+            computeOrbDescriptor(keypoints[i], image, &pattern[0], descriptors.ptr((int)i));
+        }
+    }
     const float factorPI = (float)(CV_PI/180.f);
     static void computeOrbDescriptor(const cv::KeyPoint& kpt,
-                                     const Mat& img, const cv::Point* pattern,
-                                     uchar* desc) {
+                                     const Mat& img,
+                                     const cv::Point* pattern,
+                                     uchar* desc){
+        //是点的边界问题,当重新计算图像的
         float angle = (float)kpt.angle*factorPI;
         float a = (float)cos(angle), b = (float)sin(angle);
 
         const uchar* center = &img.at<uchar>(cvRound(kpt.pt.y), cvRound(kpt.pt.x));
         const int step = (int)img.step;
-
-        #define GET_VALUE(idx) \
+#define GET_VALUE(idx) \
         center[cvRound(pattern[idx].x*b + pattern[idx].y*a)*step + \
                cvRound(pattern[idx].x*a - pattern[idx].y*b)]
 
@@ -342,16 +361,6 @@ namespace suo15features{
             desc[i] = (uchar)val;
         }
 
-        #undef GET_VALUE
-
-    }
-
-    static void computeDescriptors(const Mat& image, vector<cv::KeyPoint>& keypoints, Mat& descriptors,
-                                   const vector<cv::Point>& pattern)
-    {
-        descriptors = Mat::zeros((int)keypoints.size(), 32, CV_8UC1);
-
-        for (size_t i = 0; i < keypoints.size(); i++)
-            computeOrbDescriptor(keypoints[i], image, &pattern[0], descriptors.ptr((int)i));
+#undef GET_VALUE
     }
 }

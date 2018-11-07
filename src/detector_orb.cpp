@@ -89,10 +89,12 @@ namespace suo15features{
         for(int level = 0; level < _options._nlevels; ++level){
             vector<cv::KeyPoint> &kps = allKeypoints[level];
             int nkeypointsLevel = (int)kps.size();
+            //cout<<"level "<<level<<" "<<nkeypointsLevel<<endl;
             mnkeypointsLevels[level] = nkeypointsLevel;
             if(nkeypointsLevel == 0)
                 continue;
 
+            //正常情况下应该在这里进行描述子的计算,但是
             offset += nkeypointsLevel;
             if(level!=0){
                 float scale = mvScaleFactor[level];
@@ -359,7 +361,6 @@ namespace suo15features{
                     maxResponse = vNodeKeys[k].response;
                 }
             }
-
             vResultKeys.push_back(*pKP);
         }
 

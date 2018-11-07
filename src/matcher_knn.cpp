@@ -24,22 +24,21 @@ namespace suo15features {
         result.resize(set_1_size, -1);
         if(set_1_size == 0 || set_2_size ==0)
             return ;
-        float const square_dist_thres = MATH_POW2(matcher_options.distance_threshold);
+        //float const square_dist_thres = MATH_POW2(matcher_options.distance_threshold);
         math_tools::Knn<int> knn(this->matcher_options.distance_options, set_2_size);
         math_tools::Result<int> nn_res;
         for(int i=0; i<set_1_size; ++i){
             int* queryIdx = set_1.ptr<int32_t >(i);
             int* trainIdx = set_2.ptr<int32_t >(0);//从头开始，要检索素有的特征点
             knn.search_knnsample(queryIdx, trainIdx, &nn_res);
-            //输出这个匹配的结果，查看结果
-            //通过两层的筛选得到好的结果
-            /*if(nn_res.dist_1st_best > square_dist_thres)
-                continue;
-            if(static_cast<float>(nn_res.dist_1st_best)/
-                    static_cast<float>(nn_res.dist_2nd_best)
-                    > MATH_POW2(matcher_options.lowe_ratio_threshold))
-                continue;*/
-            result.at(i) = nn_res.index_1st_best;
+            cout<<"cur points is "<<i<<"\nbest is "<<nn_res.index_1st_best <<" dis is "<<nn_res.dist_2nd_best
+                                       <<" second is "<<nn_res.index_2nd_best<<" dis is "<<nn_res.dist_2nd_best<<endl;
+            /*
+             * 1. 使用两中信息进行粗匹配
+             * 2. 使用上点的空间距离信息,即记录好描述子,要选择二维图像空间中描述子距离最近的点
+             *
+             * */
+
         }
     }
 

@@ -19,18 +19,11 @@ namespace suo15features{
 
     cv::Mat Desc_s128::ComputeDescriptor(const cv::Mat &image, vector<Sift_KeyPoint> &keypoints) {
         //首先这里若存在点在同一层Octave上，那么
+        cout<<"sift son computeDescriptor!"<<endl;
         create_octaves(image);
-       /* for(int i=0; i<this->octaves.size();i++){
-            for(int j=0; j<this->octaves[i].img.size(); j++){
-                cv::Mat out = octaves[i].img[j];
-                cv::imshow("out", out);
-               // cout<<out<<endl;
-                cv::waitKey(0);
-            }
-        }//金字塔的创建没有明显异常*/
         descriptor_generation(keypoints);
-        if(descriptors.empty())
-            descriptors.resize(0);
+        if(this->descriptors.empty())
+            this->descriptors.resize(0);
         return this->descriptors;
     }
 
