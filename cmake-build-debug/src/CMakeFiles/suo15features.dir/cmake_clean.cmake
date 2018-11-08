@@ -16,6 +16,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/suo15features.dir/matcher_knn.cpp.o"
   "CMakeFiles/suo15features.dir/feature_set.cpp.o"
   "CMakeFiles/suo15features.dir/visualize.cpp.o"
+  "CMakeFiles/suo15features.dir/matcher_stereo.cpp.o"
   "../../lib/libsuo15features.pdb"
   "../../lib/libsuo15features.so"
 )

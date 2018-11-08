@@ -11,6 +11,7 @@
 #include <opencv2/features2d.hpp>
 #include <matcher_knn.h>
 #include <chrono>
+#include <matcher_stereo.h>
 #include "visualize.h"
 #include "common_include.h"
 
@@ -87,6 +88,40 @@ int main(int argc, char* argv[]){
     showWidthImgMatch("wknn_goodmatch", img_1, keypoints, img_2, keypoints2, knn_goodMatches);
     cv::waitKey(0);
     cv::destroyAllWindows();
+
+    /*
+     * here test the matcher_stereo
+     *
+     * */
+    suo15features::Stereo_options options;
+    cv::Size sz(img_1.size());
+    cout<<"sz.height "<<sz.height<<", sz.width "<<sz.width<<endl;
+    suo15features::Matcher_stereo matcher_stereo(options, sz, keypoints, keypoints2,
+        desc, desc2, 1, 500, detector_orb->GetScaleFactors());
+    matcher_stereo.setImagePyramid(detector_orb->GetImagePyramid(), detector_orb2->GetImagePyramid());
+    matcher_stereo.createRowIndexes();
+    matcher_stereo.ComputeStereoMatches();
+    vector<int> vMatches = matcher_stereo.GetMatches();
+    vector<int> vDistance = matcher_stereo.GetDistance();
+    vector<cv::DMatch> vDMatches;
+    vDMatches.reserve(vMatches.size());
+    for(int i=0; i<vMatches.size(); i++){
+        if(vMatches[i]!=-1){
+            cv::DMatch dmatch;
+            dmatch.queryIdx = i;
+            dmatch.trainIdx = vMatches[i];
+            dmatch.distance = vDistance[i];
+            vDMatches.push_back(dmatch);
+        }
+    }
+
+    cv::Mat out2;
+    cv::drawMatches(img_1, keypoints, img_2, keypoints2, vDMatches, out2);
+    cv::imshow("out2", out2);
+    showWidthImgMatch("out3", img_1, keypoints, img_2, keypoints2, vDMatches);
+    cv::waitKey(0);
+    //双目匹配,恢复视差也完成了,接下来可以进行双目的tarcking
+    
     return 0;
 }
 

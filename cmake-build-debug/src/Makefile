@@ -530,6 +530,33 @@ matcher_knn.cpp.s:
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/matcher_knn.cpp.s
 .PHONY : matcher_knn.cpp.s
 
+matcher_stereo.o: matcher_stereo.cpp.o
+
+.PHONY : matcher_stereo.o
+
+# target to build an object file
+matcher_stereo.cpp.o:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/matcher_stereo.cpp.o
+.PHONY : matcher_stereo.cpp.o
+
+matcher_stereo.i: matcher_stereo.cpp.i
+
+.PHONY : matcher_stereo.i
+
+# target to preprocess a source file
+matcher_stereo.cpp.i:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/matcher_stereo.cpp.i
+.PHONY : matcher_stereo.cpp.i
+
+matcher_stereo.s: matcher_stereo.cpp.s
+
+.PHONY : matcher_stereo.s
+
+# target to generate assembly for a file
+matcher_stereo.cpp.s:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/matcher_stereo.cpp.s
+.PHONY : matcher_stereo.cpp.s
+
 sift_keypoint.o: sift_keypoint.cpp.o
 
 .PHONY : sift_keypoint.o
@@ -638,6 +665,9 @@ help:
 	@echo "... matcher_knn.o"
 	@echo "... matcher_knn.i"
 	@echo "... matcher_knn.s"
+	@echo "... matcher_stereo.o"
+	@echo "... matcher_stereo.i"
+	@echo "... matcher_stereo.s"
 	@echo "... sift_keypoint.o"
 	@echo "... sift_keypoint.i"
 	@echo "... sift_keypoint.s"

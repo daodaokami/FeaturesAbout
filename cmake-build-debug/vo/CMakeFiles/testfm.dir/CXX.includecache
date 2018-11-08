@@ -130,6 +130,12 @@ matcher.h
 knn.h
 ../include/knn.h
 
+../include/matcher_stereo.h
+opencv2/core/core.hpp
+../include/opencv2/core/core.hpp
+vector
+-
+
 ../include/sift_keypoint.h
 common_include.h
 ../include/common_include.h
@@ -158,6 +164,8 @@ opencv2/features2d.hpp
 matcher_knn.h
 -
 chrono
+-
+matcher_stereo.h
 -
 visualize.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/visualize.h

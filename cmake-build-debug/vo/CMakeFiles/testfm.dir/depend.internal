@@ -17,6 +17,7 @@ vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o
  ../include/knn.h
  ../include/matcher.h
  ../include/matcher_knn.h
+ ../include/matcher_stereo.h
  ../include/sift_keypoint.h
  ../include/visualize.h
  /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/vo/testfeaturesmatcher.cpp

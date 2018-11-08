@@ -132,6 +132,12 @@ distance.h
 knn.h
 ../include/knn.h
 
+../include/matcher_stereo.h
+opencv2/core/core.hpp
+../include/opencv2/core/core.hpp
+vector
+-
+
 ../include/sift_keypoint.h
 common_include.h
 ../include/common_include.h
@@ -337,6 +343,12 @@ matcher.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher_knn.cpp
 ../include/matcher_knn.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/include/matcher_knn.h
+
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher_stereo.cpp
+matcher_stereo.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/matcher_stereo.h
+algorithm
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/algorithm
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/sift_keypoint.cpp
 sift_keypoint.h

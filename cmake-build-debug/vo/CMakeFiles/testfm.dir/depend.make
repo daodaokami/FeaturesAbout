@@ -16,6 +16,7 @@ vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/feature_set.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/knn.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/matcher.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/matcher_knn.h
+vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/matcher_stereo.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/sift_keypoint.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/visualize.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../vo/testfeaturesmatcher.cpp

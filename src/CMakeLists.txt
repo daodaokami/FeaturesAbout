@@ -15,7 +15,8 @@ add_library(suo15features SHARED
         matcher_bf.cpp
         matcher_knn.cpp
         feature_set.cpp
-        visualize.cpp)
+        visualize.cpp
+        matcher_stereo.cpp)
 
 target_link_libraries(
         suo15features ${THIRD_PARTY_LIBS}
