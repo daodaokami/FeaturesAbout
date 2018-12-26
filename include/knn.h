@@ -62,7 +62,7 @@ namespace math_tools {
             T const* offsample = &(samples[offset]);
             inner_product = distance_measurement->cal_hamming_distance(query, offsample);
             diss[i] = inner_product;
-            //std::cout<<inner_product<<std::endl;
+
             if(inner_product <= result->dist_2nd_best){
                 if(inner_product <= result->dist_1st_best){
                     result->index_2nd_best = result->index_1st_best;
@@ -76,13 +76,6 @@ namespace math_tools {
                 }
             }
         }
-        /*static bool flag = true;
-        if(flag) {
-            for (int i = 0; i < sample_nums; i++) {
-                cout << i << " " << diss[i] << endl;
-            }
-            flag = false;
-        }*/
     }
 }
 

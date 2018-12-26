@@ -17,6 +17,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/suo15features.dir/feature_set.cpp.o"
   "CMakeFiles/suo15features.dir/visualize.cpp.o"
   "CMakeFiles/suo15features.dir/matcher_stereo.cpp.o"
+  "CMakeFiles/suo15features.dir/datas_map.cpp.o"
+  "CMakeFiles/suo15features.dir/spacenear_matcher.cpp.o"
+  "CMakeFiles/suo15features.dir/spatical_subdivision.cpp.o"
   "../../lib/libsuo15features.pdb"
   "../../lib/libsuo15features.so"
 )

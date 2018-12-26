@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/lut/Downloads/apps/clion-2018.1.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/lut/Downloads/apps/clion-2018.1.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -155,6 +155,21 @@ testfm/fast:
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testfm.dir/build.make vo/CMakeFiles/testfm.dir/build
 .PHONY : testfm/fast
 
+# Convenience name for target.
+vo/CMakeFiles/testfm_spnear.dir/rule:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 vo/CMakeFiles/testfm_spnear.dir/rule
+.PHONY : vo/CMakeFiles/testfm_spnear.dir/rule
+
+# Convenience name for target.
+testfm_spnear: vo/CMakeFiles/testfm_spnear.dir/rule
+
+.PHONY : testfm_spnear
+
+# fast build rule for target.
+testfm_spnear/fast:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testfm_spnear.dir/build.make vo/CMakeFiles/testfm_spnear.dir/build
+.PHONY : testfm_spnear/fast
+
 testfeaturesextractor.o: testfeaturesextractor.cpp.o
 
 .PHONY : testfeaturesextractor.o
@@ -209,6 +224,33 @@ testfeaturesmatcher.cpp.s:
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testfm.dir/build.make vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.s
 .PHONY : testfeaturesmatcher.cpp.s
 
+testfeaturesmatcher_spacenear.o: testfeaturesmatcher_spacenear.cpp.o
+
+.PHONY : testfeaturesmatcher_spacenear.o
+
+# target to build an object file
+testfeaturesmatcher_spacenear.cpp.o:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testfm_spnear.dir/build.make vo/CMakeFiles/testfm_spnear.dir/testfeaturesmatcher_spacenear.cpp.o
+.PHONY : testfeaturesmatcher_spacenear.cpp.o
+
+testfeaturesmatcher_spacenear.i: testfeaturesmatcher_spacenear.cpp.i
+
+.PHONY : testfeaturesmatcher_spacenear.i
+
+# target to preprocess a source file
+testfeaturesmatcher_spacenear.cpp.i:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testfm_spnear.dir/build.make vo/CMakeFiles/testfm_spnear.dir/testfeaturesmatcher_spacenear.cpp.i
+.PHONY : testfeaturesmatcher_spacenear.cpp.i
+
+testfeaturesmatcher_spacenear.s: testfeaturesmatcher_spacenear.cpp.s
+
+.PHONY : testfeaturesmatcher_spacenear.s
+
+# target to generate assembly for a file
+testfeaturesmatcher_spacenear.cpp.s:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f vo/CMakeFiles/testfm_spnear.dir/build.make vo/CMakeFiles/testfm_spnear.dir/testfeaturesmatcher_spacenear.cpp.s
+.PHONY : testfeaturesmatcher_spacenear.cpp.s
+
 testgaussblur.o: testgaussblur.cpp.o
 
 .PHONY : testgaussblur.o
@@ -242,17 +284,21 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... edit_cache"
 	@echo "... testfe"
 	@echo "... testgb"
 	@echo "... rebuild_cache"
 	@echo "... testfm"
-	@echo "... edit_cache"
+	@echo "... testfm_spnear"
 	@echo "... testfeaturesextractor.o"
 	@echo "... testfeaturesextractor.i"
 	@echo "... testfeaturesextractor.s"
 	@echo "... testfeaturesmatcher.o"
 	@echo "... testfeaturesmatcher.i"
 	@echo "... testfeaturesmatcher.s"
+	@echo "... testfeaturesmatcher_spacenear.o"
+	@echo "... testfeaturesmatcher_spacenear.i"
+	@echo "... testfeaturesmatcher_spacenear.s"
 	@echo "... testgaussblur.o"
 	@echo "... testgaussblur.i"
 	@echo "... testgaussblur.s"

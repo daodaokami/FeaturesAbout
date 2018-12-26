@@ -8,6 +8,7 @@
 #include <sift_keypoint.h>
 #include <matcher.h>
 #include <feature_set.h>
+#include <gms_matcher.h>
 #include <opencv2/features2d.hpp>
 #include <matcher_knn.h>
 #include <chrono>
@@ -20,6 +21,11 @@ void showWidthImgMatch(string winname , const cv::Mat& image_1, const vector<cv:
                        const cv::Mat& image_2, const vector<cv::KeyPoint>& keypoints_2,
                        const vector<cv::DMatch>& matches);
 
+void runGMSFilter(Mat& img1, vector<cv::KeyPoint>& kp1,
+                  Mat& desc1,
+                  Mat& img2, vector<cv::KeyPoint>& kp2,
+                  Mat& desc2,
+                  vector<DMatch>& matches_all, vector<DMatch>& matches_gms);
 int main(int argc, char* argv[]){
     if(argc < 3){
         cerr<<"syntax: "<<argv[0] << " image1 image2 "<<endl;
@@ -35,7 +41,7 @@ int main(int argc, char* argv[]){
     cv::Mat img_1 = cv::imread(argv[1], 0);
     cv::Mat img_2 = cv::imread(argv[2], 0);
 /*计时 1*/
-    suo15features::ORB_options orb_options(31, 15, 19, 1000, 1.2, 4, 20, 7);
+    suo15features::ORB_options orb_options(31, 15, 19, 3000, 1.2, 4, 20, 7);
     std::chrono::system_clock::time_point start = std::chrono::system_clock::now();
     suo15features::Detector<cv::KeyPoint>* detector_orb = new suo15features::Detector_orb(orb_options);
     vector<cv::KeyPoint> keypoints = detector_orb->ExtractorKeyPoints(img_1);
@@ -43,30 +49,52 @@ int main(int argc, char* argv[]){
     cv::Mat desc = orb_desc->ComputeDescriptor(img_1, keypoints);
     std::chrono::system_clock::time_point end = std::chrono::system_clock::now();
     std::chrono::duration<double> elapsed_seconds = end - start;
-    cout<<"time out "<< elapsed_seconds.count()<<"s."<<endl;
-    cout<<"desc1 row \n"<<desc.size<<"\n"<<desc<<endl;
+    cout<<"detector time out "<< elapsed_seconds.count()<<"s."<<endl;
+    //cout<<"desc1 row \n"<<desc.size<<"\n"<<desc<<endl;
     cv::Mat km1;
     cv::drawKeypoints(img_1, keypoints, km1);
     cv::imshow("km1", km1);
     cv::waitKey(0);
 
-    for(int i=0; i<keypoints.size(); i++){
-        cout<<keypoints[i].pt<<" "<<keypoints[i].angle<<endl;
-    }
     suo15features::Detector<cv::KeyPoint>* detector_orb2 = new suo15features::Detector_orb(orb_options);
     vector<cv::KeyPoint> keypoints2 = detector_orb2->ExtractorKeyPoints(img_2);
     suo15features::Descry<cv::KeyPoint>* orb_desc2 = new suo15features::Desc_b256(detector_orb2);
     cv::Mat desc2 = orb_desc2->ComputeDescriptor(img_2, keypoints2);
-    cout<<"desc2 row \n"<<desc2.size<<"\n"<<desc2<<endl;
+
     cv::Mat km2;
     cv::drawKeypoints(img_2, keypoints2, km2);
     cv::imshow("km2", km2);
     cv::waitKey(0);
 
+    std::chrono::system_clock::time_point start_bf = std::chrono::system_clock::now();
     vector<cv::DMatch> matches;
     cv::BFMatcher matcher(cv::NORM_HAMMING);
     matcher.match(desc, desc2, matches);
+    std::chrono::system_clock::time_point end_bf = std::chrono::system_clock::now();
+    std::chrono::duration<double> elapsed_seconds_bf = end_bf - start_bf;
+    cout<<"bfmatches size is "<<matches.size()<<endl;
+    cout<<"bfmatcher time out "<< elapsed_seconds_bf.count()<<"s."<<endl;
+    showWidthImgMatch("bf_match", img_1, keypoints, img_2, keypoints2, matches);
+    cv::waitKey(0);
+    //在bfmatches 之后,选择进行GMS的筛选
+    /*
+     *
+     *
+     * GMS filter the params is
+     *
+     * */
+    vector<DMatch> matches_gms;
+    std::chrono::system_clock::time_point start_gms = std::chrono::system_clock::now();
+    runGMSFilter(img_1, keypoints, desc, img_2, keypoints2, desc2, matches, matches_gms);
+    std::chrono::system_clock::time_point end_gms = std::chrono::system_clock::now();
+    std::chrono::duration<double> elapsed_seconds_gms = end_gms - start_gms;
+    cout<<"gms matches size is "<<matches_gms.size()<<endl;
+    cout<<"gms time out "<<elapsed_seconds_gms.count()<<"s."<<endl;
+    showWidthImgMatch("gms_match", img_1, keypoints, img_2, keypoints2, matches_gms);
+    cv::waitKey(0);
 
+    /****              !!!!!             ****/
+    //如何给出,高精度的match
     vector<vector<cv::DMatch>> knn_matches;
     vector<cv::DMatch> knn_goodMatches;
     matcher.knnMatch(desc, desc2, knn_matches, 2);
@@ -80,19 +108,21 @@ int main(int argc, char* argv[]){
             knn_goodMatches.push_back(bestMatch);
     }
 
-    cv::Mat img_knngoodMatch;
+    cout<<"knn_goodMatches size is "<<knn_goodMatches.size()<<endl;
+    /*cv::Mat img_knngoodMatch;
     cv::drawMatches(img_1, keypoints, img_2, keypoints2, knn_goodMatches, img_knngoodMatch);
     cv::imshow("knn_goodMatch", img_knngoodMatch);
-    cv::waitKey(0);
+    cv::waitKey(0);*/
 
     showWidthImgMatch("wknn_goodmatch", img_1, keypoints, img_2, keypoints2, knn_goodMatches);
     cv::waitKey(0);
     cv::destroyAllWindows();
 
+    //如果用暴力匹配呢??
     /*
      * here test the matcher_stereo
      *
-     * */
+     *
     suo15features::Stereo_options options;
     cv::Size sz(img_1.size());
     cout<<"sz.height "<<sz.height<<", sz.width "<<sz.width<<endl;
@@ -121,10 +151,41 @@ int main(int argc, char* argv[]){
     showWidthImgMatch("out3", img_1, keypoints, img_2, keypoints2, vDMatches);
     cv::waitKey(0);
     //双目匹配,恢复视差也完成了,接下来可以进行双目的tarcking
-    
+    //改善收匹配的数量有所增加,但是有许多的错误匹配!!!要进行二次修改了
+    cout<<knn_goodMatches.size()<<", improve "<<vDMatches.size()<<endl;*/
     return 0;
 }
 
+void GmsMatch(Mat& img1, vector<cv::KeyPoint>& kp1,
+              Mat& desc1,
+              Mat& img2, vector<cv::KeyPoint>& kp2,
+              Mat& desc2, vector<DMatch>& matches_all, vector<DMatch>& matches_gms);
+void runGMSFilter(Mat& img1, vector<cv::KeyPoint>& kp1,
+                  Mat& desc1,
+                  Mat& img2, vector<cv::KeyPoint>& kp2,
+                  Mat& desc2, vector<DMatch>& matches_all,
+                  vector<DMatch>& matches_gms){
+    GmsMatch(img1, kp1, desc1,
+             img2, kp2, desc2, matches_all, matches_gms);
+}
+
+void GmsMatch(Mat& img1, vector<cv::KeyPoint>& kp1,
+                Mat& desc1,
+                Mat& img2, vector<cv::KeyPoint>& kp2,
+                Mat& desc2, vector<DMatch>& matches_all, vector<DMatch>& matches_gms){
+    std::vector<bool> vbInliers;
+    gms_matcher gms(kp1, img1.size(), kp2, img2.size(), matches_all);
+    int num_inliers = gms.GetInlierMask(vbInliers, false, false);
+    // collect matches
+    for (size_t i = 0; i < vbInliers.size(); ++i)
+    {
+        if (vbInliers[i] == true)
+        {
+            matches_gms.push_back(matches_all[i]);
+        }
+    }
+
+}
 void showWidthImgMatch(string winname, const cv::Mat& image_1, const vector<cv::KeyPoint>& keypoints_1,
                        const cv::Mat& image_2, const vector<cv::KeyPoint>& keypoints_2,
                        const vector<cv::DMatch>& matches){

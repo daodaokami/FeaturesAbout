@@ -162,6 +162,19 @@ testfm/fast:
 	$(MAKE) -f vo/CMakeFiles/testfm.dir/build.make vo/CMakeFiles/testfm.dir/build
 .PHONY : testfm/fast
 
+#=============================================================================
+# Target rules for targets named testfm_spnear
+
+# Build rule for target.
+testfm_spnear: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testfm_spnear
+.PHONY : testfm_spnear
+
+# fast build rule for target.
+testfm_spnear/fast:
+	$(MAKE) -f vo/CMakeFiles/testfm_spnear.dir/build.make vo/CMakeFiles/testfm_spnear.dir/build
+.PHONY : testfm_spnear/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -174,6 +187,7 @@ help:
 	@echo "... testfe"
 	@echo "... testgb"
 	@echo "... testfm"
+	@echo "... testfm_spnear"
 .PHONY : help
 
 

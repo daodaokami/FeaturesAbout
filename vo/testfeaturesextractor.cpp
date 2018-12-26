@@ -89,28 +89,16 @@ int main(){
     cv::waitKey(0);
     delete detector;
     return 0;*/
-/*
 
-    suo15features::ORB_config default_config(31, 15, 19, 1000, 1.2, 4, 20, 7);
-    detector = new suo15features::Detector_orb(default_config);
-    vector<int> mnkeypointsLevels = detector->GetKeypointsLevels();
-
-    suo15features::Descry* descry;
-    suo15features::Detector_orb detector_orb;
-    //descriptor = new suo15features::Desc_b256();
+    cv::Mat img = cv::imread("./data/01000r.png", cv::IMREAD_ANYCOLOR);
+    suo15features::ORB_options default_options(31, 15, 19, 1000, 1.2, 4, 20, 7);
+    suo15features::Detector<cv::KeyPoint>* detector = new suo15features::Detector_orb(default_options);
     std::chrono::system_clock::time_point start = std::chrono::system_clock::now();
     vector<cv::KeyPoint> keypoints_orb = detector->ExtractorKeyPoints(img);
-
-    descry = new suo15features::Desc_b256(detector);
-    cv::Mat descs = descry->ComputeDescriptor(img, keypoints_orb);
-
-    mnkeypointsLevels.clear();
-    mnkeypointsLevels = detector->GetKeypointsLevels();
     std::chrono::system_clock::time_point end = std::chrono::system_clock::now();
     std::chrono::duration<double> elapsed_seconds = end - start;
     cout<<"time out "<< elapsed_seconds.count()<<"s."<<endl;
-    delete detector;
-*/
+
     //将点展开，得到，分别得到不同层次上的特征点
 /*    vector<vector<cv::KeyPoint>> allKeypoints;
     allKeypoints.resize(default_config._nlevels);

@@ -16,7 +16,9 @@ namespace suo15features{
                                                              const vector<cv::KeyPoint> &keypoints_2,
                                                              const cv::Mat &descriptors_2){
         vector<CP> keypointsCP;
-
+        //space subdivision
+        //we should know the ori_img size
+        //and decide a size of the grid to change the bf matcher areas
 
         return keypointsCP;
     };

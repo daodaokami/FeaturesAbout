@@ -41,7 +41,7 @@ namespace suo15features{
 
         const float minZ = mb;
         const float minD = 0;
-        const float maxD = mbf/minZ;
+        const float maxD = 50;//mbf/minZ;
 
         std::vector<std::pair<int, int>> vDistIdx;
         vDistIdx.reserve(N);//左边的特征点对应的最近的右视图的点的集合

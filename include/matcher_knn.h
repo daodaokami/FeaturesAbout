@@ -9,7 +9,6 @@
 #include "knn.h"
 
 namespace suo15features {
-
     class Matcher_knn:public Matcher{
     private:
         Matcher_options matcher_options;

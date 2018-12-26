@@ -13,6 +13,7 @@ vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/detector_sift.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/detector_surf.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/distance.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/feature_set.h
+vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/gms_matcher.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/knn.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/matcher.h
 vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o: ../include/matcher_knn.h

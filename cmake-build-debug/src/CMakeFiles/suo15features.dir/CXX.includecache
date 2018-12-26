@@ -40,6 +40,16 @@ unordered_map
 map
 -
 
+../include/datas_map.h
+unordered_map
+-
+map
+-
+vector
+-
+opencv2/core/types.hpp
+-
+
 ../include/desc_b256.h
 detector_orb.h
 ../include/detector_orb.h
@@ -143,6 +153,16 @@ common_include.h
 ../include/common_include.h
 sift_keypoint.h
 ../include/sift_keypoint.h
+
+../include/spacenear_matcher.h
+spatical_subdivision.h
+../include/spatical_subdivision.h
+
+../include/spatical_subdivision.h
+opencv2/core/core.hpp
+-
+vector
+-
 
 ../include/visualize.h
 common_include.h
@@ -268,6 +288,12 @@ sift_keypoint.h
 accum_conv.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/accum_conv.h
 
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/datas_map.cpp
+iostream
+-
+datas_map.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/datas_map.h
+
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/desc_b256.cpp
 detector_orb.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/detector_orb.h
@@ -353,6 +379,24 @@ algorithm
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/sift_keypoint.cpp
 sift_keypoint.h
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/sift_keypoint.h
+
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/spacenear_matcher.cpp
+spacenear_matcher.h
+-
+opencv2/features2d.hpp
+-
+opencv/cv.hpp
+-
+iostream
+-
+chrono
+-
+
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/spatical_subdivision.cpp
+spatical_subdivision.h
+/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/spatical_subdivision.h
+iostream
+-
 
 /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/visualize.cpp
 opencv2/features2d.hpp
@@ -1221,6 +1265,38 @@ details.h
 /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 
 /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+
+/usr/local/include/opencv/cv.h
+opencv2/core/core_c.h
+/usr/local/include/opencv/opencv2/core/core_c.h
+opencv2/imgproc/imgproc_c.h
+/usr/local/include/opencv/opencv2/imgproc/imgproc_c.h
+opencv2/photo/photo_c.h
+/usr/local/include/opencv/opencv2/photo/photo_c.h
+opencv2/video/tracking_c.h
+/usr/local/include/opencv/opencv2/video/tracking_c.h
+opencv2/objdetect/objdetect_c.h
+/usr/local/include/opencv/opencv2/objdetect/objdetect_c.h
+
+/usr/local/include/opencv/cv.hpp
+cv.h
+/usr/local/include/opencv/cv.h
+opencv2/core.hpp
+/usr/local/include/opencv/opencv2/core.hpp
+opencv2/imgproc.hpp
+/usr/local/include/opencv/opencv2/imgproc.hpp
+opencv2/photo.hpp
+/usr/local/include/opencv/opencv2/photo.hpp
+opencv2/video.hpp
+/usr/local/include/opencv/opencv2/video.hpp
+opencv2/highgui.hpp
+/usr/local/include/opencv/opencv2/highgui.hpp
+opencv2/features2d.hpp
+/usr/local/include/opencv/opencv2/features2d.hpp
+opencv2/calib3d.hpp
+/usr/local/include/opencv/opencv2/calib3d.hpp
+opencv2/objdetect.hpp
+/usr/local/include/opencv/opencv2/objdetect.hpp
 
 /usr/local/include/opencv/cxcore.h
 opencv2/core/core_c.h

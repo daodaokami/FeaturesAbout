@@ -110,6 +110,16 @@ desc_s128.h
 desc_b256.h
 ../include/desc_b256.h
 
+../include/gms_matcher.h
+opencv2/opencv.hpp
+-
+vector
+-
+iostream
+-
+ctime
+-
+
 ../include/knn.h
 distance.h
 ../include/distance.h
@@ -158,6 +168,8 @@ sift_keypoint.h
 matcher.h
 -
 feature_set.h
+-
+gms_matcher.h
 -
 opencv2/features2d.hpp
 -

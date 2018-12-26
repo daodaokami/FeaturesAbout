@@ -61,4 +61,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "vo/CMakeFiles/testfe.dir/DependInfo.cmake"
   "vo/CMakeFiles/testgb.dir/DependInfo.cmake"
   "vo/CMakeFiles/testfm.dir/DependInfo.cmake"
+  "vo/CMakeFiles/testfm_spnear.dir/DependInfo.cmake"
   )

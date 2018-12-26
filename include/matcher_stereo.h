@@ -69,5 +69,4 @@ namespace suo15features {
     inline std::vector<int> Matcher_stereo::GetDistance() { return vDistance; }
 }
 
-
 #endif //LUT15VO_MATCHER_STEREO_H

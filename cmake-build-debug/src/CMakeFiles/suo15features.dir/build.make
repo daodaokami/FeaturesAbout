@@ -489,6 +489,78 @@ src/CMakeFiles/suo15features.dir/matcher_stereo.cpp.o.provides: src/CMakeFiles/s
 src/CMakeFiles/suo15features.dir/matcher_stereo.cpp.o.provides.build: src/CMakeFiles/suo15features.dir/matcher_stereo.cpp.o
 
 
+src/CMakeFiles/suo15features.dir/datas_map.cpp.o: src/CMakeFiles/suo15features.dir/flags.make
+src/CMakeFiles/suo15features.dir/datas_map.cpp.o: ../src/datas_map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/suo15features.dir/datas_map.cpp.o"
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/suo15features.dir/datas_map.cpp.o -c /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/datas_map.cpp
+
+src/CMakeFiles/suo15features.dir/datas_map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/suo15features.dir/datas_map.cpp.i"
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/datas_map.cpp > CMakeFiles/suo15features.dir/datas_map.cpp.i
+
+src/CMakeFiles/suo15features.dir/datas_map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/suo15features.dir/datas_map.cpp.s"
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/datas_map.cpp -o CMakeFiles/suo15features.dir/datas_map.cpp.s
+
+src/CMakeFiles/suo15features.dir/datas_map.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/suo15features.dir/datas_map.cpp.o.requires
+
+src/CMakeFiles/suo15features.dir/datas_map.cpp.o.provides: src/CMakeFiles/suo15features.dir/datas_map.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/datas_map.cpp.o.provides.build
+.PHONY : src/CMakeFiles/suo15features.dir/datas_map.cpp.o.provides
+
+src/CMakeFiles/suo15features.dir/datas_map.cpp.o.provides.build: src/CMakeFiles/suo15features.dir/datas_map.cpp.o
+
+
+src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.o: src/CMakeFiles/suo15features.dir/flags.make
+src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.o: ../src/spacenear_matcher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.o"
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/suo15features.dir/spacenear_matcher.cpp.o -c /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/spacenear_matcher.cpp
+
+src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/suo15features.dir/spacenear_matcher.cpp.i"
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/spacenear_matcher.cpp > CMakeFiles/suo15features.dir/spacenear_matcher.cpp.i
+
+src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/suo15features.dir/spacenear_matcher.cpp.s"
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/spacenear_matcher.cpp -o CMakeFiles/suo15features.dir/spacenear_matcher.cpp.s
+
+src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.o.requires
+
+src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.o.provides: src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.o.provides.build
+.PHONY : src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.o.provides
+
+src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.o.provides.build: src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.o
+
+
+src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.o: src/CMakeFiles/suo15features.dir/flags.make
+src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.o: ../src/spatical_subdivision.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.o"
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/suo15features.dir/spatical_subdivision.cpp.o -c /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/spatical_subdivision.cpp
+
+src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/suo15features.dir/spatical_subdivision.cpp.i"
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/spatical_subdivision.cpp > CMakeFiles/suo15features.dir/spatical_subdivision.cpp.i
+
+src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/suo15features.dir/spatical_subdivision.cpp.s"
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/src/spatical_subdivision.cpp -o CMakeFiles/suo15features.dir/spatical_subdivision.cpp.s
+
+src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.o.requires
+
+src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.o.provides: src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.o.provides.build
+.PHONY : src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.o.provides
+
+src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.o.provides.build: src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.o
+
+
 # Object files for target suo15features
 suo15features_OBJECTS = \
 "CMakeFiles/suo15features.dir/accum_conv.cpp.o" \
@@ -508,7 +580,10 @@ suo15features_OBJECTS = \
 "CMakeFiles/suo15features.dir/matcher_knn.cpp.o" \
 "CMakeFiles/suo15features.dir/feature_set.cpp.o" \
 "CMakeFiles/suo15features.dir/visualize.cpp.o" \
-"CMakeFiles/suo15features.dir/matcher_stereo.cpp.o"
+"CMakeFiles/suo15features.dir/matcher_stereo.cpp.o" \
+"CMakeFiles/suo15features.dir/datas_map.cpp.o" \
+"CMakeFiles/suo15features.dir/spacenear_matcher.cpp.o" \
+"CMakeFiles/suo15features.dir/spatical_subdivision.cpp.o"
 
 # External object files for target suo15features
 suo15features_EXTERNAL_OBJECTS =
@@ -531,6 +606,9 @@ suo15features_EXTERNAL_OBJECTS =
 ../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/feature_set.cpp.o
 ../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/visualize.cpp.o
 ../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/matcher_stereo.cpp.o
+../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/datas_map.cpp.o
+../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.o
+../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.o
 ../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/build.make
 ../lib/libsuo15features.so: /usr/local/lib/libopencv_stitching.so.3.4.0
 ../lib/libsuo15features.so: /usr/local/lib/libopencv_superres.so.3.4.0
@@ -580,7 +658,7 @@ suo15features_EXTERNAL_OBJECTS =
 ../lib/libsuo15features.so: /usr/local/lib/libopencv_imgproc.so.3.4.0
 ../lib/libsuo15features.so: /usr/local/lib/libopencv_core.so.3.4.0
 ../lib/libsuo15features.so: src/CMakeFiles/suo15features.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX shared library ../../lib/libsuo15features.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX shared library ../../lib/libsuo15features.so"
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/suo15features.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -606,6 +684,9 @@ src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/matc
 src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/feature_set.cpp.o.requires
 src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/visualize.cpp.o.requires
 src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/matcher_stereo.cpp.o.requires
+src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/datas_map.cpp.o.requires
+src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.o.requires
+src/CMakeFiles/suo15features.dir/requires: src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.o.requires
 
 .PHONY : src/CMakeFiles/suo15features.dir/requires
 

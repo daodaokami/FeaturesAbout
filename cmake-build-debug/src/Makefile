@@ -152,6 +152,33 @@ accum_conv.cpp.s:
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/accum_conv.cpp.s
 .PHONY : accum_conv.cpp.s
 
+datas_map.o: datas_map.cpp.o
+
+.PHONY : datas_map.o
+
+# target to build an object file
+datas_map.cpp.o:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/datas_map.cpp.o
+.PHONY : datas_map.cpp.o
+
+datas_map.i: datas_map.cpp.i
+
+.PHONY : datas_map.i
+
+# target to preprocess a source file
+datas_map.cpp.i:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/datas_map.cpp.i
+.PHONY : datas_map.cpp.i
+
+datas_map.s: datas_map.cpp.s
+
+.PHONY : datas_map.s
+
+# target to generate assembly for a file
+datas_map.cpp.s:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/datas_map.cpp.s
+.PHONY : datas_map.cpp.s
+
 desc_b256.o: desc_b256.cpp.o
 
 .PHONY : desc_b256.o
@@ -584,6 +611,60 @@ sift_keypoint.cpp.s:
 	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/sift_keypoint.cpp.s
 .PHONY : sift_keypoint.cpp.s
 
+spacenear_matcher.o: spacenear_matcher.cpp.o
+
+.PHONY : spacenear_matcher.o
+
+# target to build an object file
+spacenear_matcher.cpp.o:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.o
+.PHONY : spacenear_matcher.cpp.o
+
+spacenear_matcher.i: spacenear_matcher.cpp.i
+
+.PHONY : spacenear_matcher.i
+
+# target to preprocess a source file
+spacenear_matcher.cpp.i:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.i
+.PHONY : spacenear_matcher.cpp.i
+
+spacenear_matcher.s: spacenear_matcher.cpp.s
+
+.PHONY : spacenear_matcher.s
+
+# target to generate assembly for a file
+spacenear_matcher.cpp.s:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/spacenear_matcher.cpp.s
+.PHONY : spacenear_matcher.cpp.s
+
+spatical_subdivision.o: spatical_subdivision.cpp.o
+
+.PHONY : spatical_subdivision.o
+
+# target to build an object file
+spatical_subdivision.cpp.o:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.o
+.PHONY : spatical_subdivision.cpp.o
+
+spatical_subdivision.i: spatical_subdivision.cpp.i
+
+.PHONY : spatical_subdivision.i
+
+# target to preprocess a source file
+spatical_subdivision.cpp.i:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.i
+.PHONY : spatical_subdivision.cpp.i
+
+spatical_subdivision.s: spatical_subdivision.cpp.s
+
+.PHONY : spatical_subdivision.s
+
+# target to generate assembly for a file
+spatical_subdivision.cpp.s:
+	cd /home/lut/Desktop/C++/Suo15VO/FeaturesAbout/cmake-build-debug && $(MAKE) -f src/CMakeFiles/suo15features.dir/build.make src/CMakeFiles/suo15features.dir/spatical_subdivision.cpp.s
+.PHONY : spatical_subdivision.cpp.s
+
 visualize.o: visualize.cpp.o
 
 .PHONY : visualize.o
@@ -623,6 +704,9 @@ help:
 	@echo "... accum_conv.o"
 	@echo "... accum_conv.i"
 	@echo "... accum_conv.s"
+	@echo "... datas_map.o"
+	@echo "... datas_map.i"
+	@echo "... datas_map.s"
 	@echo "... desc_b256.o"
 	@echo "... desc_b256.i"
 	@echo "... desc_b256.s"
@@ -671,6 +755,12 @@ help:
 	@echo "... sift_keypoint.o"
 	@echo "... sift_keypoint.i"
 	@echo "... sift_keypoint.s"
+	@echo "... spacenear_matcher.o"
+	@echo "... spacenear_matcher.i"
+	@echo "... spacenear_matcher.s"
+	@echo "... spatical_subdivision.o"
+	@echo "... spatical_subdivision.i"
+	@echo "... spatical_subdivision.s"
 	@echo "... visualize.o"
 	@echo "... visualize.i"
 	@echo "... visualize.s"

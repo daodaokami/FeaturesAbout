@@ -1,7 +1,9 @@
 add_executable(testfe testfeaturesextractor.cpp)
 add_executable(testgb testgaussblur.cpp)
 add_executable(testfm testfeaturesmatcher.cpp)
+add_executable(testfm_spnear testfeaturesmatcher_spacenear.cpp)
 
 target_link_libraries(testfe suo15features)
 target_link_libraries(testgb suo15features)
 target_link_libraries(testfm suo15features)
+target_link_libraries(testfm_spnear suo15features)

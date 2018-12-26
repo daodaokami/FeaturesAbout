@@ -16,7 +16,11 @@ add_library(suo15features SHARED
         matcher_knn.cpp
         feature_set.cpp
         visualize.cpp
-        matcher_stereo.cpp)
+        matcher_stereo.cpp
+        datas_map.cpp
+        spacenear_matcher.cpp
+        spatical_subdivision.cpp
+        )
 
 target_link_libraries(
         suo15features ${THIRD_PARTY_LIBS}

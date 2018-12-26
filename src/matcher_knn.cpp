@@ -34,11 +34,19 @@ namespace suo15features {
             cout<<"cur points is "<<i<<"\nbest is "<<nn_res.index_1st_best <<" dis is "<<nn_res.dist_2nd_best
                                        <<" second is "<<nn_res.index_2nd_best<<" dis is "<<nn_res.dist_2nd_best<<endl;
             /*
-             * 1. 使用两中信息进行粗匹配
-             * 2. 使用上点的空间距离信息,即记录好描述子,要选择二维图像空间中描述子距离最近的点
-             *
-             * */
+             * ** 使用两种信息进行粗匹配  **
+             *  使用上点的空间距离信息,即记录好描述子,要选择二维图像空间中描述子距离最近的点
+             *  1.进行knn近邻搜索,2.限制空间的范围,减少搜索空间,加速匹配速度.
+             *  这里的knn匹配,可以用bfmatch的knnmatch来进行一次出匹配.
+             */
 
+
+            /*
+             * 在只有描述子的情况下,空间信息丢失,不能采用空间限制描述子的筛选匹配
+             * 这里需要的操作是,对图像分割较大的网格,并且直接获取网格内的特征点的描述子,这样就可以
+             * 在网格和其相邻的网格内得到的特征点,进行判断,筛选,要选择一个合适的网格大小,基本要符合
+             * 一定量的旋转与平移下的像素点的位置偏移量的大小
+             * */
         }
     }
 
@@ -53,6 +61,8 @@ namespace suo15features {
             cv::Mat &descriptors_1,
             const vector<cv::KeyPoint> &keypoints_2,
             cv::Mat &descriptors_2){
+        //输入的是特征点的位置与对应的描述子
 
+        //返回的是匹配的点对!!!
     }
 }

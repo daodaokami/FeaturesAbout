@@ -2,10 +2,11 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="Lut15VO" targetName="testfm" />
       <config projectName="Lut15VO" targetName="testgb" />
-      <config projectName="Lut15VO" targetName="testfe" />
+      <config projectName="Lut15VO" targetName="testfm" />
       <config projectName="Lut15VO" targetName="suo15features" />
+      <config projectName="Lut15VO" targetName="testfm_spnear" />
+      <config projectName="Lut15VO" targetName="testfe" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -15,26 +16,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f6d1d61-9017-4b53-9d4e-237f5f1c19ce" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/data/01000r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/01001r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/010049.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/010050.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/010051.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/010052.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/010053.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/010265.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/010266.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/010267.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/010268.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/datas_map.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/gms_matcher.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/spacenear_matcher.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/spatical_subdivision.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datas_map.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spacenear_matcher.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spatical_subdivision.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vo/testfeaturesmatcher_spacenear.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/testfe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/testfe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/testfm" beforeDir="false" afterPath="$PROJECT_DIR$/bin/testfm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Lut15VO.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Lut15VO.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/desc_b256.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/desc_b256.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher_bf.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher_bf.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher_knn.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher_knn.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher_stereo.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/matcher_stereo.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/suo15features.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testfe.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testfe.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testfe.dir/testfeaturesextractor.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testfe.dir/testfeaturesextractor.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testfm.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testfm.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testfm.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testfm.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testfm.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testfm.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testfm.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testfm.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testfm.dir/testfeaturesmatcher.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testgb.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/CMakeFiles/testgb.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vo/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vo/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/knn.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/knn.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/matcher_knn.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/matcher_knn.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/matcher_stereo.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/matcher_stereo.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/libsuo15features.so" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libsuo15features.so" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/desc_b256.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/desc_b256.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/matcher_bf.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/matcher_bf.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/matcher_knn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/matcher_knn.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/matcher_stereo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/matcher_stereo.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vo/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vo/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vo/testfeaturesextractor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vo/testfeaturesextractor.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vo/testfeaturesmatcher.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vo/testfeaturesmatcher.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -53,74 +97,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="testfeaturesmatcher.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vo/testfeaturesmatcher.cpp">
+      <file leaf-file-name="testfeaturesmatcher_spacenear.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vo/testfeaturesmatcher_spacenear.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
+            <state relative-caret-position="1178">
+              <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
               <folding>
-                <element signature="e#38#57#0" expanded="true" />
+                <element signature="e#38#63#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="desc_b256.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/desc_b256.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="307" selection-start-line="307" selection-end-line="307" />
-            </state>
-          </provider>
+      <file leaf-file-name="000004.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/000004.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="detector_orb.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/detector_orb.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1525">
-              <caret line="104" column="37" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
-            </state>
-          </provider>
+      <file leaf-file-name="rgb002.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/rgb002.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="detector_orb.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/detector_orb.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
-            </state>
-          </provider>
+      <file leaf-file-name="rgb003.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/rgb003.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="matcher_stereo.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/matcher_stereo.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="773">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
-              <folding>
-                <element signature="e#37#64#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="rgb004.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/rgb004.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="stl_vector.h" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="574" selection-start-line="574" selection-end-line="574" />
-            </state>
-          </provider>
+      <file leaf-file-name="rgb001.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/rgb001.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="matcher_stereo.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/matcher_stereo.h">
+      <file leaf-file-name="gms_matcher.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/include/gms_matcher.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
-              <folding>
-                <element signature="e#264#296#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="152">
+              <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -130,6 +148,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
               <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spacenear_matcher.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/spacenear_matcher.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="841">
+              <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="features2d.hpp" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/include/opencv2/features2d.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="894" selection-start-line="894" selection-end-line="894" />
             </state>
           </provider>
         </entry>
@@ -149,10 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/gauss_Blur.cpp" />
-        <option value="$PROJECT_DIR$/include/accum.h" />
-        <option value="$PROJECT_DIR$/src/accum.cpp" />
-        <option value="$PROJECT_DIR$/src/accum_conv.cpp" />
         <option value="$PROJECT_DIR$/include/gauss_blur.h" />
         <option value="$PROJECT_DIR$/src/gauss_blur.cpp" />
         <option value="$PROJECT_DIR$/data/positions1.txt" />
@@ -165,7 +197,6 @@
         <option value="$PROJECT_DIR$/include/sift_keypoint.h" />
         <option value="$PROJECT_DIR$/src/sift_keypoint.cpp" />
         <option value="$PROJECT_DIR$/vo/main.cpp" />
-        <option value="$PROJECT_DIR$/vo/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/detector_fast.cpp" />
         <option value="$PROJECT_DIR$/include/detector_fast.h" />
         <option value="$PROJECT_DIR$/include/detector_sift.h" />
@@ -176,16 +207,11 @@
         <option value="$PROJECT_DIR$/include/matcher_bf.h" />
         <option value="$PROJECT_DIR$/include/feature_set.h" />
         <option value="$PROJECT_DIR$/include/distance.h" />
-        <option value="$PROJECT_DIR$/include/matcher_knn.h" />
         <option value="$PROJECT_DIR$/src/matcher.cpp" />
         <option value="$PROJECT_DIR$/include/visualize.h" />
         <option value="$PROJECT_DIR$/src/visualize.cpp" />
         <option value="$PROJECT_DIR$/include/ransac.h" />
-        <option value="$PROJECT_DIR$/src/matcher_bf.cpp" />
         <option value="$PROJECT_DIR$/include/matcher.h" />
-        <option value="$PROJECT_DIR$/src/matcher_knn.cpp" />
-        <option value="$PROJECT_DIR$/include/knn.h" />
-        <option value="$PROJECT_DIR$/vo/testfeaturesextractor.cpp" />
         <option value="$PROJECT_DIR$/src/desc_s128.cpp" />
         <option value="$PROJECT_DIR$/include/descry.h" />
         <option value="$PROJECT_DIR$/include/desc_s128.h" />
@@ -194,21 +220,31 @@
         <option value="$PROJECT_DIR$/include/detector_orb.h" />
         <option value="$PROJECT_DIR$/include/detector.h" />
         <option value="$PROJECT_DIR$/src/detector_orb.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/desc_b256.cpp" />
-        <option value="$PROJECT_DIR$/src/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/include/matcher_stereo.h" />
+        <option value="$PROJECT_DIR$/vo/testtracking.cpp" />
+        <option value="$PROJECT_DIR$/include/matcher_knn.h" />
         <option value="$PROJECT_DIR$/src/matcher_stereo.cpp" />
+        <option value="$PROJECT_DIR$/include/matcher_stereo.h" />
+        <option value="$PROJECT_DIR$/vo/testfeaturesextractor.cpp" />
+        <option value="$PROJECT_DIR$/src/desc_b256.cpp" />
+        <option value="$PROJECT_DIR$/src/matcher_knn.cpp" />
+        <option value="$PROJECT_DIR$/include/knn.h" />
         <option value="$PROJECT_DIR$/vo/testfeaturesmatcher.cpp" />
+        <option value="$PROJECT_DIR$/src/matcher_bf.cpp" />
+        <option value="$PROJECT_DIR$/src/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/vo/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/spacenear_matcher.cpp" />
+        <option value="$PROJECT_DIR$/vo/testfeaturesmatcher_spacenear.cpp" />
+        <option value="$PROJECT_DIR$/include/gms_matcher.h" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="480" />
-    <option name="y" value="-4" />
-    <option name="width" value="1441" />
-    <option name="height" value="1020" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-3" />
+    <option name="y" value="33" />
+    <option name="width" value="1820" />
+    <option name="height" value="962" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -234,11 +270,6 @@
             <path>
               <item name="Lut15VO" type="b2602c69:ProjectViewProjectNode" />
               <item name="FeaturesAbout" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lut15VO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FeaturesAbout" type="462c0819:PsiDirectoryNode" />
               <item name="include" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -260,20 +291,21 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="sample&#9;null&#9;null&#10;keypoint_relative_scale&#9;null&#9;null&#10;Gauss&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Gitprocs/slambook/ch7/CMakeLists.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/include" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/include" />
       <recent name="$PROJECT_DIR$/features" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$/include" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -288,18 +320,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.suo15features">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="testfm" EXPLICIT_BUILD_TARGET_NAME="all" />
+  <component name="RunManager" selected="Application.testfm_spnear">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="testfm_spnear" EXPLICIT_BUILD_TARGET_NAME="all" />
     <configuration name="main" type="CMakeRunConfiguration" factoryName="Application" singleton="true" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lut15VO" TARGET_NAME="main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="main" />
-    <configuration name="suo15features" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="./data/000001.png ./data/000001.png" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lut15VO" TARGET_NAME="testfm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="testfm" />
-    <configuration name="testfe" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lut15VO" TARGET_NAME="testfe" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="testfe" />
-    <configuration name="testfm" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lut15VO" TARGET_NAME="testfm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="testfm" />
+    <configuration name="suo15features" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="./data/010265.png ./data/010266.png" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lut15VO" TARGET_NAME="testfm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="testfm_spnear" />
+    <configuration name="testfe" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lut15VO" TARGET_NAME="testfe" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="testfm_spnear" />
+    <configuration name="testfm" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lut15VO" TARGET_NAME="testfm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="testfm_spnear" />
+    <configuration name="testfm_spnear" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="./data/rgb001.png ./data/rgb003.png" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lut15VO" TARGET_NAME="testfm_spnear" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="testfm_spnear" />
     <configuration name="testgb" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lut15VO" TARGET_NAME="main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lut15VO" RUN_TARGET_NAME="main" />
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.suo15features" />
       <item itemvalue="Application.testfe" />
       <item itemvalue="Application.testfm" />
+      <item itemvalue="Application.testfm_spnear" />
       <item itemvalue="Application.main" />
       <item itemvalue="Application.testgb" />
     </list>
@@ -372,27 +406,38 @@
       <workItem from="1541582576118" duration="416000" />
       <workItem from="1541592965459" duration="1430000" />
       <workItem from="1541599192877" duration="4107000" />
-      <workItem from="1541639640961" duration="16354000" />
+      <workItem from="1541639640961" duration="17737000" />
+      <workItem from="1541681831000" duration="2283000" />
+      <workItem from="1541945216875" duration="2450000" />
+      <workItem from="1541987802626" duration="1331000" />
+      <workItem from="1542346926232" duration="139000" />
+      <workItem from="1545276019822" duration="3890000" />
+      <workItem from="1545287818281" duration="9117000" />
+      <workItem from="1545310408383" duration="1112000" />
+      <workItem from="1545358402570" duration="4458000" />
+      <workItem from="1545393909763" duration="95000" />
+      <workItem from="1545706630065" duration="787000" />
+      <workItem from="1545810739981" duration="5105000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="388398000" />
+    <option name="totallyTimeSpent" value="420548000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-4" width="1922" height="1020" extended-state="6" />
+    <frame x="-3" y="33" width="1820" height="962" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09427083" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1908691" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.7739583" weight="0.22932746" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.7739583" weight="0.26855123" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.31919906" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.16458334" side_tool="true" weight="0.31201765" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8354167" visible="true" weight="0.16427784" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8354167" weight="0.34628975" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.86875" weight="0.45314223" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.86875" weight="0.37926972" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -403,23 +448,23 @@
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997233" weight="0.3292683" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.31919906" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1552901" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8354167" visible="true" weight="0.31764707" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997233" weight="0.3292683" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.86875" weight="0.45359477" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.7739583" weight="0.26681367" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.16458334" side_tool="true" weight="0.31201765" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.31919906" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997233" weight="0.3292683" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.7739583" weight="0.26681367" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -491,7 +536,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/vo/testfeaturesmatcher.cpp</url>
-          <line>95</line>
+          <line>125</line>
           <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
@@ -499,159 +544,31 @@
           <line>50</line>
           <option name="timeStamp" value="118" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/vo/testfeaturesmatcher_spacenear.cpp</url>
+          <line>91</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/vo/testfeaturesmatcher_spacenear.cpp</url>
+          <line>105</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/spacenear_matcher.cpp</url>
+          <line>51</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/spacenear_matcher.cpp</url>
+          <line>48</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="119" />
+      <option name="time" value="124" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/aligned_memory.h" />
-    <entry file="file://$PROJECT_DIR$/include/accum_conv.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/descry.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/nearest_neighbor.h" />
-    <entry file="file://$PROJECT_DIR$/src/nearest_neighbor.cpp" />
-    <entry file="file://$PROJECT_DIR$/include/common_include.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sift_keypoint.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/example.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/000001.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/detector_fast.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vo/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/ransac.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/ransac.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/visualize.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/matcher_bf.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/matcher_bf.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/matcher.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/matcher.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/knn.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/distance.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/matcher_knn.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/visualize.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/c++/5/iostream">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/features.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/sift.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/desc_s128.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="47" column="96" selection-start-line="47" selection-start-column="96" selection-end-line="47" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/desc_s128.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -663,16 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="1262" selection-start-line="1262" selection-end-line="1262" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vo/testfeaturesextractor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="110" column="31" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
-          <folding>
-            <element signature="e#38#65#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -690,9 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/000004.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/000003.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -703,9 +607,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/01.png" />
-    <entry file="file://$PROJECT_DIR$/data/01000.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file:///usr/local/include/opencv2/core/mat.inl.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
@@ -713,34 +614,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/desc_b256.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding>
-            <element signature="e#95#120#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/matcher_knn.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -751,68 +628,231 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/detector.h">
+    <entry file="file://$PROJECT_DIR$/vo/testtracking.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/matcher_stereo.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
-          <folding>
-            <element signature="e#264#296#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
+        <state relative-caret-position="10906">
           <caret line="574" selection-start-line="574" selection-end-line="574" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/matcher_stereo.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/01001r.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/detector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/detector_orb.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1525">
-          <caret line="104" column="37" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
+        <state relative-caret-position="7885">
+          <caret line="415" selection-start-line="415" selection-end-line="415" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/desc_b256.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="307" selection-start-line="307" selection-end-line="307" />
+        <state relative-caret-position="6004">
+          <caret line="316" column="16" selection-start-line="316" selection-start-column="16" selection-end-line="316" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/matcher_stereo.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="538">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
           <folding>
             <element signature="e#37#64#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/detector_orb.h">
+    <entry file="file://$PROJECT_DIR$/src/detector_fast.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/matcher_knn.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+        <state relative-caret-position="494">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/knn.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1482">
+          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vo/testfeaturesextractor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1653">
+          <caret line="87" column="32" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
+          <folding>
+            <element signature="e#38#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/matcher_knn.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/matcher_bf.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/matcher_bf.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vo/testfeaturesmatcher.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
+        <state relative-caret-position="304">
+          <caret line="61" column="68" selection-start-line="61" selection-start-column="68" selection-end-line="61" selection-end-column="68" />
           <folding>
             <element signature="e#38#57#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vo/testgaussblur.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/datas_map.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vo/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Gitprocs/opencv-3.4.0/modules/core/src/matrix.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="992" column="70" lean-forward="true" selection-start-line="992" selection-start-column="70" selection-end-line="992" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datas_map.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Gitprocs/opencv-3.4.0/modules/core/src/stat.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="4021" selection-start-line="4021" selection-end-line="4021" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/000002.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/000001.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/detector_orb.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/01000.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/01001.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/010049.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/010050.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/include/opencv2/features2d.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="894" selection-start-line="894" selection-end-line="894" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spacenear_matcher.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/000004.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/rgb003.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/rgb004.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/rgb002.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/rgb001.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vo/testfeaturesmatcher_spacenear.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1178">
+          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+          <folding>
+            <element signature="e#38#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/gms_matcher.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
         </state>
       </provider>
     </entry>

@@ -298,7 +298,7 @@ namespace suo15features{
             vector<cv::KeyPoint> kps(keypoints.begin()+offset, keypoints.begin()+offset+nkeypointslevel);
             if(level != 0) {
                 float scale = mvScaleFactor[level];
-                cout<<"scale "<<scale<<endl;
+                //cout<<"scale "<<scale<<endl;
                 for(vector<cv::KeyPoint>::iterator keypoint = kps.begin(),
                         keypointEnd = kps.end(); keypoint != keypointEnd; ++keypoint){
                     keypoint->pt *= 1.f/scale;
@@ -307,7 +307,7 @@ namespace suo15features{
             Mat desc = descriptors.rowRange(offset, offset + nkeypointslevel);
             computeDescriptors(workingMat, kps, desc, this->pattern);
             offset += nkeypointslevel;
-            cout<<"desc "<<level <<"\n"<<desc<<endl;
+            //cout<<"desc "<<level <<"\n"<<desc<<endl;
         }
         //这里计算描述子需要修改位置!!!, 在特征点乘上尺度,并且加上偏移之前,如果没有还原尺度,那么描述子将计算出错!!!
         return descriptors;
